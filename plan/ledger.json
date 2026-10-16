@@ -4445,7 +4445,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7",
@@ -4454,11 +4454,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G017.md"
+        },
+        {
+          "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7",
+          "integrated_sha": "2e7e29a9ca3657541db0bf2628a6fe4fd6a45f89",
+          "test_result": "Independent reviewer5actual TS/SQL E2E pass51.195s no skips; writer5pass82.014s. Bothdialects, UNKNOWN gating, criticalsecurity floor/redaction, dirtysource proof, dynamicSQLincomplete+FEfindings retained; no targetconfig/import/SQL execution and readonlysnapshots.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G017.md"
         }
       ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB017",
       "history": [
         {
@@ -4481,6 +4489,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:39:27.797988+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:41:07.057400+00:00"
         }
       ]
     },
@@ -6069,10 +6082,13 @@
         "paths": [
           "devsift/ci_gate.py",
           "tests/test_ci_gate.py",
-          "docs/CI-GATE.md"
+          "docs/CI-GATE.md",
+          "devsift/cli.py",
+          "devsift/cli_scan.py"
         ],
         "locks": [
-          "write:ci/entry"
+          "write:ci/entry",
+          "write:cli/ci-entry"
         ],
         "lease": "current selected session until accepted or reassigned"
       },
@@ -6113,7 +6129,7 @@
       },
       "T050": {
         "owner": "implementer_2",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -6122,11 +6138,10 @@
           "tests/fixtures/e2e/frontend",
           "tests/fixtures/e2e/sql"
         ],
-        "locks": [
-          "write:tests/e2e/frontend"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7"
+        "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7",
+        "integrated_sha": "2e7e29a9ca3657541db0bf2628a6fe4fd6a45f89"
       },
       "T040": {
         "owner": "controller_g014",
@@ -6185,7 +6200,9 @@
         "paths": [
           "devsift/doctor.py",
           "tests/test_doctor_config.py",
-          "docs/DOCTOR.md"
+          "docs/DOCTOR.md",
+          "devsift/cli.py",
+          "tests/test_doctor_cli.py"
         ],
         "locks": [
           "write:cli/doctor"
@@ -6234,17 +6251,15 @@
       ],
       "held_locks": [
         "write:adapters/security",
-        "write:reports/model",
         "write:ci/entry",
-        "write:tests/e2e/frontend",
-        "write:tests/observability",
-        "write:cli/doctor"
+        "write:cli/doctor",
+        "write:reports/model",
+        "write:tests/observability"
       ],
       "active_jobs": [
         "T031",
         "T037",
         "T043",
-        "T050",
         "T036",
         "T059"
       ],
