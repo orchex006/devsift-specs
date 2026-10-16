@@ -1486,7 +1486,6 @@
           "ready": false,
           "blocking_tasks": [
             "T054",
-            "T068",
             "T069"
           ]
         }
@@ -5299,8 +5298,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
+          "test_result": "ActualWindowsoptinfullproof1PASS50.924s currentwheel+sdist/twofreshvenvs/syntheticprior→current→rollback/exactmodulehashes+RECORD/readonlyconsumerandtoolsource/Git; defaultexplicitSKIP;2OSCIupdatedmandatory, independentreviewpending",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5317,6 +5323,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:50:30.331520+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T14:01:07.185762+00:00"
         }
       ]
     },
@@ -6347,7 +6358,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
@@ -6360,11 +6371,20 @@
           "test_result": "Malformedstored/deflateprefix/CRC andtail/concatenation probes RED beforefix. Fullcapturedcompressedspan boundedexactsize/CRC/EOF/no tails; WindowsCOM/LPTsuperscripts guarded. All10actualtests pass2.516s, distinct re-review pending",
           "author": "cli_writer",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9",
+          "integrated_sha": "2e2f5370028a4bb3d330077628f143d5572dd678",
+          "test_result": "Distinct reviewer accepted60140e5: all10actualZIPtestsPASS2.223s zeroskips plus independentlyreproducedstored/deflateprefix bypasses nowreject. Fullcapturedpayload exactsize/CRC/EOF/no trailingstreams, Windowsdevicealias guards; boundedknownshapes/privacy/noextract/execute/auth boundaries audited. Controllerintegratedsame3files unchanged; no universalcertificationclaimed.",
+          "evidence_uri": "docs/evidence/G023.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB023",
       "history": [
         {
@@ -6406,6 +6426,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:59:54.361538+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T14:01:06.374988+00:00"
         }
       ]
     },
@@ -6426,12 +6451,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB023"
+      "execution_id": "GB023",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T14:01:06.734769+00:00",
+          "reason": "Resource admission under cooperative canonical-ledger OS lock."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T14:01:06.930132+00:00"
+        }
+      ]
     },
     "T070": {
       "id": "T070",
@@ -8490,7 +8528,7 @@
       },
       "T068": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "fix/g023-t068-deflate-proof",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-deflate-proof",
         "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
@@ -8499,9 +8537,7 @@
           "tools/check_artifact_security.py",
           "tests/test_artifact_security.py"
         ],
-        "locks": [
-          "write:security/assurance"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
         "prior_jobs": [
@@ -8524,7 +8560,8 @@
             "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd"
           }
         ],
-        "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9"
+        "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9",
+        "integrated_sha": "2e2f5370028a4bb3d330077628f143d5572dd678"
       },
       "T075": {
         "owner": "controller",
@@ -8543,7 +8580,7 @@
       },
       "T054": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g018-t054-install-rollback",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t054-install-rollback",
         "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
@@ -8556,7 +8593,8 @@
           "write:tests/install"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532"
       },
       "T066": {
         "base_sha": "bcfdba86634aa29dcf22efa031977e2915892fbd",
@@ -8575,6 +8613,24 @@
         "authorization_id": "autopilot_next_goals",
         "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
         "integrated_sha": "df86aa721899b16a524cc3409cd31b3bd3ce894e"
+      },
+      "T069": {
+        "base_sha": "2e2f5370028a4bb3d330077628f143d5572dd678",
+        "branch": "test/g023-t069-security-acceptance",
+        "lease": "User-authorized autopilot until accepted or explicitly reassigned",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t069-security-acceptance",
+        "owner": "cli_writer",
+        "status": "running",
+        "paths": [
+          "tests/test_security_acceptance.py",
+          "docs/SECURITY-GATE.md"
+        ],
+        "locks": [
+          "write:tests/security-release"
+        ],
+        "source_repository": "orchex006/devsift",
+        "claim_controller": "controller",
+        "authorization_id": "autopilot_next_goals"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8617,15 +8673,15 @@
         }
       ],
       "held_locks": [
-        "write:security/assurance",
-        "write:tests/install"
+        "write:tests/install",
+        "write:tests/security-release"
       ],
       "active_jobs": [
-        "T068",
-        "T054"
+        "T054",
+        "T069"
       ],
-      "latest_integrated_sha": "8345368e97c66fde3dc05fa0924a2868d2f7136e",
-      "updated_utc": "2026-10-16T14:00:09.989671+00:00",
+      "latest_integrated_sha": "2e2f5370028a4bb3d330077628f143d5572dd678",
+      "updated_utc": "2026-10-16T14:01:07.185762+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
