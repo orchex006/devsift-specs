@@ -3758,11 +3758,16 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
           "test_result": "Writer6Pythoncontext,4actualNode-TS+ScriptDomsecurity,12secretcompatibility,6frontendcompatibility tests pass; narrowprovenbindings/TLS/imports, sourceprivacy/negativecontrols andexplicitplatformlimits",
+          "author": "policy_writer"
+        },
+        {
+          "source_sha": "0a3d8e6",
+          "test_result": "Fresh TLS and shared-module alias rework frozen for independent review; producer 8 Python context, 12 credential, 5 native security tests passed; exact review pending",
           "author": "policy_writer"
         }
       ],
@@ -3805,6 +3810,11 @@
           "actor": "controller",
           "at": "2026-10-16T11:15:14.745666+00:00",
           "reason": "Reviewer actualstdlibsafeSSLoverride andNodeignoredAgentsecondargcounterexamples; fresh scoped TLScontext rework"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T11:33:31.519976+00:00"
         }
       ]
     },
@@ -4313,12 +4323,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB014"
+      "assignee": "implementer_2",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB014",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:26:26.975511+00:00"
+        }
+      ]
     },
     "T042": {
       "id": "T042",
@@ -6638,7 +6655,7 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g011-t032-tls-context",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-tls-context",
         "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
@@ -6681,7 +6698,8 @@
             "lease": "current selected session until accepted or reassigned",
             "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
           }
-        ]
+        ],
+        "source_sha": "0a3d8e6"
       },
       "T060": {
         "owner": "implementer_1",
@@ -6790,6 +6808,22 @@
             ]
           }
         }
+      },
+      "T041": {
+        "owner": "implementer_2",
+        "status": "running",
+        "branch": "feature/g014-risk-context",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g014-risk-context",
+        "base_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1",
+        "paths": [
+          "devsift/report_context.py",
+          "tests/test_report_context.py",
+          "docs/REPORT-CONTEXT.md"
+        ],
+        "locks": [
+          "write:reports/risk"
+        ],
+        "session": "g014-g016-g017-g020"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6834,15 +6868,17 @@
       "held_locks": [
         "write:rules/security",
         "write:tests/agent",
-        "write:ci/integration"
+        "write:ci/integration",
+        "write:reports/risk"
       ],
       "active_jobs": [
         "T032",
         "T048",
-        "T044"
+        "T044",
+        "T041"
       ],
-      "latest_integrated_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1",
-      "updated_utc": "2026-10-16T11:21:19.199445+00:00",
+      "latest_integrated_sha": "eee54bf3582209a6d3dc2045367b48273864756b",
+      "updated_utc": "2026-10-16T11:33:31.519976+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
