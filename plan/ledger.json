@@ -6185,16 +6185,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
       "execution_id": "GA022",
       "history": [
         {
           "actor": "controller",
           "reason": "Maintainer ownership serialization belongs to the single canonical specs ledger; runtime policy discovery remains T064. No DAG or acceptance change."
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:57:21.573931+00:00",
+          "reason": "Resource admission under cooperative canonical-ledger OS lock."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:57:21.701566+00:00"
         }
       ]
     },
@@ -8506,6 +8517,24 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
+      },
+      "T066": {
+        "base_sha": "bcfdba86634aa29dcf22efa031977e2915892fbd",
+        "branch": "test/g022-t066-ownership-overrides",
+        "lease": "User-authorized autopilot until accepted or explicitly reassigned",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t066-ownership-overrides",
+        "owner": "controller",
+        "status": "running",
+        "paths": [
+          "tests/test_multirepo_ownership.py",
+          "docs/RESOURCE-OWNERSHIP.md"
+        ],
+        "locks": [
+          "write:tests/multirepo"
+        ],
+        "source_repository": "orchex006/devsift-specs",
+        "claim_controller": "controller",
+        "authorization_id": "autopilot_next_goals"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8549,14 +8578,16 @@
       ],
       "held_locks": [
         "write:security/assurance",
-        "write:tests/install"
+        "write:tests/install",
+        "write:tests/multirepo"
       ],
       "active_jobs": [
         "T068",
-        "T054"
+        "T054",
+        "T066"
       ],
       "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:56:56.082700+00:00",
+      "updated_utc": "2026-10-16T13:57:21.701566+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -9050,7 +9081,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "e2f2d879678770afa9271b1f7fa775c0d711ac38"
+      "latest_specs_integrated_sha": "bcfdba86634aa29dcf22efa031977e2915892fbd"
     },
     "previous_checkpoints": [
       {
