@@ -5459,8 +5459,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
+          "test_result": "Producer 10 focused change-budget tests and 18 existing policy tests pass; real source/Git hashes unchanged, strict declared estimates and no execution/write authority. Independent review pending.",
+          "author": "policy_writer"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5477,6 +5483,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:08:12.417573+00:00",
           "reason": "Explicit user autopilot authorizes next ready goals. T013 accepted; independent non-mutating change-budget contract, no overlap with foreign case approval/CLI ownership."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:14:06.807965+00:00"
         }
       ]
     },
@@ -7232,7 +7243,7 @@
       },
       "T061": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g021-t061-change-budget",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t061-change-budget",
         "base_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
@@ -7244,7 +7255,8 @@
         "locks": [
           "write:safety/decision"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7295,7 +7307,7 @@
         "T061"
       ],
       "latest_integrated_sha": "73d98c48e3f0deb67938dfe5c87ce08ca19123e0",
-      "updated_utc": "2026-10-16T12:14:06.121581+00:00",
+      "updated_utc": "2026-10-16T12:14:06.807965+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
