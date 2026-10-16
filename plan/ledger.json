@@ -6330,7 +6330,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
@@ -6360,6 +6360,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:41:59.378330+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T13:43:55.951976+00:00",
+          "reason": "Reviewer requires distinguishing preapproval proposal generation from explicit operator binding and allscope selection from proven legacy origin"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:43:55.951976+00:00",
+          "reason": "Reviewer requires distinguishing preapproval proposal generation from explicit operator binding and allscope selection from proven legacy origin"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:43:55.951976+00:00",
+          "reason": "Reviewer requires distinguishing preapproval proposal generation from explicit operator binding and allscope selection from proven legacy origin"
         }
       ]
     },
@@ -8140,10 +8158,10 @@
       },
       "T073": {
         "owner": "controller",
-        "status": "in_review",
-        "branch": "docs/g025-t073-getting-started",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-getting-started",
-        "base_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
+        "status": "running",
+        "branch": "docs/g025-t073-workflow-clarity",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-workflow-clarity",
+        "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
         "paths": [
           "README.md",
           "docs/USAGE.md"
@@ -8153,7 +8171,25 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
+        "prior_jobs": [
+          {
+            "owner": "controller",
+            "status": "in_review",
+            "branch": "docs/g025-t073-getting-started",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-getting-started",
+            "base_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
+            "paths": [
+              "README.md",
+              "docs/USAGE.md"
+            ],
+            "locks": [
+              "write:docs/readme"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_repository": "orchex006/devsift",
+            "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
+          }
+        ]
       },
       "T068": {
         "owner": "cli_writer",
@@ -8225,7 +8261,7 @@
         "T068"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:42:55.390967+00:00",
+      "updated_utc": "2026-10-16T13:43:55.951976+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
