@@ -18,3 +18,9 @@ The T043/T044 shared CLI handoff is complete and the controller_g014 lease is re
 Final CI runs: runtime `38901823874`, native `38901824152`, installed `38901824220`, quality `38901823972`. Runtime, installed and quality checks pass on both OS; native Linux and Windows pass, including all3T051 groups and actual Windows alias regressions. This is component acceptance, not a package release or automatic source-edit authorization.
 
 Checkpoint means a plain unfinished-work handoff only when actually pausing. Do not create restore snapshots, cloned workspaces or per-task checkpoints. Remove only completed clean integrated worktrees, retaining branch refs and preserving active other-session work.
+
+## Final autopilot routing (new direct user authorization)
+
+Controller_g014 now owns the currently unclaimed G024/T070–T072 once accepted prerequisites unlock them. Execution subagents must use `gpt-6-luna` with low reasoning, per the user. Authorization: `execution.authorizations.autopilot_luna_final`; goal routing is explicit in `execution.goal_controllers`. The other controller keeps T069/G023 and its independent review; do not reassign or duplicate that active work. T070 is not claimed or implemented before T069 is accepted. This supplements earlier scope; it does not revoke other claims. No actual tags/package releases or license choice are authorized by this readiness work.
+
+G024 supporting correction: controller_g014 / luna_implementer_2 owns specs `tools/resource_claims.py`, `tests/test_resource_claims.py`, `docs/RESOURCE-OWNERSHIP.md` for proven Windows CRLF false-corrupt admission. See execution.supporting_corrections.g024_windows_ledger_bytes. Existing T065 acceptance/history and other task claims are preserved. Review/source references will be recorded; keep canonical writes binary/atomic under ledger_lock.
