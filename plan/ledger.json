@@ -6088,7 +6088,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04",
@@ -6097,7 +6097,7 @@
           "source_repository": "orchex006/devsift-specs"
         }
       ],
-      "assignee": "policy_writer",
+      "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
       "execution_id": "GA022",
@@ -6122,6 +6122,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:49:17.164905+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T13:51:52.663841+00:00",
+          "reason": "Root and independent reviewer reproduced canonicalCOPY admissionINVALID_REQUEST due3reviewedacceptedhistoricalnon-taskjobs. Preserveactualledger; allow onlyexplicitinactiveacceptedemptylocksfullSHAreviewedhistoricalrecords, failclosedunknown/active"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:51:52.663841+00:00",
+          "reason": "Root and independent reviewer reproduced canonicalCOPY admissionINVALID_REQUEST due3reviewedacceptedhistoricalnon-taskjobs. Preserveactualledger; allow onlyexplicitinactiveacceptedemptylocksfullSHAreviewedhistoricalrecords, failclosedunknown/active"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:51:52.663841+00:00",
+          "reason": "Root and independent reviewer reproduced canonicalCOPY admissionINVALID_REQUEST due3reviewedacceptedhistoricalnon-taskjobs. Preserveactualledger; allow onlyexplicitinactiveacceptedemptylocksfullSHAreviewedhistoricalrecords, failclosedunknown/active"
         }
       ]
     },
@@ -6265,8 +6283,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
+          "test_result": "Eight actual bounded ZIP/wheel secrecy/privacy/malformed/nonexecution/Windows link fixtures pass1.597s; no T053 dependency. Distinct review pending",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6283,6 +6308,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:42:55.390967+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:51:52.379945+00:00"
         }
       ]
     },
@@ -8294,11 +8324,11 @@
         "integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9"
       },
       "T065": {
-        "owner": "policy_writer",
-        "status": "in_review",
-        "branch": "feature/g022-t065-owner-locks",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t065-owner-locks",
-        "base_sha": "aaca318c15eabdb7799c4330a6ac8143ae6ac839",
+        "owner": "controller",
+        "status": "running",
+        "branch": "fix/g022-t065-history-compat",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t065-history-compat",
+        "base_sha": "d30e131e7c173ef0ad76d24ba890f27e7fc009fa",
         "paths": [
           "tools/resource_claims.py",
           "tests/test_resource_claims.py",
@@ -8309,7 +8339,26 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift-specs",
-        "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04"
+        "prior_jobs": [
+          {
+            "owner": "policy_writer",
+            "status": "in_review",
+            "branch": "feature/g022-t065-owner-locks",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t065-owner-locks",
+            "base_sha": "aaca318c15eabdb7799c4330a6ac8143ae6ac839",
+            "paths": [
+              "tools/resource_claims.py",
+              "tests/test_resource_claims.py",
+              "docs/RESOURCE-OWNERSHIP.md"
+            ],
+            "locks": [
+              "write:policy/ownership"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_repository": "orchex006/devsift-specs",
+            "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04"
+          }
+        ]
       },
       "T073": {
         "owner": "controller",
@@ -8348,7 +8397,7 @@
       },
       "T068": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g023-t068-artifact-assurance",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-artifact-assurance",
         "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
@@ -8361,7 +8410,8 @@
           "write:security/assurance"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd"
       },
       "T075": {
         "owner": "controller",
@@ -8446,7 +8496,7 @@
         "T054"
       ],
       "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:50:30.331520+00:00",
+      "updated_utc": "2026-10-16T13:51:52.663841+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8886,7 +8936,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "deb54ed204762453b6cccb3071776ad9fed2faca"
+      "latest_specs_integrated_sha": "d30e131e7c173ef0ad76d24ba890f27e7fc009fa"
     },
     "previous_checkpoints": [
       {
