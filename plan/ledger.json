@@ -6019,16 +6019,28 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
       "execution_id": "GA022",
       "history": [
         {
           "actor": "controller",
           "reason": "Maintainer ownership serialization belongs to the single canonical specs ledger; runtime policy discovery remains T064. No DAG or acceptance change."
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:36:18.654469+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:36:18.654469+00:00",
+          "reason": ""
         }
       ]
     },
@@ -8017,6 +8029,23 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
+      },
+      "T065": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g022-t065-owner-locks",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t065-owner-locks",
+        "base_sha": "aaca318c15eabdb7799c4330a6ac8143ae6ac839",
+        "paths": [
+          "tools/resource_claims.py",
+          "tests/test_resource_claims.py",
+          "docs/RESOURCE-OWNERSHIP.md"
+        ],
+        "locks": [
+          "write:policy/ownership"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift-specs"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8061,15 +8090,17 @@
       "held_locks": [
         "write:security/gate",
         "write:packaging/artifacts",
-        "write:docs/cases"
+        "write:docs/cases",
+        "write:policy/ownership"
       ],
       "active_jobs": [
         "T067",
         "T053",
-        "T074"
+        "T074",
+        "T065"
       ],
       "latest_integrated_sha": "6b2e406214d233cdbaf7e1f16c4fcad9be9f7afb",
-      "updated_utc": "2026-10-16T13:34:34.249809+00:00",
+      "updated_utc": "2026-10-16T13:36:18.654469+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8419,7 +8450,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "810f0e634469270df5699240f286cf2240ab35d6"
+      "latest_specs_integrated_sha": "aaca318c15eabdb7799c4330a6ac8143ae6ac839"
     },
     "previous_checkpoints": [
       {
