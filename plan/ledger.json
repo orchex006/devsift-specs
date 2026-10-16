@@ -6769,12 +6769,27 @@
           ".github/workflows/quality-gate.yml",
           "tests/test_ci_artifacts.py",
           "docs/CI-GATE.md",
-          "docs/CLI.md"
+          "docs/CLI.md",
+          "tests/test_ci_workflow_contract.py",
+          "docs/CI-WORKFLOW.md"
         ],
         "locks": [
           "write:ci/integration"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "subjobs": {
+          "workflow": {
+            "owner": "cli_writer",
+            "status": "running",
+            "branch": "feature/g015-t044-workflow",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g015-t044-workflow",
+            "paths": [
+              ".github/workflows/quality-gate.yml",
+              "tests/test_ci_workflow_contract.py",
+              "docs/CI-WORKFLOW.md"
+            ]
+          }
+        }
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
