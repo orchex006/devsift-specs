@@ -6664,8 +6664,17 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "author": "luna_implementer_1",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "low",
+          "source_sha": "0bbd3d0d9b3be751884e55d93a3194c0ec01db8d",
+          "source_repository": "orchex006/devsift",
+          "test_result": "Writer2actualfour-componentfixture dryruntests PASS84.4s; repeatbytes+trustedpins+Gitreadonly+wrongpin/tamper/nooverwrite/CLI2 checked. Actualreadiness incomplete:RECOGNIZED_SENSITIVE_SHAPE in3sourcearchives, consumer-skillclean. No actualwheel/install/license/SBOM/sign/release; independentreviewpending."
+        }
+      ],
       "assignee": "luna_implementer_1",
       "reviewer": "luna_reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6676,6 +6685,11 @@
           "actor": "controller_g014",
           "at": "2026-10-16T14:23:36.982579+00:00",
           "reason": "Resource admission under cooperative canonical-ledger OS lock."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:30:15.447775+00:00"
         }
       ]
     },
@@ -8812,7 +8826,7 @@
         "lease": "Explicitautopilot; gpt-6-luna low",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g024-t072-release-dry-run",
         "owner": "luna_implementer_1",
-        "status": "running",
+        "status": "in_review",
         "paths": [
           "tests/test_release_dry_run.py",
           "docs/RELEASE-READINESS.md",
@@ -8823,7 +8837,8 @@
         ],
         "source_repository": "orchex006/devsift",
         "claim_controller": "controller_g014",
-        "authorization_id": "autopilot_luna_final"
+        "authorization_id": "autopilot_luna_final",
+        "source_sha": "0bbd3d0d9b3be751884e55d93a3194c0ec01db8d"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -9875,6 +9890,31 @@
         "test_result": "IndependentLuna/low11resourceclaimtests PASS9.208s noskips incl4actualWindowscrossprocess; binaryrawCRLF+UTF8expectedhash/admission andalloriginalidentity/nofollow/size/lock protections preserved; writer11PASS2.120s.",
         "integrated_sha": "a46042d6f1460a46c7589506d0b5778dff4bee5e",
         "review_result": "accepted"
+      }
+    },
+    "delivery_audits": {
+      "runtime_pr11": {
+        "repository": "orchex006/devsift",
+        "reviewed_source_sha": "86712822f7e95f45da3fd0661e7418ebff26e6b1",
+        "main_merge_sha": "8c9a2c6db43f6fd069d746a21a189ca214bf9c68",
+        "reviewer": "reviewer",
+        "required_checks": "8 SUCCESS across Windows/Linux",
+        "runs": {
+          "runtime": 38913551687,
+          "native": 38913527934,
+          "installed": 38913527613,
+          "quality": 38913527943
+        },
+        "report_artifacts": {
+          "linux": 12050928848,
+          "windows": 12051850712,
+          "byte_identical": true,
+          "official_schemas_valid": true
+        },
+        "cache_observation": "Exact-key SQL NuGet HIT and restore SUCCESS both OS; PR save SKIPPED; no main-save claim",
+        "optional_sarif_service": "SKIPPED",
+        "evidence_uri": "docs/evidence/AUTOPILOT-CI.md",
+        "release_authorized": false
       }
     }
   }
