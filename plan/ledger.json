@@ -5926,11 +5926,17 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080",
           "test_result": "Producer actual Windows10 policy-discovery tests pass0.197s, one POSIX-specific test explicitly skipped; policy18pass0.289s. Protected reads, real symlink/8.3alias/handlecleanup pass; no remote/process or analysis-authority claims. Independent review pending.",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "14cfb832a1e5894bdbf79fc06b97ee9f96ff9a46",
+          "test_result": "Metadata aliases rejected before reads; 12 Windows tests pass, one POSIX-only skip; independent re-review pending",
           "author": "policy_writer",
           "source_repository": "orchex006/devsift"
         }
@@ -5974,6 +5980,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:20:48.803233+00:00",
           "reason": "Independent Windows10/11(+POSIXskip) and18policy tests pass; actual .GiT/.GIT/.GiT. path aliases bypass Git metadata exclusion. Add case-insensitive/trailingdot-space rejection beforeopen and aftercanonicalization with actual grouped regressions."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:30:45.890393+00:00"
         }
       ]
     },
@@ -6042,8 +6053,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "a7ca571253923650f26f64cddd8605185cfb7905",
+          "test_result": "12 fresh Git security gate tests, 12 adapter tests and 8 Python contexts pass; independent review pending",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6060,6 +6078,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:07:50.229805+00:00",
           "reason": "Accepted G011/T033 unlocks security escalation independent of auto-fix. Fresh bounded actual analysis/source proof, no saved report authority, no legacy edits or hidden waiver/threshold bypass."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:30:46.211743+00:00"
         }
       ]
     },
@@ -7813,7 +7836,7 @@
       },
       "T064": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g022-t064-metadata-guard",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g022-t064-metadata-guard",
         "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
@@ -7846,11 +7869,12 @@
             "source_repository": "orchex006/devsift",
             "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080"
           }
-        ]
+        ],
+        "source_sha": "14cfb832a1e5894bdbf79fc06b97ee9f96ff9a46"
       },
       "T067": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g023-t067-security-gate",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t067-security-gate",
         "base_sha": "4548f31f3310b9cec81969f39dbee9bd55ba328c",
@@ -7870,7 +7894,8 @@
             "source": "4548f31f3310b9cec81969f39dbee9bd55ba328c",
             "reason": "Controller consumed accepted hardened host Git framework; untracked owned producer files preserved, no shared API writes by worker."
           }
-        ]
+        ],
+        "source_sha": "a7ca571253923650f26f64cddd8605185cfb7905"
       },
       "T053": {
         "owner": "cli_writer",
@@ -7940,7 +7965,7 @@
         "T053"
       ],
       "latest_integrated_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
-      "updated_utc": "2026-10-16T13:26:40.922601+00:00",
+      "updated_utc": "2026-10-16T13:30:46.211743+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
