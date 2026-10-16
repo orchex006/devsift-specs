@@ -4283,8 +4283,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
+          "test_result": "9freshrealprocess/Git CIgatetests pass34.835s +6filter-free CLIscopetests4.934s +8CLItests22.682s; NEWError/legacyadvisory/UNKNOWN/incomplete, immutablecleanHEAD/no-writes, legacysecurityreview and strict thresholds",
+          "author": "controller"
+        }
+      ],
       "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -4301,6 +4307,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:27:40.476026+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:53:58.742935+00:00"
         }
       ]
     },
@@ -4369,17 +4380,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "5afb0830b6b92ef2ad9b4b228073e4d49c3fb925",
+          "integrated_sha": null,
+          "test_result": "Writer11case composer tests pass27.530s, reportmodel11pass31.038s; sealed Report input, actualGit reproof, preservedfullmasks andunresolvedno-location/patch, proposal approval_required and no writes.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G016.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB016",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:45:15.765461+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:52:35.593130+00:00"
         }
       ]
     },
@@ -4890,17 +4915,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
+          "integrated_sha": null,
+          "test_result": "Writer8new degraded groups pass4.0s; allDoctor30pass9.9s. Real trusted subprocess failure/version/overflow/timeout matrix, absentexe/artifacts/noexecute, mixedpartialcoverage, unsupportedPython simulated introspection and readonlyCLI failure matrix.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G020.md"
+        }
+      ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GA020",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:48:07.575493+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:52:35.642483+00:00"
         }
       ]
     },
@@ -6181,7 +6220,7 @@
       },
       "T043": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g011-g015-analysis-reporting",
         "worktree": "D:/SP-Billy/devsift-dev/devsift",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -6196,7 +6235,8 @@
           "write:ci/entry",
           "write:cli/ci-entry"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46"
       },
       "T058": {
         "owner": "implementer_1",
@@ -6339,7 +6379,7 @@
       },
       "T046": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g016-prompts",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-prompts",
         "base_sha": "15f868186ba8f292c4458466bd52aba130f3c69b",
@@ -6351,7 +6391,8 @@
         "locks": [
           "write:agent/prompts"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "5afb0830b6b92ef2ad9b4b228073e4d49c3fb925"
       },
       "T032": {
         "owner": "policy_writer",
@@ -6379,7 +6420,7 @@
       },
       "T060": {
         "owner": "implementer_1",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g020-degraded",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-degraded",
         "base_sha": "a6eff5429b8b47df6ce2b36b9c7dcc19daeb2518",
@@ -6390,7 +6431,8 @@
         "locks": [
           "write:tests/doctor"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6447,8 +6489,8 @@
         "T032",
         "T060"
       ],
-      "latest_integrated_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
-      "updated_utc": "2026-10-16T10:51:46.778939+00:00",
+      "latest_integrated_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
+      "updated_utc": "2026-10-16T10:53:58.742935+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
