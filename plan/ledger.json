@@ -6067,12 +6067,18 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "a7ca571253923650f26f64cddd8605185cfb7905",
           "test_result": "12 fresh Git security gate tests, 12 adapter tests and 8 Python contexts pass; independent review pending",
           "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "e7c1e08649afc5c864321281aee815938e1bfa33",
+          "test_result": "Actual unselected-language safe and Critical counterexamples failed before fix; all13security gate tests pass13.941s after global configured-provider availability guard. Distinct re-review pending.",
+          "author": "controller",
           "source_repository": "orchex006/devsift"
         }
       ],
@@ -6115,6 +6121,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:33:07.996690+00:00",
           "reason": "Reviewer rejected a7: unavailable explicitly configured provider with no selected language incorrectly returned complete; preserve Critical observations while recording global provider probe failure"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:34:34.249809+00:00"
         }
       ]
     },
@@ -7919,7 +7930,7 @@
       },
       "T067": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g023-t067-provider-completeness",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t067-provider-completeness",
         "base_sha": "6b2e406214d233cdbaf7e1f16c4fcad9be9f7afb",
@@ -7959,7 +7970,8 @@
             ],
             "source_sha": "a7ca571253923650f26f64cddd8605185cfb7905"
           }
-        ]
+        ],
+        "source_sha": "e7c1e08649afc5c864321281aee815938e1bfa33"
       },
       "T053": {
         "owner": "cli_writer",
@@ -8045,7 +8057,7 @@
         "T074"
       ],
       "latest_integrated_sha": "6b2e406214d233cdbaf7e1f16c4fcad9be9f7afb",
-      "updated_utc": "2026-10-16T13:33:07.996690+00:00",
+      "updated_utc": "2026-10-16T13:34:34.249809+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
