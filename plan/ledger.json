@@ -720,9 +720,11 @@
         "T039"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G013.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -826,10 +828,8 @@
               "T000"
             ]
           },
-          "ready": false,
-          "blocking_tasks": [
-            "T039"
-          ]
+          "ready": true,
+          "blocking_tasks": []
         }
       ]
     },
@@ -1125,7 +1125,6 @@
           "blocking_tasks": [
             "T032",
             "T033",
-            "T039",
             "T041",
             "T042",
             "T044",
@@ -1484,7 +1483,6 @@
           "blocking_tasks": [
             "T032",
             "T033",
-            "T039",
             "T041",
             "T042",
             "T044",
@@ -1561,10 +1559,8 @@
               "T000"
             ]
           },
-          "ready": false,
-          "blocking_tasks": [
-            "T039"
-          ]
+          "ready": true,
+          "blocking_tasks": []
         }
       ]
     }
@@ -4197,17 +4193,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
           "test_result": "Writer8actualGit JSON-SARIFexporttests pass inclofficialpinnedOASISDraft4+ownschemaURN offlinevalidators, URIcorruptionnegatives, secret/overlap/no-write; hasheddevdeps isolatedinstall +cp312Windowswheeldownload andworkflowYAMLvalidation",
           "author": "cli_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+          "integrated_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1",
+          "test_result": "Distinct reviewer8actualGit+officialOASISschema tests26.51s noskips; controllerisolatedhasheddevsetupthen8schema/exporttests pass24.674s; missingURIformatsetupfailedclosedbeforeproperinstall",
+          "evidence_uri": "docs/evidence/G013.md"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB013",
       "history": [
         {
@@ -4226,6 +4230,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:16:05.085643+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:21:19.199445+00:00"
         }
       ]
     },
@@ -4629,6 +4638,14 @@
           "test_result": "Writer4fixture groups pass42.849s covering6goldens+4externalmalformed cases via actualGit/scan/report/composer/approval/canonicalJSON; readonly source/Git hashes; no fakeproof or LLMbehaviorclaim. Controller consumer skill/CLI integration tests pending shared CLI handoff T044; whole task notaccepted yet.",
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
+          "evidence_uri": "docs/evidence/G016.md"
+        },
+        {
+          "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "scope": "Fixture portion only; whole T048 still in_review until CLI and consumer skill integration reviewed",
+          "test_result": "Independent4groups pass61.874s no skips:6goldens+4malformed cases, actualGit/scanner/report/composer/approval, no source/Git writes, no fakeproof/LLMbehavior claims.",
           "evidence_uri": "docs/evidence/G016.md"
         }
       ],
@@ -6701,7 +6718,7 @@
       },
       "T039": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g013-t039-exporters",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t039-exporters",
         "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
@@ -6714,11 +6731,10 @@
           ".github/workflows/native-analysis.yml",
           "docs/REPORT-EXPORT.md"
         ],
-        "locks": [
-          "write:reports/export"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596"
+        "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+        "integrated_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1"
       },
       "T048": {
         "owner": "implementer_1",
@@ -6802,18 +6818,16 @@
       ],
       "held_locks": [
         "write:rules/security",
-        "write:reports/export",
         "write:tests/agent",
         "write:ci/integration"
       ],
       "active_jobs": [
         "T032",
-        "T039",
         "T048",
         "T044"
       ],
-      "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
-      "updated_utc": "2026-10-16T11:16:05.085643+00:00",
+      "latest_integrated_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1",
+      "updated_utc": "2026-10-16T11:21:19.199445+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7288,6 +7302,16 @@
         "at": "2026-10-16T11:02:08.793234+00:00",
         "scope": "Technical support only; T043 owner must integrate/accept and release shared CLI before controller_g014 writes CLI again.",
         "evidence_uri": "control/reviews/T043-boundary-reviewer-3b1.md"
+      },
+      "T039-boundary_reviewer": {
+        "reviewer": "boundary_reviewer (independent cross-session reviewer)",
+        "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+        "review_result": "technical_acceptance",
+        "test_command": "DEVSIFT_TEST_SCHEMA=1 PYTHONPATH=<trusted existing validation-python> python -B -m unittest discover -s tests -p test_report_export.py -v",
+        "test_result": "8 tests pass49.321s no skips. Official pinned OASIS Draft4 SARIF and own2020JSON schema offline validation includingURI corruption; exact source/unresolved boundaries, fullJSONfidelity, masks/incomplete/read-only snapshots. No install/network.",
+        "scope": "Prerequisite support for G014; T039 owner must integrate and accept. No task status changed.",
+        "at": "2026-10-16T11:20:06.961609+00:00",
+        "evidence_uri": "control/reviews/T039-boundary-reviewer.md"
       }
     },
     "goal_controllers": {
