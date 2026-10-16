@@ -78,3 +78,12 @@ the G016 approval integration check to its owning G016 tests, or replace that pa
 with assertions on the existing sealed report case prompts/pending approval.
 This controller will consume only scoped T042 fixtures/docs/tests after that
 dependency is resolved; it will not merge G016 runtime modules to make tests pass.
+
+Resolved in this consumer branch at `0f49505001d17186771f860fad07605f7bd42e62`:
+scoped T042 fixtures/tests/docs are integrated with the G016-only test segment
+replaced by sealed report prompt/pending-approval assertions. No production module
+changed. Independent reviewer accepted the scoped variant; the changed real Git/
+schema group passed in 25.800s, and controller integration ran all three groups
+with official schemas enabled in 136.403s. The first two fixture groups and all
+seven source fixtures match original `35f63e3` byte for byte. Foreign canonical
+T042 acceptance/source/ownership remain intact; no G016 runtime files are included.
