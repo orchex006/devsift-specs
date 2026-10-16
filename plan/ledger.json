@@ -1126,7 +1126,6 @@
             "T032",
             "T033",
             "T042",
-            "T044",
             "T045",
             "T048",
             "T051"
@@ -1483,7 +1482,6 @@
             "T032",
             "T033",
             "T042",
-            "T044",
             "T045",
             "T048",
             "T051",
@@ -4547,17 +4545,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
           "test_result": "Independent childworkflow3adversarialYAMLtests,parent30actualGitprocessCLItests accepted38e; root independently4actualwrappertests102.93s pass e75, coldbytecodefixreviewed; final combined hostedCI review pending",
           "author": "controller"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
+          "integrated_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
+          "test_result": "Distinct reviewer accepted fullpipeline exact9ce:5actualwrapper99.297s,parent30actualtests,child3YAMLmutationtests; actualGHA38895632235 Windows+Ubuntu analysis/uploadSUCCESS; all3artifacts byte-identical and rootofficialSARIF/report schemasvalidated. OptionalSARIFpublisher skippedhonestly",
+          "evidence_uri": "docs/evidence/G015.md"
         }
       ],
       "assignee": "controller",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB015",
       "history": [
         {
@@ -4576,6 +4582,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:43:08.786628+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:46:48.430027+00:00"
         }
       ]
     },
@@ -6911,7 +6922,7 @@
       },
       "T044": {
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g011-g015-analysis-reporting",
         "worktree": "D:/SP-Billy/devsift-dev/devsift",
         "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
@@ -6927,9 +6938,7 @@
           "tests/test_ci_workflow_contract.py",
           "docs/CI-WORKFLOW.md"
         ],
-        "locks": [
-          "write:ci/integration"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "subjobs": {
           "workflow": {
@@ -6944,7 +6953,8 @@
             ]
           }
         },
-        "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2"
+        "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
+        "integrated_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec"
       },
       "T041": {
         "owner": "implementer_2",
@@ -7021,17 +7031,15 @@
       "held_locks": [
         "write:rules/security",
         "write:tests/agent",
-        "write:ci/integration",
         "write:tests/reports"
       ],
       "active_jobs": [
         "T032",
         "T048",
-        "T044",
         "T042"
       ],
-      "latest_integrated_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
-      "updated_utc": "2026-10-16T11:43:08.786628+00:00",
+      "latest_integrated_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
+      "updated_utc": "2026-10-16T11:46:48.430027+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
