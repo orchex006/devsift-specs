@@ -6195,12 +6195,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB023"
+      "execution_id": "GB023",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:42:55.390967+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:42:55.390967+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T069": {
       "id": "T069",
@@ -8140,6 +8154,23 @@
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
         "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
+      },
+      "T068": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "feature/g023-t068-artifact-assurance",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-artifact-assurance",
+        "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
+        "paths": [
+          "docs/THREAT-MODEL.md",
+          "tools/check_artifact_security.py",
+          "tests/test_artifact_security.py"
+        ],
+        "locks": [
+          "write:security/assurance"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8184,15 +8215,17 @@
       "held_locks": [
         "write:packaging/artifacts",
         "write:policy/ownership",
-        "write:docs/readme"
+        "write:docs/readme",
+        "write:security/assurance"
       ],
       "active_jobs": [
         "T053",
         "T065",
-        "T073"
+        "T073",
+        "T068"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:42:55.027941+00:00",
+      "updated_utc": "2026-10-16T13:42:55.390967+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
