@@ -892,9 +892,11 @@
         "T048"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G016.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1129,7 +1131,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T048",
             "T051"
           ]
         }
@@ -1478,7 +1479,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T048",
             "T051",
             "T052",
             "T053",
@@ -4868,7 +4868,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
@@ -4885,11 +4885,19 @@
           "scope": "Fixture portion only; whole T048 still in_review until CLI and consumer skill integration reviewed",
           "test_result": "Independent4groups pass61.874s no skips:6goldens+4malformed cases, actualGit/scanner/report/composer/approval, no source/Git writes, no fakeproof/LLMbehavior claims.",
           "evidence_uri": "docs/evidence/G016.md"
+        },
+        {
+          "source_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "integrated_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "test_result": "Independent boundary_reviewer accepts final CLI/consumer skill/host Git integration:7actual case CLI tests PASS31.918s,5GitRuntime PASS1.924s,32Doctor PASS13.441s,no skips; unchanged runtime/test/skill fingerprint5d6ebccb89aaa4867c305c9864d176a9ca3cc397646e23d94900ad16a324ffe1. Earlier fixture4groups PASS61.874s. Controller installed wheel2PASS12.868s and skill validation PASS. Full suite still pending, no additional native claim.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G016.md"
         }
       ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB016",
       "history": [
         {
@@ -4901,6 +4909,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:14:40.059084+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:18:19.560906+00:00"
         }
       ]
     },
@@ -5067,12 +5080,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB017"
+      "assignee": "implementer_1",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB017",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:18:49.231923+00:00"
+        }
+      ]
     },
     "T052": {
       "id": "T052",
@@ -5459,17 +5479,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
           "test_result": "Producer 10 focused change-budget tests and 18 existing policy tests pass; real source/Git hashes unchanged, strict declared estimates and no execution/write authority. Independent review pending.",
           "author": "policy_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
+          "integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
+          "test_result": "Independent 10 focused and 18 policy tests pass; 320 adversarial planning combinations preserve no write/execution authority, pending actual verification and separate approval requirements. Producer and controller tests pass; controller integrated 10 tests in0.260s. Declared estimates are not measured source or quality-policy overrides.",
+          "evidence_uri": "docs/evidence/G021.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA021",
       "history": [
         {
@@ -5488,6 +5517,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T12:14:06.807965+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T12:21:56.438008+00:00"
         }
       ]
     },
@@ -7092,7 +7126,7 @@
       },
       "T048": {
         "owner": "implementer_1",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g016-fixtures",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-fixtures",
         "base_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
@@ -7118,13 +7152,12 @@
           "devsift/case_approval.py",
           "devsift/scanner.py"
         ],
-        "locks": [
-          "write:tests/agent"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
+        "source_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
         "controller_integration_status": "running: explicit input command backend, consumer skill and actual CLI tests; fixture review accepted separately",
-        "additional_regression": "Actual case CLI regression proved project git.exe can intercept source-proof lookup. Resolve host Git absolutely outside consumer root; also prevent Python module shadowing in consumer skill."
+        "additional_regression": "Actual case CLI regression proved project git.exe can intercept source-proof lookup. Resolve host Git absolutely outside consumer root; also prevent Python module shadowing in consumer skill.",
+        "integrated_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf"
       },
       "T044": {
         "owner": "controller",
@@ -7243,7 +7276,7 @@
       },
       "T061": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g021-t061-change-budget",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t061-change-budget",
         "base_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
@@ -7252,11 +7285,25 @@
           "tests/test_change_budget.py",
           "docs/CHANGE-BUDGET.md"
         ],
-        "locks": [
-          "write:safety/decision"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d"
+        "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
+        "integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001"
+      },
+      "T051": {
+        "owner": "implementer_1",
+        "status": "running",
+        "branch": "test/g017-full-gate",
+        "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g017-full-gate",
+        "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
+        "paths": [
+          "tests/test_e2e_full_gate.py",
+          "docs/E2E.md"
+        ],
+        "locks": [
+          "write:tests/e2e/gate"
+        ],
+        "session": "g014-g016-g017-g020"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7299,15 +7346,13 @@
         }
       ],
       "held_locks": [
-        "write:tests/agent",
-        "write:safety/decision"
+        "write:tests/e2e/gate"
       ],
       "active_jobs": [
-        "T048",
-        "T061"
+        "T051"
       ],
-      "latest_integrated_sha": "73d98c48e3f0deb67938dfe5c87ce08ca19123e0",
-      "updated_utc": "2026-10-16T12:14:06.807965+00:00",
+      "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
+      "updated_utc": "2026-10-16T12:21:56.438008+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7967,6 +8012,33 @@
           "proof": "Reviewed equivalent cherry-pick 2f8bdbf; original branch retained",
           "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-doctor"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g014-report-gates",
+          "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f",
+          "branch_retained": "test/g014-report-gates",
+          "clean": true,
+          "removed": true,
+          "integrated_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "proof": "Reviewed source ancestor"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g016-fixtures",
+          "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
+          "branch_retained": "test/g016-fixtures",
+          "clean": true,
+          "removed": true,
+          "integrated_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "proof": "Reviewed source ancestor"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g014-risk-context",
+          "source_sha": "47c757f7aecc4e762e96a6b51a071dc2506e36a4",
+          "branch_retained": "feature/g014-risk-context",
+          "clean": true,
+          "removed": true,
+          "integrated_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "proof": "Byte-identical three-file reviewed cherry-pick d4251bc; original branch retained"
         }
       ]
     }
