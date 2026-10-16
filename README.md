@@ -1,16 +1,16 @@
 # DevSift Specifications
 
-Approved product and engineering specifications for [DevSift](https://github.com/orchex006/devsift). This repository preserves the v6 design and bootstrap kit. Runtime implementation, pull requests, and the canonical execution ledger live in the [code repository](https://github.com/orchex006/devsift). The pending statuses below describe the original plan snapshot.
+Approved product and engineering specifications for [DevSift](https://github.com/orchex006/devsift). This repository preserves the v6 design and bootstrap kit. Runtime implementation, pull requests, and the canonical execution ledger live in the [code repository](https://github.com/orchex006/devsift). Completed goal/task checklists mirror accepted implementation; see [execution progress](plan/EXECUTION-STATUS.md). The bundled ledger remains the original planning fixture; the code ledger is authoritative.
 
-**Language-agnostic developer quality intelligence — planned, not yet implemented.**
+**Language-agnostic developer quality intelligence — specification and implementation progress.**
 
 DevSift aims to detect code-quality and security issues as changes are developed, link findings to verified source locations, explain human-readable risk and provide narrowly scoped agent remediation prompts. New code can be gated; existing legacy code is recommendation-first. Code scanning never silently refactors production services.
 
 **Repository:** https://github.com/orchex006/devsift  
-**Stage:** v6 development specification and repository bootstrap kit (no working lint engine, CLI or published package yet).  
+**Stage:** G000 bootstrap, G001 policy and G002 CLI foundations accepted in the code repository. Analyzer/report engines and package release remain pending.  
 **Independence:** usable in arbitrary projects; AgriMap, Axiom and Drevqon are optional integrations, not architectural dependencies.
 
-## Planned interface (not yet executable)
+## Command interface reference (CLI shell implemented; analyzers pending)
 
 ```bash
 devsift scan --changed
@@ -21,9 +21,11 @@ devsift prompt OBS-001 --mode review
 devsift doctor
 ```
 
-## First implementation task
+## Implementation progress
 
-The repository was verified empty on **2026-10-16**. `G000/T000` is the sole initially ready task: autopilot publish **all** approved v6 scaffold files, configure the repository Description, and verify remote SHA. Read [`docs/BOOTSTRAP-AUTOPILOT.md`](docs/BOOTSTRAP-AUTOPILOT.md) or the complete [v6 product specification](docs/SPEC-V6.md). All other task work must wait for T000 to be independently accepted — not necessarily all of G000. `T076` independently verifies bootstrap completion.
+[G000](plan/goals/G000.md), [G001](plan/goals/G001.md) and [G002](plan/goals/G002.md) are accepted. Their goal and task checklists mirror verified code-repository execution and link to its evidence. See the [progress summary](plan/EXECUTION-STATUS.md) and [canonical execution ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json).
+
+The initial planning fixture in this repository remains unchanged for the original DAG tests. Commands below validate that fixture and the specification kit; they do not describe live execution readiness.
 
 ```bash
 python tools/planctl.py validate
