@@ -11,3 +11,10 @@ Use scoped branches and reviewed PRs, no direct main writes, force push, broad s
 Scan and review are read-only; consumer repairs require authorization. Never invent capabilities, test results or provenance. Runtime changes and tests happen in the code checkout. Plan-tool tests and validation run here. No release without authorization.
 
 Checkpoint means a plain handoff when pausing work: unfinished work, branches, dirty files, blockers and next actions. Do not create restore snapshots, clone workspaces or checkpoint after every commit/task. Git preserves committed history. Resume checks actual repository state before continuing.
+
+Canonical coordination now has cooperative OS locking in `tools/resource_claims.py`.
+Admit new pending ownership through `apply_claim`; every other authorized ledger
+mutation holds `ledger_lock` across the entire fresh-read/validate/atomic-replace
+transaction. All controllers must select this same canonical primary checkout,
+not an isolated worktree's frozen ledger. Do not nest admission inside that lock.
+This synchronizes trusted maintainers; it grants no authorization or acceptance.

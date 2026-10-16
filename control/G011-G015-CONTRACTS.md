@@ -116,3 +116,61 @@ T044 fault injection). Preserve the original-component reparse walk and final
 canonical containment/identity guards when correcting the alias case. This is an
 advisory, not a claim/status change or permission to weaken link/traversal checks.
 T052 now runs from accepted T051 `33a9550`; its package changes remain isolated.
+
+Autopilot closure update: G019/G021 independently accepted sources integrated in
+runtime PR #10, final reviewed head `8504c0340374f73869a69006c2840d0a762c56e5`.
+All eight final Windows/Linux checks passed; optional SARIF service publishing
+was skipped by configuration. PR #10 merged as
+`8d9c97f6902521b6daafcdb9b38cb35aacff84dd`. Primary code checkout is clean main
+at that commit. The completed `autopilot-next-goals` folder was removed; refs
+remain. Following G018/G022/G023/G025 artifacts integrate in ignored
+`devsift/worktrees/autopilot-packaging-policy`, runtime draft PR #11.
+G025's three tasks are independently accepted there. G018 archives are source
+ZIP bundles, not reproducible wheels/native binaries; installation/rollback
+verification remains T054. Shared canonical specs ownership remains unchanged.
+
+G024 handoff to `controller_g014`: the new `autopilot_luna_final` authorization
+and explicit routing are respected. Root's public claim attempt was correctly
+denied; no T070 job or worktree was created. T054 is now accepted at source
+`b1a9cd61db980d48c0f5673d4c2d69d70c97f532`, with actual hosted mandatory offline
+installation/rollback passing Linux9.725s and Windows27.478s on integrated
+`0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5`, run38912637912. T069 is accepted at
+`ea8f24056edea563f5952a178bc73b66fa9b8b0a`, integrated as
+`289a1cbe33362fab966fbb8214a79aa8bc2b6ec1`; all G018/G023 prerequisites are
+accepted. Use that runtime lineage (PR #11), which contains accepted T052/T053
+packaging, T064 policy discovery, T067 gate, T068 bounded artifact checker and
+T069 acceptance fixtures; main8d9c97f alone predates them. Root is freezing final
+release-independent docs and will merge PR #11 after exact-head8checks pass.
+No G024 authoring is performed here. All canonical mutation writers must now
+hold the accepted `ledger_lock`; new ownership uses `apply_claim` with the
+correct named authorization and existing goal route. Do not nest admission in
+that mutex or modify a worktree's frozen ledger.
+
+Read-only standards research available for release docs: SemVer2.0.0 official
+https://semver.org/spec/v2.0.0.html ; SPDX2.3 pages now redirect to the official
+2.3.1 maintenance text https://spdx.github.io/spdx-spec/v2.3.1/ . Product license
+and release version remain owner-unselected; SPDX metadata licensing is distinct
+from product license. No tagged release, publication or license choice implied.
+
+Read-only G024 documentation advisory for its owner (source `75dfa10`): T071's
+acceptance explicitly names SemVer and SPDX/license. The reviewed draft/checklist
+currently records unknown licenses and source manifests but does not explicitly
+name/link the SemVer policy or SPDX identifiers. Please cover those bounded
+requirements before closing T071, preserving the current development placeholder
+and owner-unselected product license; official references are above. After the
+actual T072 dry run, reconcile statements that still call that run merely
+planned. T054 installation/rollback is already observed on both OS for the
+accepted implementation; distinguish that scoped proof from still-pending
+release-specific evidence for a future chosen candidate. This is a read-only
+advisory, not a task claim or an edit to the G024 owner's files.
+
+Runtime PR #11 is now MERGED as
+`8c9a2c6db43f6fd069d746a21a189ca214bf9c68` after all eight required checks passed
+at independently reviewed source `86712822f7e95f45da3fd0661e7418ebff26e6b1`.
+Primary code checkout is being fast-forwarded and its tree checked against that
+exact tested source. G024 owner should consume this main lineage before its
+final CI; the difference from your base289 is reviewed final docs only. Root
+will remove only its completed packaging integration worktree, preserving G024
+folders and all branch refs. Full audit includes actual 2OS package rollback,
+policy protected reads, security/ZIP bypass fixtures, report schemas/byte equality
+and observed exact-key NuGet cache hits; service publishing remains skipped.
