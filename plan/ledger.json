@@ -6294,7 +6294,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
@@ -6324,6 +6324,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:51:52.379945+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T13:53:55.784772+00:00",
+          "reason": "Reviewer actualmalformeddeflatestream forgedsizes/CRC prefix bypass returnedfalsecomplete; validate boundedrawcompressedspan/eof/exactsize/no trailingorconcatenateddata"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:53:55.784772+00:00",
+          "reason": "Reviewer actualmalformeddeflatestream forgedsizes/CRC prefix bypass returnedfalsecomplete; validate boundedrawcompressedspan/eof/exactsize/no trailingorconcatenateddata"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:53:55.784772+00:00",
+          "reason": "Reviewer actualmalformeddeflatestream forgedsizes/CRC prefix bypass returnedfalsecomplete; validate boundedrawcompressedspan/eof/exactsize/no trailingorconcatenateddata"
         }
       ]
     },
@@ -8409,10 +8427,10 @@
       },
       "T068": {
         "owner": "cli_writer",
-        "status": "in_review",
-        "branch": "feature/g023-t068-artifact-assurance",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-artifact-assurance",
-        "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
+        "status": "running",
+        "branch": "fix/g023-t068-deflate-proof",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-deflate-proof",
+        "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
         "paths": [
           "docs/THREAT-MODEL.md",
           "tools/check_artifact_security.py",
@@ -8423,7 +8441,26 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd"
+        "prior_jobs": [
+          {
+            "owner": "cli_writer",
+            "status": "in_review",
+            "branch": "feature/g023-t068-artifact-assurance",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-artifact-assurance",
+            "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
+            "paths": [
+              "docs/THREAT-MODEL.md",
+              "tools/check_artifact_security.py",
+              "tests/test_artifact_security.py"
+            ],
+            "locks": [
+              "write:security/assurance"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_repository": "orchex006/devsift",
+            "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd"
+          }
+        ]
       },
       "T075": {
         "owner": "controller",
@@ -8508,7 +8545,7 @@
         "T054"
       ],
       "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:53:36.938436+00:00",
+      "updated_utc": "2026-10-16T13:53:55.784772+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
