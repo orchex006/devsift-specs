@@ -761,7 +761,7 @@
         "T042"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -935,7 +935,7 @@
         "T051"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -1202,7 +1202,7 @@
         "T060"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -3883,7 +3883,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -3912,6 +3912,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:27:40.320516+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T10:29:34.472028+00:00",
+          "reason": "Reviewer reproduced raw error code leak and explicit-secret masking of machine keys/enums; fresh contained rework"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:29:34.472028+00:00",
+          "reason": "Reviewer reproduced raw error code leak and explicit-secret masking of machine keys/enums; fresh contained rework"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:29:34.472028+00:00",
+          "reason": "Reviewer reproduced raw error code leak and explicit-secret masking of machine keys/enums; fresh contained rework"
         }
       ]
     },
@@ -5741,10 +5759,10 @@
       },
       "T037": {
         "owner": "controller",
-        "status": "in_review",
-        "branch": "feature/g011-g015-analysis-reporting",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift",
-        "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+        "status": "running",
+        "branch": "fix/g013-t037-redaction",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t037-redaction",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
         "paths": [
           "devsift/report_model.py",
           "schemas/report.schema.json",
@@ -5755,7 +5773,26 @@
           "write:reports/model"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665"
+        "prior_jobs": [
+          {
+            "owner": "controller",
+            "status": "in_review",
+            "branch": "feature/g011-g015-analysis-reporting",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift",
+            "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+            "paths": [
+              "devsift/report_model.py",
+              "schemas/report.schema.json",
+              "tests/test_report_model.py",
+              "docs/REPORT-MODEL.md"
+            ],
+            "locks": [
+              "write:reports/model"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665"
+          }
+        ]
       },
       "T043": {
         "owner": "controller",
@@ -5880,13 +5917,13 @@
       ],
       "held_locks": [
         "write:adapters/security",
+        "write:rules/observability",
+        "write:reports/model",
         "write:ci/entry",
         "write:cli/doctor",
-        "write:reports/classifier",
-        "write:reports/model",
-        "write:rules/observability",
         "write:tests/e2e/backend",
-        "write:tests/e2e/frontend"
+        "write:tests/e2e/frontend",
+        "write:reports/classifier"
       ],
       "active_jobs": [
         "T031",
@@ -5899,7 +5936,7 @@
         "T040"
       ],
       "latest_integrated_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
-      "updated_utc": "2026-10-16T10:28:32.981563+00:00",
+      "updated_utc": "2026-10-16T10:29:34.472028+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
