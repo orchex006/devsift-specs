@@ -124,3 +124,21 @@ converted into an invented task. These metadata checks do not re-prove old Git
 artifacts or authenticate a reviewer. Explicit `execution.goal_controllers`
 routing also remains binding: broader selected authorization does not override
 another controller's existing goal route.
+
+## Multirepo override acceptance fixtures
+
+`tests/test_multirepo_ownership.py` starts two actual isolated controller child
+processes against one disposable ledger. Separate repository-local policy file
+claims coexist without changing either configuration. A shared policy/schema
+contract admits one owner across repositories, and admits the second only after
+the fixture controller records completion and clears the first lease under the
+same OS lock. This is cooperative ownership serialization, not a filesystem lock
+on application files. A broader selected session cannot override another explicit
+goal controller. Opaque foreign state and declared override data survive.
+
+The fixture's override JSON is passive declared data, not another implementation
+of runtime policy validation or evidence of effective quality enforcement. Actual
+precedence and the independent Critical security floor remain the accepted code
+repository's T064 discovery and G001 policy contracts/tests. Fixture acceptance
+records simulate trusted coordination only; they do not claim real review,
+release authorization or task acceptance for production artifacts.
