@@ -1,6 +1,6 @@
 # DevSift — Product & Engineering Specification v6
 
-**Status:** G000–G010 and all 32 tasks are independently accepted. Immutable baselines, the bounded native host and documented Roslyn, Go AST, ESLint/TypeScript and ScriptDom rules are implemented. Explicit trusted setup enables native CLI scans; complete report/prompt backends remain pending. See `plan/ledger.json` and `docs/evidence/`.
+**Status:** G000–G015 are independently accepted. Bounded security/observability analysis, source-reproved Markdown/JSON/SARIF reports, baseline-aware context and Windows/Linux CI gates are implemented within their documented limits. Stored-report, explain and case-prompt CLI backends remain pending in this delivery. Subsequent goals continue by the accepted dependency frontier under user-authorized autopilot; see `plan/ledger.json` and `docs/evidence/` for current ownership and status.
 **Canonical repository:** https://github.com/orchex006/devsift
 **Owner:** `orchex006`
 **Product:** `DevSift` · proposed CLI: `devsift` · proposed skill: `$devsift`
@@ -37,7 +37,11 @@ DevSift is an ecosystem-agnostic code quality and development-risk analysis prod
 | DS-P12 | Resumable accepted-evidence task orchestration with GA/GB transitive classification | `planctl` tests, reviewer separation |
 | DS-P13 | Reproducible install/build after real implementation, without releasing fake capabilities | packaging and e2e fixtures |
 
-## 4. CLI and Skill intent (future interface, NOT yet functional)
+## 4. CLI and Skill target interface
+
+The installed CLI help and runtime documentation describe available commands.
+The target examples below also include pending capabilities; `inspect` and the
+stored-report/explain/case-prompt backends are not implemented by G011–G015.
 
 ```text
 devsift scan --changed
