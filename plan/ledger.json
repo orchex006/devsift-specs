@@ -8112,8 +8112,8 @@
         "T074",
         "T065"
       ],
-      "latest_integrated_sha": "6b2e406214d233cdbaf7e1f16c4fcad9be9f7afb",
-      "updated_utc": "2026-10-16T13:36:48.685283+00:00",
+      "latest_integrated_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
+      "updated_utc": "2026-10-16T13:38:27.098186+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8451,6 +8451,69 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T12:35:10.006829+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g018-t052-package-manifest",
+          "source_sha": "f4cc098fe749ac4744443240434cc0fe8197abc5",
+          "replacement_sha": "f4cc098fe749ac4744443240434cc0fe8197abc5",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:11.205692+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g019-t057-governance",
+          "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
+          "replacement_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:21.156122+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g021-t062-mode-doc",
+          "source_sha": "5eed6256d2e93b70c4b812b50adae4ec838721e5",
+          "replacement_sha": "5eed6256d2e93b70c4b812b50adae4ec838721e5",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:23.057170+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g021-t062-verification",
+          "source_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32",
+          "replacement_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:24.090744+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g021-t063-denial",
+          "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
+          "replacement_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:25.077645+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g022-t064-metadata-guard",
+          "source_sha": "14cfb832a1e5894bdbf79fc06b97ee9f96ff9a46",
+          "replacement_sha": "14cfb832a1e5894bdbf79fc06b97ee9f96ff9a46",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:26.059872+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g022-t064-policy-discovery",
+          "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080",
+          "replacement_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:38:27.098186+00:00"
         }
       ],
       "external_worktrees_preserved": [
