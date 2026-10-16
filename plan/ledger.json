@@ -3766,7 +3766,7 @@
           "author": "policy_writer"
         },
         {
-          "source_sha": "0a3d8e6",
+          "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584",
           "test_result": "Fresh TLS and shared-module alias rework frozen for independent review; producer 8 Python context, 12 credential, 5 native security tests passed; exact review pending",
           "author": "policy_writer"
         }
@@ -6699,7 +6699,7 @@
             "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
           }
         ],
-        "source_sha": "0a3d8e6"
+        "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584"
       },
       "T060": {
         "owner": "implementer_1",
