@@ -1128,10 +1128,8 @@
             "T039",
             "T041",
             "T042",
-            "T043",
             "T044",
             "T045",
-            "T047",
             "T048",
             "T051"
           ]
@@ -1489,10 +1487,8 @@
             "T039",
             "T041",
             "T042",
-            "T043",
             "T044",
             "T045",
-            "T047",
             "T048",
             "T051",
             "T052",
@@ -4317,7 +4313,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
@@ -4328,11 +4324,19 @@
           "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
           "test_result": "Bothreviewcounterexamplesreproducedred; fresh10realprocess/GitCItestspass23.992s inclcommittedPRbase-toHEADdefaultscopeandFalseconfigrejected",
           "author": "controller"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+          "integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+          "test_result": "Distinct reviewer10CI+6scope tests29.68/8.51s andoriginaladversarialcases pass; controllerintegrated10pass41.671s, defaultcommittedPRcoverage andFalsebypassfixed",
+          "evidence_uri": "docs/evidence/G015.md"
         }
       ],
       "assignee": "controller",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB015",
       "history": [
         {
@@ -4374,6 +4378,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:59:05.575062+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:08:00.576685+00:00"
         }
       ]
     },
@@ -4394,12 +4403,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB015"
+      "execution_id": "GB015",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:08:01.001687+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:08:01.001687+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T045": {
       "id": "T045",
@@ -4500,7 +4523,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c",
@@ -4509,11 +4532,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G016.md"
+        },
+        {
+          "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "test_result": "Independent core14approvaltests pass69.875s no skips, loader2ce8655 five tests+descriptor/junction/depth probes accepted. Exact operatorrecord/bindings/time/currentHEAD/index/rawfile/link checks; masks andconstant errors; validapproval manualplanningonly review_required, all execution/write/automaticfixFalse. Writer25case regressions82.595s.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G016.md"
         }
       ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB016",
       "history": [
         {
@@ -4525,6 +4556,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:02:46.307632+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:05:03.318831+00:00"
         }
       ]
     },
@@ -4545,12 +4581,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB016"
+      "assignee": "implementer_1",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB016",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:05:05.130357+00:00"
+        }
+      ]
     },
     "T049": {
       "id": "T049",
@@ -6329,7 +6372,7 @@
       },
       "T043": {
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "fix/g015-t043-base-scope",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g015-t043-base-scope",
         "base_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
@@ -6340,9 +6383,7 @@
           "tests/test_ci_gate.py",
           "docs/CI-GATE.md"
         ],
-        "locks": [
-          "write:ci/entry"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "prior_jobs": [
           {
@@ -6366,7 +6407,8 @@
             "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46"
           }
         ],
-        "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f"
+        "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+        "integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c"
       },
       "T058": {
         "owner": "implementer_1",
@@ -6564,7 +6606,7 @@
       },
       "T047": {
         "owner": "implementer_2",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g016-approval",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-approval",
         "base_sha": "8c719aee86f66c8fbcc2548b22efe59ba9d0d8de",
@@ -6575,11 +6617,10 @@
           "devsift/command_inputs.py",
           "tests/test_command_inputs.py"
         ],
-        "locks": [
-          "write:agent/approval"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c"
+        "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c",
+        "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99"
       },
       "T039": {
         "owner": "cli_writer",
@@ -6598,6 +6639,45 @@
         ],
         "locks": [
           "write:reports/export"
+        ],
+        "lease": "current selected session until accepted or reassigned"
+      },
+      "T048": {
+        "owner": "implementer_1",
+        "status": "running",
+        "branch": "test/g016-fixtures",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-fixtures",
+        "base_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+        "paths": [
+          "tests/test_case_prompt_fixtures.py",
+          "tests/fixtures/case_prompts",
+          "docs/CASE-PROMPT-EVAL.md",
+          "tests/test_case_cli.py",
+          "skills/devsift/SKILL.md"
+        ],
+        "locks": [
+          "write:tests/agent"
+        ],
+        "session": "g014-g016-g017-g020"
+      },
+      "T044": {
+        "owner": "controller",
+        "status": "running",
+        "branch": "feature/g011-g015-analysis-reporting",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift",
+        "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+        "paths": [
+          "devsift/ci_artifacts.py",
+          "devsift/cli.py",
+          "devsift/cli_scan.py",
+          "tools/run_quality_ci.py",
+          ".github/workflows/quality-gate.yml",
+          "tests/test_ci_artifacts.py",
+          "docs/CI-GATE.md",
+          "docs/CLI.md"
+        ],
+        "locks": [
+          "write:ci/integration"
         ],
         "lease": "current selected session until accepted or reassigned"
       }
@@ -6642,19 +6722,19 @@
         }
       ],
       "held_locks": [
-        "write:ci/entry",
         "write:rules/security",
-        "write:agent/approval",
-        "write:reports/export"
+        "write:reports/export",
+        "write:tests/agent",
+        "write:ci/integration"
       ],
       "active_jobs": [
-        "T043",
         "T032",
-        "T047",
-        "T039"
+        "T039",
+        "T048",
+        "T044"
       ],
       "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
-      "updated_utc": "2026-10-16T11:03:55.521535+00:00",
+      "updated_utc": "2026-10-16T11:08:01.001687+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
