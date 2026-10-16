@@ -5080,17 +5080,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "109b656d2e7cea34e4743971ba350f35b0f606f6",
+          "integrated_sha": null,
+          "test_result": "Writer actual mixed native+schema CLI3groups PASS188.534s no skips; finalsourcefrozen109b656, all16 trusted setupinputs matchprimary. Actual allformats, matched/wrongapprovalheld, legacy/securityreview, clean0/new1/partialSQL2/mismatchedmanifest2, readonly snapshots. Independent review pending.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G017.md"
+        }
+      ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB017",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T12:18:49.231923+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:30:56.137168+00:00"
         }
       ]
     },
@@ -7387,7 +7401,7 @@
       },
       "T051": {
         "owner": "implementer_1",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g017-full-gate",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g017-full-gate",
         "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
@@ -7398,7 +7412,8 @@
         "locks": [
           "write:tests/e2e/gate"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "109b656d2e7cea34e4743971ba350f35b0f606f6"
       },
       "T062": {
         "owner": "policy_writer",
@@ -7446,7 +7461,8 @@
           "tests/test_governance_boundary.py",
           "tests/fixtures/governance",
           "docs/AGENT-SCOPE.md",
-          "skills/devsift/SKILL.md"
+          "skills/devsift/SKILL.md",
+          ".github/workflows/cli-contract.yml"
         ],
         "locks": [
           "write:tests/governance"
@@ -7495,14 +7511,11 @@
         }
       ],
       "held_locks": [
-        "write:doctor/config",
-        "write:tests/e2e/gate",
         "write:safety/verification",
+        "write:tests/e2e/gate",
         "write:tests/governance"
       ],
       "active_jobs": [
-        "T059",
-        "T060",
         "T051",
         "T062",
         "T057"
