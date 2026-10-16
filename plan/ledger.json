@@ -1123,7 +1123,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T032",
             "T033",
             "T042",
             "T045",
@@ -1359,7 +1358,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T032",
             "T033"
           ]
         }
@@ -1479,7 +1477,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T032",
             "T033",
             "T042",
             "T045",
@@ -3754,7 +3751,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
@@ -3775,11 +3772,19 @@
           "source_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
           "test_result": "Grouped directmutation AST fix frozen:6actualnativePASS199.158s plus21-caseactualmutationPASS97.437s withguardreason notparseerror. Independentbatchre-review pending",
           "author": "policy_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "integrated_sha": "24c00092521a122d34addc5802007e4b4992f201",
+          "test_result": "Independent reviewer accepted final source: 21 actual native mutation cases passed in 70.936s; actual unsafe TLS and secret logging positives and safe TLS controls passed. Earlier independent 8 Python, 12 credential and 5 native tests passed; final producer 6 native tests passed in 199.158s. Critical rules retain matched safe counterexamples and documented bounds.",
+          "evidence_uri": "docs/evidence/G011.md"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA011",
       "history": [
         {
@@ -3867,6 +3872,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:50:16.712748+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:52:10.845879+00:00"
         }
       ]
     },
@@ -4434,17 +4444,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f",
+          "integrated_sha": null,
+          "test_result": "Writer3actualmixedflow groups pass267.398s no skips official/report schemas. Reviewedbaselinecapture/save/load +Git/assess +context +all3exports; legacy/new/UNKNOWN/securityreview, missingconsumer/test, priorincomplete2 dominatesenforced1, maskedprompt/explicitapprovalmanualplanningonly; source/Git/baseline unchanged.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G014.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB014",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:41:29.531444+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:51:15.310687+00:00"
         }
       ]
     },
@@ -6779,7 +6803,7 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "fix/g011-t032-delete-mutation",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-delete-mutation",
         "base_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
@@ -6792,9 +6816,7 @@
           "tests/test_native_security.py",
           "docs/SECURITY-ANALYSIS.md"
         ],
-        "locks": [
-          "write:rules/security"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "prior_jobs": [
           {
@@ -6869,7 +6891,8 @@
             "source_sha": "7889eec543f4ccdf96a9a9011dc245e26d935c0e"
           }
         ],
-        "source_sha": "af1b88af07dd52115bbff5f790d037c16a50584a"
+        "source_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+        "integrated_sha": "24c00092521a122d34addc5802007e4b4992f201"
       },
       "T060": {
         "owner": "implementer_1",
@@ -7003,7 +7026,7 @@
       },
       "T042": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g014-report-gates",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g014-report-gates",
         "base_sha": "d4251bc2ea4d5de6f042e331b7370e103e665408",
@@ -7015,7 +7038,8 @@
         "locks": [
           "write:tests/reports"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f"
       },
       "T045": {
         "owner": "cli_writer",
@@ -7074,19 +7098,17 @@
         }
       ],
       "held_locks": [
-        "write:rules/security",
         "write:tests/agent",
         "write:tests/reports",
         "write:tests/ci"
       ],
       "active_jobs": [
-        "T032",
         "T048",
         "T042",
         "T045"
       ],
-      "latest_integrated_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
-      "updated_utc": "2026-10-16T11:50:16.712748+00:00",
+      "latest_integrated_sha": "24c00092521a122d34addc5802007e4b4992f201",
+      "updated_utc": "2026-10-16T11:52:10.845879+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
