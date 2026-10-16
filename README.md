@@ -1,4 +1,6 @@
-# DevSift
+# DevSift Specifications
+
+Approved product and engineering specifications for [DevSift](https://github.com/orchex006/devsift). This repository preserves the v6 design and bootstrap kit. Runtime implementation, pull requests, and the canonical execution ledger live in the [code repository](https://github.com/orchex006/devsift). The pending statuses below describe the original plan snapshot.
 
 **Language-agnostic developer quality intelligence — planned, not yet implemented.**
 
