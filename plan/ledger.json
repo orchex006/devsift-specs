@@ -828,7 +828,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T038",
             "T039"
           ]
         }
@@ -1126,7 +1125,6 @@
           "blocking_tasks": [
             "T032",
             "T033",
-            "T038",
             "T039",
             "T041",
             "T042",
@@ -1488,7 +1486,6 @@
           "blocking_tasks": [
             "T032",
             "T033",
-            "T038",
             "T039",
             "T041",
             "T042",
@@ -1570,7 +1567,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T038",
             "T039"
           ]
         }
@@ -4114,17 +4110,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
           "test_result": "Writer10focusedactualGitMarkdowncases pass acrosssuite+targetedassertioncorrection; completeallcases/metadata, secretmask source/overlap, escaping/safe fences/numbering/no-write",
           "author": "cli_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
+          "integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+          "test_result": "Distinct reviewer10actualGittests22.04s+actualCommonMarkparseprobes pass; controllerintegrated10pass46.213s, fullcases/source/prompts/wholeMASKescaping",
+          "evidence_uri": "docs/evidence/G013.md"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB013",
       "history": [
         {
@@ -4143,6 +4147,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:57:53.257422+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:03:55.127626+00:00"
         }
       ]
     },
@@ -4163,12 +4172,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB013"
+      "execution_id": "GB013",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:03:55.521535+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:03:55.521535+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T040": {
       "id": "T040",
@@ -4477,17 +4500,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c",
+          "integrated_sha": null,
+          "test_result": "Writer14approvaltests44.813s; final25case*tests82.595s no skips inclcomposer regression+actualsymlink. Exact4-way bindings/time approval/freshHEAD+index+selectedrawbytes; no sourcewrites, approvedhandoffmanualplanningonly+review_required withunknown effects. ControllerexplicitJSONloader5tests+independentreview accepted2ce8655 separately; finalT047reviewpendingcore.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G016.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB016",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:54:16.759936+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:02:46.307632+00:00"
         }
       ]
     },
@@ -6455,7 +6492,7 @@
       },
       "T038": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g013-t038-markdown",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t038-markdown",
         "base_sha": "84177a8779ceb43cb0fb8c4e1163fd6b1e05d542",
@@ -6465,11 +6502,10 @@
           "tests/fixtures/reports",
           "docs/MARKDOWN-REPORT.md"
         ],
-        "locks": [
-          "write:reports/markdown"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7"
+        "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
+        "integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c"
       },
       "T046": {
         "owner": "implementer_2",
@@ -6528,7 +6564,7 @@
       },
       "T047": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g016-approval",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-approval",
         "base_sha": "8c719aee86f66c8fbcc2548b22efe59ba9d0d8de",
@@ -6542,7 +6578,28 @@
         "locks": [
           "write:agent/approval"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c"
+      },
+      "T039": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "feature/g013-t039-exporters",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t039-exporters",
+        "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+        "paths": [
+          "devsift/report_export.py",
+          "tests/test_report_export.py",
+          "tools/setup_validation.py",
+          "requirements-dev.txt",
+          ".github/workflows/runtime-tests.yml",
+          ".github/workflows/native-analysis.yml",
+          "docs/REPORT-EXPORT.md"
+        ],
+        "locks": [
+          "write:reports/export"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6586,18 +6643,18 @@
       ],
       "held_locks": [
         "write:ci/entry",
-        "write:reports/markdown",
         "write:rules/security",
-        "write:agent/approval"
+        "write:agent/approval",
+        "write:reports/export"
       ],
       "active_jobs": [
         "T043",
-        "T038",
         "T032",
-        "T047"
+        "T047",
+        "T039"
       ],
-      "latest_integrated_sha": "f07efd83445ebb5a113a9933b4d2a1633956076e",
-      "updated_utc": "2026-10-16T10:59:05.575062+00:00",
+      "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+      "updated_utc": "2026-10-16T11:03:55.521535+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7053,6 +7110,16 @@
         "scope": "Prerequisite support for G017 and shared CLI handoff; T043 owner still decides accepted integration. No other-session task status changed.",
         "at": "2026-10-16T10:56:40.578586+00:00",
         "evidence_uri": "control/reviews/T043-boundary-reviewer.md"
+      },
+      "T043-boundary_reviewer-3b1": {
+        "reviewer": "boundary_reviewer (independent cross-session reviewer)",
+        "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+        "review_result": "technical_acceptance",
+        "test_command": "python -B -m unittest discover -s tests -p test_ci_gate.py -v",
+        "test_result": "10 CI tests pass32.626s from frozen detached exact source. Includes committed PR delta/defaultchanged requiresbase, filter-free workingchanges union, strict require_security_reviewTrue and protected security/incomplete behavior.",
+        "at": "2026-10-16T11:02:08.793234+00:00",
+        "scope": "Technical support only; T043 owner must integrate/accept and release shared CLI before controller_g014 writes CLI again.",
+        "evidence_uri": "control/reviews/T043-boundary-reviewer-3b1.md"
       }
     },
     "goal_controllers": {
