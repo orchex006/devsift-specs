@@ -7432,7 +7432,7 @@
         "T056"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:26:09.327104+00:00",
+      "updated_utc": "2026-10-16T12:27:09.869117+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7743,6 +7743,24 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T12:06:33.623563+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g019-t055-scope",
+          "source_sha": "29cf67c7615a9b96b54819daf318c3b5256c503a",
+          "replacement_sha": "29cf67c7615a9b96b54819daf318c3b5256c503a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T12:27:08.099137+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g021-t061-change-budget",
+          "source_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
+          "replacement_sha": "cc2b49500e7f47e04cadba901bd162769d7f781d",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T12:27:09.869117+00:00"
         }
       ],
       "external_worktrees_preserved": [
