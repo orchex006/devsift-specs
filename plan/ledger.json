@@ -6348,7 +6348,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
@@ -6361,11 +6361,20 @@
           "test_result": "Docs-only exact two reviewer corrections: preapproval proposal generation versus approval record; allsource selection versus provenlegacy. git diff --check passes, narrow distinct re-review pending",
           "author": "controller",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8",
+          "integrated_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
+          "test_result": "Independent reviewer accepted exact docs wording and all links against integrated T074. Setup and readonly/native/UNKNOWN/manualplanning/library boundaries match CLI. Docs-only no redundanttests; git diff --check pass.",
+          "evidence_uri": "docs/evidence/G025.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "controller",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA025",
       "history": [
         {
@@ -6407,6 +6416,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:44:50.053607+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T13:47:58.550501+00:00"
         }
       ]
     },
@@ -6492,12 +6506,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA025"
+      "execution_id": "GA025",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:47:59.115882+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:47:59.115882+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T076": {
       "id": "T076",
@@ -8206,7 +8234,7 @@
       },
       "T073": {
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "docs/g025-t073-workflow-clarity",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-workflow-clarity",
         "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
@@ -8214,9 +8242,7 @@
           "README.md",
           "docs/USAGE.md"
         ],
-        "locks": [
-          "write:docs/readme"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
         "prior_jobs": [
@@ -8238,7 +8264,8 @@
             "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
           }
         ],
-        "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8"
+        "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8",
+        "integrated_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d"
       },
       "T068": {
         "owner": "cli_writer",
@@ -8253,6 +8280,21 @@
         ],
         "locks": [
           "write:security/assurance"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
+      },
+      "T075": {
+        "owner": "controller",
+        "status": "running",
+        "branch": "docs/g025-t075-adoption",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t075-adoption",
+        "base_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
+        "paths": [
+          "docs/MIGRATION.md"
+        ],
+        "locks": [
+          "write:docs/migration"
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
@@ -8300,17 +8342,17 @@
       "held_locks": [
         "write:packaging/artifacts",
         "write:policy/ownership",
-        "write:docs/readme",
-        "write:security/assurance"
+        "write:security/assurance",
+        "write:docs/migration"
       ],
       "active_jobs": [
         "T053",
         "T065",
-        "T073",
-        "T068"
+        "T068",
+        "T075"
       ],
-      "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:46:12.331588+00:00",
+      "latest_integrated_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
+      "updated_utc": "2026-10-16T13:47:59.115882+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
