@@ -5203,12 +5203,18 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
           "test_result": "Six actual deterministic archive, integrity tamper, immutable source/index, separate Gitdir/link/output and disabled callback tests pass33.809s; source ZIP not wheel reproducibility, distinct review pending",
           "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f",
+          "test_result": "Actual missing-promisor-object remote-helper marker regression RED before fix, all8 actual archive/input/integrity tests pass43.311s after no-lazy-fetch/effectivepartialguard/trustedhostGit. Fresh distinct re-review pending",
+          "author": "controller",
           "source_repository": "orchex006/devsift"
         }
       ],
@@ -5251,6 +5257,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:46:12.331588+00:00",
           "reason": "Distinct reviewer actual missing-promisor-blob triggered remote helper during source proof; reject partial/promisor before object reads and disable lazy fetch; use accepted trusted host Git"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:48:44.462493+00:00"
         }
       ]
     },
@@ -6506,8 +6517,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
+          "test_result": "Docs-only gradual review-to-enforce adoption, source/lifecycle/UNKNOWN/Critical/prompt/policy boundaries cross-linked to accepted actual contracts; git diff --check pass, distinct review pending",
+          "author": "controller",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6524,6 +6542,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:47:59.115882+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:48:44.699246+00:00"
         }
       ]
     },
@@ -8164,7 +8187,7 @@
       },
       "T053": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g018-t053-offline-git",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-offline-git",
         "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
@@ -8197,7 +8220,8 @@
             "source_repository": "orchex006/devsift",
             "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0"
           }
-        ]
+        ],
+        "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f"
       },
       "T074": {
         "owner": "policy_writer",
@@ -8286,7 +8310,7 @@
       },
       "T075": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g025-t075-adoption",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t075-adoption",
         "base_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
@@ -8297,7 +8321,8 @@
           "write:docs/migration"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8352,7 +8377,7 @@
         "T075"
       ],
       "latest_integrated_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
-      "updated_utc": "2026-10-16T13:47:59.115882+00:00",
+      "updated_utc": "2026-10-16T13:48:44.699246+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
