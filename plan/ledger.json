@@ -935,7 +935,7 @@
         "T051"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -1133,7 +1133,6 @@
             "T037",
             "T038",
             "T039",
-            "T040",
             "T041",
             "T042",
             "T043",
@@ -1201,7 +1200,7 @@
         "T060"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -1502,7 +1501,6 @@
             "T037",
             "T038",
             "T039",
-            "T040",
             "T041",
             "T042",
             "T043",
@@ -3697,7 +3695,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "2ecb1feb88bc706050ad22f631136295efd6eee6",
@@ -3726,6 +3724,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:32:13.518515+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T10:34:26.407313+00:00",
+          "reason": "Reviewer proved JS regex false credential and nonsecurity overlap mask lost by shared scanner; root owns shared reproof correction"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:34:26.407313+00:00",
+          "reason": "Reviewer proved JS regex false credential and nonsecurity overlap mask lost by shared scanner; root owns shared reproof correction"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:34:26.407313+00:00",
+          "reason": "Reviewer proved JS regex false credential and nonsecurity overlap mask lost by shared scanner; root owns shared reproof correction"
         }
       ]
     },
@@ -4044,7 +4060,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "5352b1dc91052d1042a45d04b5b29c5e691a1cd1",
@@ -4053,11 +4069,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G014.md"
+        },
+        {
+          "source_sha": "5352b1dc91052d1042a45d04b5b29c5e691a1cd1",
+          "integrated_sha": "496206e47d3b00fb32f5fa2a353a4812cd6d621e",
+          "test_result": "Independent reviewer boundary_reviewer accepted; 9 tests pass30.715s plus stale/version/repository/matched-location adversarial probes. Controller 9 tests17.476s; no source or Git writes; changelog integrated.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G014.md"
         }
       ],
       "assignee": "controller_g014",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB014",
       "history": [
         {
@@ -4069,6 +4093,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:31:44.686859+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:34:04.429399+00:00"
         }
       ]
     },
@@ -4297,11 +4326,11 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Not authorized in current session; preserve unfinished branch until separately selected",
+      "next_step": "Implement authorized scope",
       "execution_id": "GB017",
       "history": [
         {
@@ -4314,6 +4343,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:32:13.102331+00:00",
           "reason": "User explicitly limited authorization to G011–G015; unapproved claim superseded, source preserved"
+        },
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:33:41.511226+00:00"
         }
       ]
     },
@@ -4335,11 +4369,11 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Not authorized in current session; preserve unfinished branch until separately selected",
+      "next_step": "Implement authorized scope",
       "execution_id": "GB017",
       "history": [
         {
@@ -4352,6 +4386,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:32:13.102331+00:00",
           "reason": "User explicitly limited authorization to G011–G015; unapproved claim superseded, source preserved"
+        },
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:33:41.549012+00:00"
         }
       ]
     },
@@ -4546,11 +4585,11 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Not authorized in current session; preserve unfinished branch until separately selected",
+      "next_step": "Implement authorized scope",
       "execution_id": "GA020",
       "history": [
         {
@@ -4563,6 +4602,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:32:13.102331+00:00",
           "reason": "User explicitly limited authorization to G011–G015; unapproved claim superseded, source preserved"
+        },
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:33:41.467147+00:00"
         }
       ]
     },
@@ -5052,7 +5096,10 @@
       "G012",
       "G013",
       "G014",
-      "G015"
+      "G015",
+      "G020",
+      "G017",
+      "G016"
     ],
     "controller": "controller",
     "policy_sha": "acf9a44240d866f94f70dfaa3260b3d393f25f23",
@@ -5801,10 +5848,10 @@
       },
       "T031": {
         "owner": "policy_writer",
-        "status": "in_review",
-        "branch": "feature/g011-t031-secrets",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t031-secrets",
-        "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+        "status": "running",
+        "branch": "fix/g011-t031-literal-context",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t031-literal-context",
+        "base_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
         "paths": [
           "devsift/security_adapter.py",
           "tests/test_security_adapter.py",
@@ -5814,7 +5861,25 @@
           "write:adapters/security"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "2ecb1feb88bc706050ad22f631136295efd6eee6"
+        "prior_jobs": [
+          {
+            "owner": "policy_writer",
+            "status": "in_review",
+            "branch": "feature/g011-t031-secrets",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t031-secrets",
+            "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+            "paths": [
+              "devsift/security_adapter.py",
+              "tests/test_security_adapter.py",
+              "docs/SECURITY-ANALYSIS.md"
+            ],
+            "locks": [
+              "write:adapters/security"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_sha": "2ecb1feb88bc706050ad22f631136295efd6eee6"
+          }
+        ]
       },
       "T034": {
         "owner": "cli_writer",
@@ -5888,7 +5953,7 @@
       },
       "T058": {
         "owner": "implementer_1",
-        "status": "superseded",
+        "status": "running",
         "branch": "feature/g020-doctor",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-doctor",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5897,13 +5962,14 @@
           "tests/test_doctor.py",
           "docs/DOCTOR.md"
         ],
-        "locks": [],
-        "session": "g014-g016-g017-g020",
-        "reason": "Outside latest explicit user scope; dirty work preserved, never accepted"
+        "locks": [
+          "write:cli/doctor"
+        ],
+        "session": "g014-g016-g017-g020"
       },
       "T049": {
         "owner": "implementer_2",
-        "status": "superseded",
+        "status": "running",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5913,13 +5979,14 @@
           "tests/fixtures/e2e/backend",
           "docs/E2E.md"
         ],
-        "locks": [],
-        "session": "g014-g016-g017-g020",
-        "reason": "Outside latest explicit user scope; dirty work preserved, never accepted"
+        "locks": [
+          "write:tests/e2e/backend"
+        ],
+        "session": "g014-g016-g017-g020"
       },
       "T050": {
         "owner": "implementer_2",
-        "status": "superseded",
+        "status": "running",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5928,13 +5995,14 @@
           "tests/fixtures/e2e/frontend",
           "tests/fixtures/e2e/sql"
         ],
-        "locks": [],
-        "session": "g014-g016-g017-g020",
-        "reason": "Outside latest explicit user scope; dirty work preserved, never accepted"
+        "locks": [
+          "write:tests/e2e/frontend"
+        ],
+        "session": "g014-g016-g017-g020"
       },
       "T040": {
         "owner": "controller_g014",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g014-g016-g017-g020",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/delivery-g014-g020",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5943,11 +6011,10 @@
           "tests/test_report_decisions.py",
           "docs/REPORT-DECISIONS.md"
         ],
-        "locks": [
-          "write:reports/classifier"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "5352b1dc91052d1042a45d04b5b29c5e691a1cd1"
+        "source_sha": "5352b1dc91052d1042a45d04b5b29c5e691a1cd1",
+        "integrated_sha": "496206e47d3b00fb32f5fa2a353a4812cd6d621e"
       },
       "T035": {
         "owner": "cli_writer",
@@ -6009,18 +6076,22 @@
         "write:adapters/security",
         "write:reports/model",
         "write:ci/entry",
-        "write:reports/classifier",
+        "write:cli/doctor",
+        "write:tests/e2e/backend",
+        "write:tests/e2e/frontend",
         "write:rules/observability"
       ],
       "active_jobs": [
         "T031",
         "T037",
         "T043",
-        "T040",
+        "T058",
+        "T049",
+        "T050",
         "T035"
       ],
       "latest_integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
-      "updated_utc": "2026-10-16T10:33:22.759588+00:00",
+      "updated_utc": "2026-10-16T10:34:26.407313+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -6369,6 +6440,22 @@
         "G020"
       ],
       "instruction": "Do not dispatch or accept excluded work; preserve existing unfinished files and branch refs. Canonical ledger writes are serialized by this controller."
+    },
+    "authorizations": {
+      "g014-g016-g017-g020": {
+        "source": "Direct user message in the active Codex conversation",
+        "request": "ดำเนินการต่อหน่อย G020 , G017 , G014 , G016",
+        "selected_goals": [
+          "G020",
+          "G017",
+          "G014",
+          "G016"
+        ],
+        "scope": "Explicitly authorized independent concurrent session. Preserve other G011-G015 work. Do not supersede these claims based on another session scope.",
+        "controller": "controller_g014",
+        "reviewer": "boundary_reviewer",
+        "coordination": "control/ACTIVE-SESSIONS.md"
+      }
     }
   }
 }
