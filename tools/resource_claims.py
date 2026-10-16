@@ -294,6 +294,12 @@ def _admit(data, request, controller, authorization_id):
              and task.get("goal_id") in authorization["selected_goals"]
              and type(execution.get("selected_goals")) is list
              and task.get("goal_id") in execution["selected_goals"], "UNAUTHORIZED_CONTROLLER")
+    controllers = execution.get("goal_controllers", {})
+    _require(type(controllers) is dict and len(controllers) <= 128, "CORRUPT_LEDGER")
+    for routed_goal, routed_controller in controllers.items():
+        _require(type(routed_goal) is str and re.fullmatch(r"G[0-9]{3}", routed_goal) is not None, "CORRUPT_LEDGER")
+        _identifier(routed_controller)
+    _require(goal not in controllers or controllers[goal] == controller, "UNAUTHORIZED_CONTROLLER")
     for goals in (authorization["selected_goals"], execution["selected_goals"]):
         _require(len(goals) <= 128 and all(type(item) is str and re.fullmatch(r"G[0-9]{3}", item) is not None
                                           for item in goals), "CORRUPT_LEDGER")
@@ -306,8 +312,23 @@ def _admit(data, request, controller, authorization_id):
     _require(set(required) <= set(request.locks), "REQUIRED_LOCK_MISSING")
     requested_paths, requested_locks = _paths(request.paths), _locks(request.locks)
     for task_id, job in execution["jobs"].items():
+        _require(type(job) is dict, "CORRUPT_LEDGER")
+        if task_id not in tasks:
+            # Reviewed integration/correction jobs predate task-only allocation.
+            # Preserve their records without inventing tasks or active leases.
+            _identifier(task_id)
+            _require(re.fullmatch(r"T[0-9]{3}", task_id) is None, "CORRUPT_LEDGER")
+            _require(job.get("status") == "accepted" and job.get("locks") == []
+                     and job.get("review_result") == "accepted", "CORRUPT_LEDGER")
+            _identifier(job.get("owner"))
+            _identifier(job.get("reviewer"))
+            _require(job["owner"] != job["reviewer"], "CORRUPT_LEDGER")
+            for key in ("source_sha", "integrated_sha"):
+                value = job.get(key)
+                _require(type(value) is str and re.fullmatch(r"(?:[a-f0-9]{40}|[a-f0-9]{64})", value) is not None
+                         and set(value) != {"0"}, "CORRUPT_LEDGER")
+            continue
         _task(task_id)
-        _require(type(job) is dict and task_id in tasks, "CORRUPT_LEDGER")
         status = job.get("status")
         if status == "accepted":
             _require(tasks[task_id].get("status") == "accepted" and job.get("locks", []) == [], "CORRUPT_LEDGER")

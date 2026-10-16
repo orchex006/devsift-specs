@@ -114,3 +114,13 @@ check prefix/case conflicts, expired-looking leases, rejected inputs and a
 dangling lock-path symlink whose external target must never be created. Windows
 execution tests the actual byte-range branch; POSIX tests use the actual flock
 branch when run on POSIX. Neither result should be represented as the other OS.
+
+Compatibility with the existing canonical ledger preserves reviewed historical
+integration/correction jobs whose keys are not task IDs. Only explicitly accepted
+records with exactly empty locks, an accepted review by a distinct named reviewer,
+and full nonzero source/integrated SHAs are inactive. Unknown task-shaped IDs,
+active or ambiguous historical records fail closed; no history is removed or
+converted into an invented task. These metadata checks do not re-prove old Git
+artifacts or authenticate a reviewer. Explicit `execution.goal_controllers`
+routing also remains binding: broader selected authorization does not override
+another controller's existing goal route.

@@ -78,6 +78,39 @@ class ResourceClaimsTests(unittest.TestCase):
         self.assertFalse(self.apply(self.request()).admitted)
         self.assertFalse(self.path.exists())
 
+    def test_reviewed_inactive_non_task_history_preserved_and_ambiguous_history_denied(self):
+        historical = {"status": "accepted", "locks": [], "owner": "prior_writer",
+                      "reviewer": "prior_reviewer", "review_result": "accepted",
+                      "source_sha": "a" * 40, "integrated_sha": "b" * 40,
+                      "opaque_history": {"keep": [1, 2]}}
+        self.data["execution"]["jobs"]["historical-integration"] = historical
+        self.write(self.data)
+        self.assertTrue(self.apply(self.request()).admitted)
+        self.assertEqual(json.loads(self.path.read_text())["execution"]["jobs"]["historical-integration"], historical)
+        for changes in ({"status": "running"}, {"status": "unknown"}, {"locks": ["write:held"]},
+                        {"locks": None}, {"review_result": "pending"}, {"reviewer": "prior_writer"},
+                        {"reviewer": None}, {"source_sha": "not-a-sha"}, {"integrated_sha": "0" * 40}):
+            data = copy.deepcopy(self.data)
+            data["execution"]["jobs"]["historical-integration"] = {**historical, **changes}
+            self.write(data)
+            before = self.path.read_bytes()
+            with self.subTest(changes=changes):
+                self.assertFalse(self.apply(self.request()).admitted)
+                self.assertEqual(self.path.read_bytes(), before)
+        data = copy.deepcopy(self.data)
+        data["execution"]["jobs"]["T999"] = data["execution"]["jobs"].pop("historical-integration")
+        self.write(data)
+        before = self.path.read_bytes()
+        self.assertFalse(self.apply(self.request()).admitted)
+        self.assertEqual(self.path.read_bytes(), before)
+
+    def test_selected_authorization_does_not_override_existing_goal_controller(self):
+        self.data["execution"]["goal_controllers"] = {"G001": "other_controller"}
+        self.write(self.data)
+        before = self.path.read_bytes()
+        self.assertFalse(self.apply(self.request()).admitted)
+        self.assertEqual(self.path.read_bytes(), before)
+
     def test_path_prefix_conflicts_are_repository_scoped_contracts_are_global(self):
         self.assertTrue(self.apply(self.request(paths=("src/",), locks=("write:shared/model",))).admitted)
         self.assertTrue(self.apply(self.request("T002", "owner/specs", ("src/child.py",))).admitted)
