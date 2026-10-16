@@ -3786,8 +3786,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161",
+          "test_result": "Writer ten observability plus14evidence tests pass; strict actual hop pairing/coverage and no raw IDs or messages, no source writes",
+          "author": "cli_writer"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -3804,6 +3810,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:21:29.822829+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:28:32.981563+00:00"
         }
       ]
     },
@@ -5682,7 +5693,7 @@
       },
       "T034": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g012-t034-observability",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t034-observability",
         "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
@@ -5694,7 +5705,8 @@
         "locks": [
           "write:rules/observability"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161"
       },
       "T037": {
         "owner": "controller",
@@ -5783,7 +5795,7 @@
         "T043"
       ],
       "latest_integrated_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
-      "updated_utc": "2026-10-16T10:27:40.476026+00:00",
+      "updated_utc": "2026-10-16T10:28:32.981563+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
