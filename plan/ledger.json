@@ -1188,7 +1188,7 @@
         "T060"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
+      "status": "accepted",
       "evidence": [
         "docs/evidence/G020.md"
       ],
@@ -5137,8 +5137,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "f4cc098fe749ac4744443240434cc0fe8197abc5",
+          "test_result": "Producer7 package tests12.238s including actual wheel/sdist with pinned setuptools83, strict component inventory/path/reparse/index guards, untracked sensitive/module exclusion, originalsource/index/HEAD unchanged. Archive reproducibility/freshinstall deferred T053/T054. Independent review pending.",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5155,6 +5162,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:37:56.011352+00:00",
           "reason": "G017 fully accepted at source33a9550 unlocks G018. Base includes every accepted packaging prerequisite; later independent G019/G021 code is not a prerequisite. Offline core/consumer asset allowlists, no release/native downloads or maintainer asset leakage."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:48:18.951587+00:00"
         }
       ]
     },
@@ -5559,7 +5571,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
@@ -5584,11 +5596,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G020.md"
+        },
+        {
+          "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+          "integrated_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "test_result": "Independent boundary_reviewer accepts final reproof: hostedWindowsruntime job116975671468/run38901823874 SUCCESS exacthead ebf1705,457tests395.858s/81native-platform-installedskips; bothoriginalDoctorCIfailures andall3real8.3aliasCLI/root/junctionsecuritygroups actualOK, notskipped. Priorindependent36DoctorCLItests PASS4.215s noskips at93ad +writer36PASS11.647s. Doctorregressioncleared; finalWindowsnative/main-merge gatestillpending, no globalCIpassclaim.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G020.md"
         }
       ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GA020",
       "history": [
         {
@@ -5616,6 +5636,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T12:36:25.471119+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:47:05.795952+00:00"
         }
       ]
     },
@@ -7326,7 +7351,7 @@
       },
       "T060": {
         "owner": "implementer_2",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "fix/g020-windows-path",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-windows-path",
         "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
@@ -7337,7 +7362,7 @@
         "locks": [],
         "session": "g014-g016-g017-g020",
         "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
-        "integrated_sha": "8c719aee86f66c8fbcc2548b22efe59ba9d0d8de"
+        "integrated_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d"
       },
       "T047": {
         "owner": "implementer_2",
@@ -7635,7 +7660,7 @@
       },
       "T052": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g018-t052-package-manifest",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t052-package-manifest",
         "base_sha": "33a9550271f84f175bbc52f24f081640dda92d6e",
@@ -7651,7 +7676,8 @@
           "write:packaging/manifests"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "f4cc098fe749ac4744443240434cc0fe8197abc5"
       },
       "T063": {
         "owner": "policy_writer",
@@ -7717,13 +7743,12 @@
         "write:tests/safety"
       ],
       "active_jobs": [
-        "T060",
         "T057",
         "T052",
         "T063"
       ],
       "latest_integrated_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
-      "updated_utc": "2026-10-16T12:45:06.268925+00:00",
+      "updated_utc": "2026-10-16T12:48:18.951587+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8267,6 +8292,12 @@
           "pull_request": "https://github.com/orchex006/devsift/pull/9",
           "paths": [],
           "note": "Preserve accepted Doctor/case input flags and isolated consumer entry when merging later CLI work."
+        },
+        "delivery": {
+          "status": "all12tasksaccepted; finalWindowsnativeCI/mainmergepending",
+          "source_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "runtime_pr": "https://github.com/orchex006/devsift/pull/9",
+          "specs_pr": "https://github.com/orchex006/devsift-specs/pull/9"
         }
       },
       "g011-g015": {
@@ -8444,6 +8475,15 @@
           "removed": true,
           "integrated_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
           "proof": "Accepted T051 source ancestor; original branch retained"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-windows-path",
+          "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+          "branch_retained": "fix/g020-windows-path",
+          "clean": true,
+          "removed": true,
+          "integrated_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "proof": "Accepted T059/T060 correction source ancestor; original branch retained"
         }
       ]
     }
