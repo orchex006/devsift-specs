@@ -4197,8 +4197,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+          "test_result": "Writer8actualGit JSON-SARIFexporttests pass inclofficialpinnedOASISDraft4+ownschemaURN offlinevalidators, URIcorruptionnegatives, secret/overlap/no-write; hasheddevdeps isolatedinstall +cp312Windowswheeldownload andworkflowYAMLvalidation",
+          "author": "cli_writer"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -4215,6 +4221,11 @@
           "actor": "controller",
           "at": "2026-10-16T11:03:55.521535+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T11:16:05.085643+00:00"
         }
       ]
     },
@@ -6690,7 +6701,7 @@
       },
       "T039": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g013-t039-exporters",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t039-exporters",
         "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
@@ -6706,7 +6717,8 @@
         "locks": [
           "write:reports/export"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596"
       },
       "T048": {
         "owner": "implementer_1",
@@ -6801,7 +6813,7 @@
         "T044"
       ],
       "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
-      "updated_utc": "2026-10-16T11:15:14.745666+00:00",
+      "updated_utc": "2026-10-16T11:16:05.085643+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
