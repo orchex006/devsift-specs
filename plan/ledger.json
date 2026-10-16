@@ -4607,12 +4607,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB015"
+      "execution_id": "GB015",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:46:55.554040+00:00",
+          "reason": "T044accepted; actualWindowsLinux byte-identicalofficialschema-valid3artifacts observed. Add leastprivilege exactkeyNugetcache and adversarialcontracts"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:46:55.554040+00:00",
+          "reason": "T044accepted; actualWindowsLinux byte-identicalofficialschema-valid3artifacts observed. Add leastprivilege exactkeyNugetcache and adversarialcontracts"
+        }
+      ]
     },
     "T046": {
       "id": "T046",
@@ -6987,6 +7001,22 @@
           "write:tests/reports"
         ],
         "session": "g014-g016-g017-g020"
+      },
+      "T045": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "test/g015-t045-ci-cache",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g015-t045-ci-cache",
+        "base_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
+        "paths": [
+          ".github/workflows/quality-gate.yml",
+          "tests/test_ci_cache_contract.py",
+          "docs/CI-WORKFLOW.md"
+        ],
+        "locks": [
+          "write:tests/ci"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7031,15 +7061,17 @@
       "held_locks": [
         "write:rules/security",
         "write:tests/agent",
-        "write:tests/reports"
+        "write:tests/reports",
+        "write:tests/ci"
       ],
       "active_jobs": [
         "T032",
         "T048",
-        "T042"
+        "T042",
+        "T045"
       ],
       "latest_integrated_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
-      "updated_utc": "2026-10-16T11:46:48.430027+00:00",
+      "updated_utc": "2026-10-16T11:46:55.554040+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
