@@ -1146,9 +1146,11 @@
         "T057"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G019.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1232,9 +1234,11 @@
         "T063"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G021.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -5361,18 +5365,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
           "test_result": "Producer actual installed Windows5governance +1CLI tests pass; shadow canary first reproducesplainpython-m execution, isolatedmodule/console safe; actualsource/Git/package unchanged. Requiredinstalledflag failsclosedmissinginstall; separate2OSCI step. Independent review pending.",
           "author": "cli_writer",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
+          "integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
+          "test_result": "Independent actual5 governance and existing installedCLI tests pass, prepared wheel matches source. Hosted38902178719 Windows and Ubuntu install succeeded; all5 governance cases plusconsole contract ran with requiredinstalledflag1 and zero skips (Linux0.668s/Windows2.499s). Source/Git/package unchanged and shadow positivecontrol proves isolatedinvocation. No LLM/hostbehavior claim.",
+          "evidence_uri": "docs/evidence/G019.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA019",
       "history": [
         {
@@ -5391,6 +5404,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T12:37:56.239220+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T12:49:16.059966+00:00"
         }
       ]
     },
@@ -5817,18 +5835,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
           "test_result": "Producer7 actual Git/CLI acceptance tests25.156s pass: real semantic price change still not authorized by measured counts or declared pass; missing evidence/identity substitutions/wire approvals/legacycritical/unknown/batch/refactor/readonly CLI guard preserved. Independent review pending.",
           "author": "policy_writer",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
+          "integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
+          "test_result": "Independent7 real Git/CLI acceptance tests14.261s pass. Actual semanticdiff+declaredpass neverauthorizes; missing orsubstituted evidence/root/case/pair/scope rejects, externalclaims staydeclared, legacyCriticalsecurity_review and source/Git/tool hashes preserved. No G016 dependency or production changes.",
+          "evidence_uri": "docs/evidence/G021.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA021",
       "history": [
         {
@@ -5847,6 +5874,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T12:45:06.268925+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T12:49:16.356309+00:00"
         }
       ]
     },
@@ -7640,7 +7672,7 @@
       },
       "T057": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g019-t057-governance",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g019-t057-governance",
         "base_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
@@ -7651,12 +7683,11 @@
           "skills/devsift/SKILL.md",
           ".github/workflows/cli-contract.yml"
         ],
-        "locks": [
-          "write:tests/governance"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2"
+        "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
+        "integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14"
       },
       "T052": {
         "owner": "cli_writer",
@@ -7681,7 +7712,7 @@
       },
       "T063": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g021-t063-denial",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t063-denial",
         "base_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
@@ -7690,12 +7721,11 @@
           "tests/fixtures/remediation",
           "docs/VERIFICATION-EVIDENCE.md"
         ],
-        "locks": [
-          "write:tests/safety"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691"
+        "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
+        "integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7738,17 +7768,13 @@
         }
       ],
       "held_locks": [
-        "write:tests/governance",
-        "write:packaging/manifests",
-        "write:tests/safety"
+        "write:packaging/manifests"
       ],
       "active_jobs": [
-        "T057",
-        "T052",
-        "T063"
+        "T052"
       ],
-      "latest_integrated_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
-      "updated_utc": "2026-10-16T12:48:18.951587+00:00",
+      "latest_integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
+      "updated_utc": "2026-10-16T12:49:16.356309+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
