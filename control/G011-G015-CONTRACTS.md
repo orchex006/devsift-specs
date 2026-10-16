@@ -89,3 +89,18 @@ schema group passed in 25.800s, and controller integration ran all three groups
 with official schemas enabled in 136.403s. The first two fixture groups and all
 seven source fixtures match original `35f63e3` byte for byte. Foreign canonical
 T042 acceptance/source/ownership remain intact; no G016 runtime files are included.
+
+Delivery closure: runtime PR #8 merged as `f9ba7eec7fded3d6d3f479ee93c5c5a3372f8ebe`
+after all eight required checks passed; specs PR #8 merged as
+`dfd9037c643d1d8b6c4de1e24be306156aade355` after both platform checks passed.
+All five G011–G015 goals and fifteen tasks are accepted. Their completed owned
+worktree folders were removed with source refs/cleanup evidence retained.
+
+Autopilot canonical branch is now `docs/autopilot-next-goals` in the same specs
+checkout; branch rename preserved every dirty file. Do not replace its live ledger
+from the older isolated specs worktree. Existing task owners stay unchanged.
+Future runtime integration lives in `worktrees/autopilot-next-goals`, branch
+`feature/autopilot-next-goals`, draft code PR #10. T055 and T061 are accepted there;
+T056 is accepted in specs (its explicit source_repository is devsift-specs, in line
+with the repository separation). T057 and T062 are the current following jobs.
+The primary code checkout is clean main at the merged G011–G015 tree.
