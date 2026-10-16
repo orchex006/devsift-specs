@@ -6331,11 +6331,17 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
           "test_result": "Eight actual bounded ZIP/wheel secrecy/privacy/malformed/nonexecution/Windows link fixtures pass1.597s; no T053 dependency. Distinct review pending",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9",
+          "test_result": "Malformedstored/deflateprefix/CRC andtail/concatenation probes RED beforefix. Fullcapturedcompressedspan boundedexactsize/CRC/EOF/no tails; WindowsCOM/LPTsuperscripts guarded. All10actualtests pass2.516s, distinct re-review pending",
           "author": "cli_writer",
           "source_repository": "orchex006/devsift"
         }
@@ -6379,6 +6385,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:53:55.784772+00:00",
           "reason": "Reviewer actualmalformeddeflatestream forgedsizes/CRC prefix bypass returnedfalsecomplete; validate boundedrawcompressedspan/eof/exactsize/no trailingorconcatenateddata"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:59:54.361538+00:00"
         }
       ]
     },
@@ -8463,7 +8474,7 @@
       },
       "T068": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g023-t068-deflate-proof",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t068-deflate-proof",
         "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
@@ -8496,7 +8507,8 @@
             "source_repository": "orchex006/devsift",
             "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd"
           }
-        ]
+        ],
+        "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9"
       },
       "T075": {
         "owner": "controller",
@@ -8599,8 +8611,8 @@
         "T054",
         "T066"
       ],
-      "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:59:04.560025+00:00",
+      "latest_integrated_sha": "8345368e97c66fde3dc05fa0924a2868d2f7136e",
+      "updated_utc": "2026-10-16T13:59:54.361538+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
