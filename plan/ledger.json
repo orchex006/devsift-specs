@@ -1037,9 +1037,11 @@
         "T054"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G018.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1485,7 +1487,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T054",
             "T069"
           ]
         }
@@ -5298,18 +5299,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
           "test_result": "ActualWindowsoptinfullproof1PASS50.924s currentwheel+sdist/twofreshvenvs/syntheticprior→current→rollback/exactmodulehashes+RECORD/readonlyconsumerandtoolsource/Git; defaultexplicitSKIP;2OSCIupdatedmandatory, independentreviewpending",
           "author": "policy_writer",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
+          "integrated_sha": "0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5",
+          "test_result": "Distinct reviewer accepted exactb1a9: actualWindowsfullproof44.953s, current42/prior41wheel+sdist/twofreshvenvs/offlineCLI/RECORD/sourceGitpreserved. Integrated0a0dc1b actualhosted installedworkflow38912637912 SUCCESS bothLinux/Windows includingmandatory freshinstall/rollback (no optin skip). Consumer/sourcebundles verified; wheel/nativebyte-repro notclaimed. G018all3tasksaccepted.",
+          "evidence_uri": "docs/evidence/G018.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB018",
       "history": [
         {
@@ -5328,6 +5338,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T14:01:07.185762+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T14:04:23.876287+00:00"
         }
       ]
     },
@@ -8580,7 +8595,7 @@
       },
       "T054": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g018-t054-install-rollback",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t054-install-rollback",
         "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
@@ -8589,12 +8604,11 @@
           "docs/PACKAGING.md",
           ".github/workflows/cli-contract.yml"
         ],
-        "locks": [
-          "write:tests/install"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532"
+        "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
+        "integrated_sha": "0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5"
       },
       "T066": {
         "base_sha": "bcfdba86634aa29dcf22efa031977e2915892fbd",
@@ -8673,15 +8687,13 @@
         }
       ],
       "held_locks": [
-        "write:tests/install",
         "write:tests/security-release"
       ],
       "active_jobs": [
-        "T054",
         "T069"
       ],
-      "latest_integrated_sha": "2e2f5370028a4bb3d330077628f143d5572dd678",
-      "updated_utc": "2026-10-16T14:01:30.382889+00:00",
+      "latest_integrated_sha": "0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5",
+      "updated_utc": "2026-10-16T14:04:23.876287+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
