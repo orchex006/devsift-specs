@@ -3762,7 +3762,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
@@ -3791,6 +3791,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:11:59.755313+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T11:15:14.745666+00:00",
+          "reason": "Reviewer actualstdlibsafeSSLoverride andNodeignoredAgentsecondargcounterexamples; fresh scoped TLScontext rework"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:15:14.745666+00:00",
+          "reason": "Reviewer actualstdlibsafeSSLoverride andNodeignoredAgentsecondargcounterexamples; fresh scoped TLScontext rework"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:15:14.745666+00:00",
+          "reason": "Reviewer actualstdlibsafeSSLoverride andNodeignoredAgentsecondargcounterexamples; fresh scoped TLScontext rework"
         }
       ]
     },
@@ -4592,17 +4610,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
+          "integrated_sha": null,
+          "test_result": "Writer4fixture groups pass42.849s covering6goldens+4externalmalformed cases via actualGit/scan/report/composer/approval/canonicalJSON; readonly source/Git hashes; no fakeproof or LLMbehaviorclaim. Controller consumer skill/CLI integration tests pending shared CLI handoff T044; whole task notaccepted yet.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G016.md"
+        }
+      ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB016",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:05:05.130357+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:14:40.059084+00:00"
         }
       ]
     },
@@ -6578,18 +6610,14 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "in_review",
-        "branch": "feature/g011-t032-security-context",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-security-context",
-        "base_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
+        "status": "running",
+        "branch": "fix/g011-t032-tls-context",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-tls-context",
+        "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
         "paths": [
           "devsift/security_context.py",
           "devsift/security_adapter.py",
-          "native/dotnet/Program.cs",
-          "native/go/main.go",
           "native/frontend/analyze.cjs",
-          "devsift/dotnet_adapter.py",
-          "devsift/go_adapter.py",
           "devsift/typescript_adapter.py",
           "tests/test_security_context.py",
           "tests/test_native_security.py",
@@ -6599,7 +6627,33 @@
           "write:rules/security"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
+        "prior_jobs": [
+          {
+            "owner": "policy_writer",
+            "status": "in_review",
+            "branch": "feature/g011-t032-security-context",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-security-context",
+            "base_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
+            "paths": [
+              "devsift/security_context.py",
+              "devsift/security_adapter.py",
+              "native/dotnet/Program.cs",
+              "native/go/main.go",
+              "native/frontend/analyze.cjs",
+              "devsift/dotnet_adapter.py",
+              "devsift/go_adapter.py",
+              "devsift/typescript_adapter.py",
+              "tests/test_security_context.py",
+              "tests/test_native_security.py",
+              "docs/SECURITY-ANALYSIS.md"
+            ],
+            "locks": [
+              "write:rules/security"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
+          }
+        ]
       },
       "T060": {
         "owner": "implementer_1",
@@ -6656,7 +6710,7 @@
       },
       "T048": {
         "owner": "implementer_1",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g016-fixtures",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g016-fixtures",
         "base_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
@@ -6670,7 +6724,8 @@
         "locks": [
           "write:tests/agent"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d"
       },
       "T044": {
         "owner": "controller",
@@ -6746,7 +6801,7 @@
         "T044"
       ],
       "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
-      "updated_utc": "2026-10-16T11:11:59.755313+00:00",
+      "updated_utc": "2026-10-16T11:15:14.745666+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7164,7 +7219,16 @@
         "controller": "controller_g014",
         "reviewer": "boundary_reviewer",
         "coordination": "control/ACTIVE-SESSIONS.md",
-        "goal_controller": "controller_g014 owns all tasks of these four selected goals, including independent T041 after accepted T039"
+        "goal_controller": "controller_g014 owns all tasks of these four selected goals, including independent T041 after accepted T039",
+        "pending_shared_cli": {
+          "waiting_for": "T044 accepted and shared devsift/cli.py released",
+          "prepared_in": "D:/SP-Billy/devsift-dev/devsift/worktrees/delivery-g014-g020",
+          "features": [
+            "G020 doctor --policy/--cache-path",
+            "G016 prompt --scan-input/--approval-file"
+          ],
+          "policy": "No edits to shared CLI entry during T044 ownership. Integrate accepted CI entry source before committing combined public flags."
+        }
       },
       "g011-g015": {
         "source": "Direct user messages in this conversation",
