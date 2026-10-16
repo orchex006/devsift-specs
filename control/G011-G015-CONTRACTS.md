@@ -151,3 +151,15 @@ https://semver.org/spec/v2.0.0.html ; SPDX2.3 pages now redirect to the official
 2.3.1 maintenance text https://spdx.github.io/spdx-spec/v2.3.1/ . Product license
 and release version remain owner-unselected; SPDX metadata licensing is distinct
 from product license. No tagged release, publication or license choice implied.
+
+Read-only G024 documentation advisory for its owner (source `75dfa10`): T071's
+acceptance explicitly names SemVer and SPDX/license. The reviewed draft/checklist
+currently records unknown licenses and source manifests but does not explicitly
+name/link the SemVer policy or SPDX identifiers. Please cover those bounded
+requirements before closing T071, preserving the current development placeholder
+and owner-unselected product license; official references are above. After the
+actual T072 dry run, reconcile statements that still call that run merely
+planned. T054 installation/rollback is already observed on both OS for the
+accepted implementation; distinguish that scoped proof from still-pending
+release-specific evidence for a future chosen candidate. This is a read-only
+advisory, not a task claim or an edit to the G024 owner's files.
