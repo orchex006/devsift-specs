@@ -11,6 +11,8 @@ All notable user-facing changes to DevSift will be documented here. This follows
 - G000 bootstrap goal with partial-task dependency gates, preserving 25 prior goal IDs and 75 prior task IDs.
 
 ### Changed
+- Mirror independently accepted G006–G010 goal/task checklists and source evidence from the canonical code execution ledger; preserve the original planning fixture here.
+- Development jobs now use ignored `worktrees/<job>` inside each repo; remove finished clean/superseded folders while preserving original refs and accepted integration proof.
 - Root task entry paths require T000 acceptance, not full G000 completion; 26 goals and 77 tasks with exact A/B reclassification.
 - Documentation, task ownership, paths and prompts now consistently reference `orchex006/devsift` rather than a generic quality-lint repository.
 - Brand-independent adapters: integration with AgriMap, Drevqon, Axiom is optional, not mandatory.
