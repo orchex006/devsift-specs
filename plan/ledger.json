@@ -3980,6 +3980,11 @@
           "source_sha": "24d53e1f52109607851705a9cb6941d41daf1cf7",
           "test_result": "All3reviewblockers reproducedred; fresh10actualGitreporttests pass28.212s, knownsecretcodeclosedmapping/reservedwordskeepkeys-enums/controlURLsreject",
           "author": "controller"
+        },
+        {
+          "source_sha": "09d39c2a625954f3278185160302c87fcd1d9a9a",
+          "author": "controller",
+          "test_result": "11 actualGit tests pass63.894s, combinedclosed errorcodes, controlURLs, schema-safe reservedword redaction and overlappingnonsecuritymask reproof"
         }
       ],
       "assignee": "controller",
@@ -4716,12 +4721,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA020"
+      "assignee": "implementer_1",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GA020",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:39:14.410548+00:00"
+        }
+      ]
     },
     "T060": {
       "id": "T060",
@@ -6021,7 +6033,7 @@
             "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665"
           }
         ],
-        "source_sha": "24d53e1f52109607851705a9cb6941d41daf1cf7"
+        "source_sha": "09d39c2a625954f3278185160302c87fcd1d9a9a"
       },
       "T043": {
         "owner": "controller",
@@ -6137,6 +6149,22 @@
           "write:tests/observability"
         ],
         "lease": "current selected session until accepted or reassigned"
+      },
+      "T059": {
+        "owner": "implementer_1",
+        "status": "running",
+        "branch": "feature/g020-config",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-config",
+        "base_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01",
+        "paths": [
+          "devsift/doctor.py",
+          "tests/test_doctor_config.py",
+          "docs/DOCTOR.md"
+        ],
+        "locks": [
+          "write:cli/doctor"
+        ],
+        "session": "g014-g016-g017-g020"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6180,8 +6208,9 @@
       ],
       "held_locks": [
         "write:adapters/security",
-        "write:reports/model",
         "write:ci/entry",
+        "write:cli/doctor",
+        "write:reports/model",
         "write:tests/e2e/frontend",
         "write:tests/observability"
       ],
@@ -6190,7 +6219,8 @@
         "T037",
         "T043",
         "T050",
-        "T036"
+        "T036",
+        "T059"
       ],
       "latest_integrated_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef",
       "updated_utc": "2026-10-16T10:38:57.723835+00:00",
