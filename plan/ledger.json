@@ -3897,8 +3897,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
+          "test_result": "Producer all 5 actual Git/CLI redaction tests passed with native testing enabled (120.532s); 2 strengthened error/provenance checks passed (9.234s). All formats/prompts/error streams masked, reserved schema values valid and source/Git unchanged. Independent review pending.",
+          "author": "policy_writer"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -3915,6 +3921,11 @@
           "actor": "controller",
           "at": "2026-10-16T11:52:12.255002+00:00",
           "reason": "Accepted T032 unlocks actual Git, CLI, all-format report, prompt and error-stream redaction acceptance tests."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:00:37.243351+00:00"
         }
       ]
     },
@@ -7016,7 +7027,8 @@
           "docs/CLI.md",
           "docs/CASE-PROMPTS.md",
           "README.md",
-          "tests/test_cli.py"
+          "tests/test_cli.py",
+          "tests/test_cli_platform.py"
         ],
         "locks": [
           "write:tests/agent"
@@ -7111,7 +7123,7 @@
       },
       "T033": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g011-t033-security-e2e",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t033-security-e2e",
         "base_sha": "24c00092521a122d34addc5802007e4b4992f201",
@@ -7122,7 +7134,8 @@
         "locks": [
           "write:tests/security"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "3178d956cce9567e61c68569af9c3323a467f397"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7172,8 +7185,8 @@
         "T048",
         "T033"
       ],
-      "latest_integrated_sha": "6ec26dddda93fa762d9a9be6cdfec0ad0ffece94",
-      "updated_utc": "2026-10-16T11:58:42.362374+00:00",
+      "latest_integrated_sha": "0f49505001d17186771f860fad07605f7bd42e62",
+      "updated_utc": "2026-10-16T12:00:37.243351+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
