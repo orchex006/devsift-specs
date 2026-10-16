@@ -3897,12 +3897,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA011"
+      "execution_id": "GA011",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:52:12.255002+00:00",
+          "reason": "Accepted T032 unlocks actual Git, CLI, all-format report, prompt and error-stream redaction acceptance tests."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:52:12.255002+00:00",
+          "reason": "Accepted T032 unlocks actual Git, CLI, all-format report, prompt and error-stream redaction acceptance tests."
+        }
+      ]
     },
     "T034": {
       "id": "T034",
@@ -7056,6 +7070,21 @@
           "write:tests/ci"
         ],
         "lease": "current selected session until accepted or reassigned"
+      },
+      "T033": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "test/g011-t033-security-e2e",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t033-security-e2e",
+        "base_sha": "24c00092521a122d34addc5802007e4b4992f201",
+        "paths": [
+          "tests/test_security_end_to_end.py",
+          "docs/SECURITY-ANALYSIS.md"
+        ],
+        "locks": [
+          "write:tests/security"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7100,15 +7129,17 @@
       "held_locks": [
         "write:tests/agent",
         "write:tests/reports",
-        "write:tests/ci"
+        "write:tests/ci",
+        "write:tests/security"
       ],
       "active_jobs": [
         "T048",
         "T042",
-        "T045"
+        "T045",
+        "T033"
       ],
       "latest_integrated_sha": "24c00092521a122d34addc5802007e4b4992f201",
-      "updated_utc": "2026-10-16T11:52:10.845879+00:00",
+      "updated_utc": "2026-10-16T11:52:12.255002+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
