@@ -1128,7 +1128,6 @@
             "T031",
             "T032",
             "T033",
-            "T035",
             "T036",
             "T037",
             "T038",
@@ -1141,7 +1140,6 @@
             "T046",
             "T047",
             "T048",
-            "T049",
             "T050",
             "T051"
           ]
@@ -1496,7 +1494,6 @@
             "T031",
             "T032",
             "T033",
-            "T035",
             "T036",
             "T037",
             "T038",
@@ -1509,7 +1506,6 @@
             "T046",
             "T047",
             "T048",
-            "T049",
             "T050",
             "T051",
             "T052",
@@ -3873,17 +3869,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b",
           "test_result": "Writer19noise/correlation tests pass, explicit measured duplicateemissioncontexts/protectedaudit/auth/security/no rawIDs or messages",
           "author": "cli_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b",
+          "integrated_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef",
+          "test_result": "Distinct reviewer19tests +adversarialscope/privacy/protectedauditprobes pass; controllerintegrated9noise tests pass0.011s",
+          "evidence_uri": "docs/evidence/G012.md"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA012",
       "history": [
         {
@@ -3902,6 +3906,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:37:12.473907+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T10:38:57.493954+00:00"
         }
       ]
     },
@@ -3922,12 +3931,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA012"
+      "execution_id": "GA012",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:38:57.723835+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:38:57.723835+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T037": {
       "id": "T037",
@@ -4337,7 +4360,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6",
@@ -4346,11 +4369,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G017.md"
+        },
+        {
+          "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6",
+          "integrated_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01",
+          "test_result": "Independent reviewer actual Roslyn/Go4 E2E pass73.789s; writer4pass44.883s. PublicCLI UNKNOWN preserved, explicit baseline/core composition and parser failures, no consumer/Git/manifest/baseline writes.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G017.md"
         }
       ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB017",
       "history": [
         {
@@ -4373,6 +4404,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:36:18.624422+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:38:56.030259+00:00"
         }
       ]
     },
@@ -4610,11 +4646,28 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "accepted",
+      "evidence": [
+        {
+          "source_sha": "f59fcc2",
+          "integrated_sha": null,
+          "test_result": "Producer3a209c6: Doctor8 pass, nativehost7 pass, manifest4 pass/2native skips. Controller CLI3 pass4.488s, existingCLI8 pass14.864s. Integrated CLI flags and safe default incomplete; no target writes.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G020.md"
+        },
+        {
+          "source_sha": "f59fcc2",
+          "integrated_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01",
+          "test_result": "Independent reviewer11doctor+CLI tests pass3.665s; native trust pair, validate-all-before-probe, originalpins,5s/32KiB/16KiB caps; default noPATHexecution and partialcoverageexit2. ControllerCLI3pass+existingCLI8pass; stale docs corrected.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G020.md"
+        }
+      ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GA020",
       "history": [
         {
@@ -4632,6 +4685,16 @@
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:33:41.467147+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:37:37.113281+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:38:56.088467+00:00"
         }
       ]
     },
@@ -5978,7 +6041,7 @@
       },
       "T058": {
         "owner": "implementer_1",
-        "status": "running",
+        "status": "accepted",
         "branch": "feature/g020-doctor",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-doctor",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5989,14 +6052,14 @@
           "devsift/cli.py",
           "tests/test_doctor_cli.py"
         ],
-        "locks": [
-          "write:cli/doctor"
-        ],
-        "session": "g014-g016-g017-g020"
+        "locks": [],
+        "session": "g014-g016-g017-g020",
+        "source_sha": "f59fcc2",
+        "integrated_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01"
       },
       "T049": {
         "owner": "implementer_2",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -6006,11 +6069,10 @@
           "tests/fixtures/e2e/backend",
           "docs/E2E.md"
         ],
-        "locks": [
-          "write:tests/e2e/backend"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6"
+        "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6",
+        "integrated_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01"
       },
       "T050": {
         "owner": "implementer_2",
@@ -6046,7 +6108,7 @@
       },
       "T035": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g012-t035-noise",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t035-noise",
         "base_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
@@ -6055,11 +6117,26 @@
           "tests/test_observability_noise.py",
           "docs/OBSERVABILITY.md"
         ],
-        "locks": [
-          "write:rules/observability"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b"
+        "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b",
+        "integrated_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef"
+      },
+      "T036": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "test/g012-t036-otel-auth",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t036-otel-auth",
+        "base_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef",
+        "paths": [
+          "tests/test_observability_acceptance.py",
+          "tests/fixtures/observability",
+          "docs/OBSERVABILITY-TESTS.md"
+        ],
+        "locks": [
+          "write:tests/observability"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6105,22 +6182,18 @@
         "write:adapters/security",
         "write:reports/model",
         "write:ci/entry",
-        "write:cli/doctor",
-        "write:tests/e2e/backend",
         "write:tests/e2e/frontend",
-        "write:rules/observability"
+        "write:tests/observability"
       ],
       "active_jobs": [
         "T031",
         "T037",
         "T043",
-        "T058",
-        "T049",
         "T050",
-        "T035"
+        "T036"
       ],
-      "latest_integrated_sha": "94f13e27bcc63969faa0995c731184069997eaae",
-      "updated_utc": "2026-10-16T10:37:12.473907+00:00",
+      "latest_integrated_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef",
+      "updated_utc": "2026-10-16T10:38:57.723835+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
