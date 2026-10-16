@@ -7,7 +7,7 @@ Approved product and engineering specifications for [DevSift](https://github.com
 DevSift aims to detect code-quality and security issues as changes are developed, link findings to verified source locations, explain human-readable risk and provide narrowly scoped agent remediation prompts. New code can be gated; existing legacy code is recommendation-first. Code scanning never silently refactors production services.
 
 **Repository:** https://github.com/orchex006/devsift  
-**Stage:** G000–G005 foundations accepted in code: bootstrap, policy/CLI, immutable evidence, scan coordination and Git provenance. Native analyzers, complete report backends and package release remain pending.
+**Stage:** G000–G010 accepted in code (32 tasks): foundations, immutable baselines, bounded native execution and actual backend/frontend/SQL AST analyzers. Complete report/prompt backends and package release remain pending.
 **Independence:** usable in arbitrary projects; AgriMap, Axiom and Drevqon are optional integrations, not architectural dependencies.
 
 ## Command interface reference (CLI shell implemented; analyzers pending)
@@ -23,9 +23,9 @@ devsift doctor
 
 ## Implementation progress
 
-G000–G005 and all 17 required tasks are accepted in the code repository. Goal and task checklists mirror verified execution and link to immutable review/integration evidence. See the [progress summary](plan/EXECUTION-STATUS.md) and [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json).
+G000–G010 and all 32 required tasks are accepted in the code repository. Goal and task checklists mirror verified execution and link to immutable review/integration evidence. See the [progress summary](plan/EXECUTION-STATUS.md) and [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json).
 
-The CLI now inventories actual full or staged/unstaged/untracked paths and coordinates trusted adapters. No native analyzer is registered by default, so public scan requests remain incomplete. Git provenance is a separate immutable source-origin library; it does not claim semantic analysis or write baselines.
+The CLI inventories actual full or staged/unstaged/untracked paths and runs pinned native analyzers through [explicit trusted setup and manifest/digest flags](https://github.com/orchex006/devsift/blob/main/docs/NATIVE-SETUP.md). Without that configuration it stays incomplete. Source proof alone retains UNKNOWN lifecycle; verified critical findings retain security escalation. Scans never build/install, execute target projects or SQL, refresh baselines or remediate source.
 
 The initial planning fixture in this repository remains unchanged for the original DAG tests. Commands below validate that fixture and the specification kit; use the code ledger for live execution readiness.
 

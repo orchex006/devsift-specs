@@ -1,5 +1,9 @@
 # DevSift — open-source development workflow
 
+This source-development workflow applies to the [code checkout](https://github.com/orchex006/devsift).
+Native setup/build commands below run there; this specifications checkout preserves
+the planning fixture and accepted checklist mirror, and does not ship native builders.
+
 ## Repository bootstrap (one-time)
 
 `orchex006/devsift` was observed public and **empty** on 2026-10-16, with a default `main` name but no committed tree. **T000** is the exclusive authorized bootstrap job: recheck remote emptiness, stage the full approved v6 source/docs kit, make exactly one root `main` commit, push without force, set the professional GitHub Description and verify remote metadata. A distinct reviewer accepts the task only after real evidence. T076 subsequently verifies remote contents and checks. Other original root tasks depend on T000 accepted, not G000 complete.
