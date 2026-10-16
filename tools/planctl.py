@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Read-only by default: exact task-DAG A/B classification and frontier.
-A checkpoint command writes only to plan/checkpoints/, never changes source code.
+No writes or restore snapshots; pause handoffs are plain text.
 """
 from __future__ import annotations
-import argparse,json,sys,pathlib,datetime,hashlib
+import argparse,json,sys,pathlib
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 def load(path=None):return json.loads((pathlib.Path(path) if path else ROOT/'plan/ledger.json').read_text(encoding='utf-8'))
 def evaluate(p):
@@ -50,7 +50,7 @@ def evaluate(p):
     return results,top
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('command',choices=['validate','classify','frontier','status','checkpoint']);ap.add_argument('--ledger');ap.add_argument('--out'); args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('command',choices=['validate','classify','frontier','status']);ap.add_argument('--ledger');ap.add_argument('--out'); args=ap.parse_args()
     p=load(args.ledger);r,top=evaluate(p)
     if args.command=='validate':
         print('VALID: '+str(len(p['goals']))+' goals / '+str(len(p['tasks']))+' tasks; DAG acyclic; refs resolved; A='+str(sum(x['class']=='A' for x in r.values()))+' B='+str(sum(x['class']=='B' for x in r.values())));return 0
@@ -60,10 +60,6 @@ def main():
         print(json.dumps({'ready':ready,'count':len(ready)},indent=2));return 0
     if args.command=='status':
         print(json.dumps({'counts':{s:sum(t['status']==s for t in p['tasks'].values()) for s in ['pending','claimed','running','in_review','accepted','blocked','paused','rework']},'class_counts':{k:sum(v['class']==k for v in r.values()) for k in 'AB'}},indent=2));return 0
-    if args.command=='checkpoint':
-        target=pathlib.Path(args.out) if args.out else ROOT/'plan/checkpoints/current.json';target.parent.mkdir(exist_ok=True,parents=True)
-        state={'created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'ledger_sha256':hashlib.sha256(json.dumps(p,sort_keys=True).encode()).hexdigest(),'ledger':p,'classification':r,'ready_tasks':[t for t in top if p['tasks'][t]['status']=='pending' and all(p['tasks'][d]['status']=='accepted' for d in p['tasks'][t]['depends_on'])]}
-        tmp=target.with_suffix('.tmp');tmp.write_text(json.dumps(state,indent=2,ensure_ascii=False));tmp.replace(target);print(target);return 0
 if __name__=='__main__':
     try:sys.exit(main())
     except (ValueError,KeyError,FileNotFoundError) as e:print('INVALID:',e,file=sys.stderr);sys.exit(2)

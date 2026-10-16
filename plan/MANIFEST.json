@@ -1,5 +1,5 @@
 {
-  "artifact": "devsift-v6-implementation-kit",
+  "artifact": "devsift-specifications-and-execution-plan",
   "reference_source": "orchex006/agrimap-agent-skills@develop",
   "reference_sha": "7e0e9f0169a6ee7a6a8e7c2ead542d7da7c237bc",
   "goals": 26,
@@ -10,8 +10,9 @@
   },
   "goal_active_budget_minutes": 165,
   "subagent_slots_max": 5,
-  "status": "planning package and new-repo scaffold; no remote writes or Lint engine implementation performed",
+  "status": "live execution plan; see ledger.json for task acceptance and docs/evidence for verification",
   "repository": "orchex006/devsift",
   "bootstrap_task": "T000",
-  "source_reference": "orchex006/agrimap-agent-skills@develop"
+  "source_reference": "orchex006/agrimap-agent-skills@develop",
+  "execution_control_repository": "orchex006/devsift-specs"
 }

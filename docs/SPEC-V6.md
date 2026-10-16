@@ -1,9 +1,9 @@
 # DevSift — Product & Engineering Specification v6
 
-**Status:** approved specification baseline. G000–G005 foundations are implemented; current acceptance evidence is in [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json) and `docs/evidence/`. Analyzer/report engines remain pending.  
-**Canonical repository:** https://github.com/orchex006/devsift  
-**Owner:** `orchex006`  
-**Product:** `DevSift` · proposed CLI: `devsift` · proposed skill: `$devsift`  
+**Status:** approved specification baseline. G000–G005 foundations are implemented; current acceptance evidence is in `plan/ledger.json` and `docs/evidence/`. Analyzer/report engines remain pending.
+**Canonical repository:** https://github.com/orchex006/devsift
+**Owner:** `orchex006`
+**Product:** `DevSift` · proposed CLI: `devsift` · proposed skill: `$devsift`
 **External dependency:** none mandatory. AgriMap, Axiom and Drevqon are **optional** adapters or consumers.
 
 ## 1. Product promise
@@ -75,7 +75,7 @@ A thin cross-language CLI coordinates a stable policy registry, Git change class
 - Keep a Changelog `Unreleased`; use Semantic Versioning **only for real approved software releases**.
 - Agent Controller controls branches/worktrees/claims; up to five global subagent slots **including reviewers**; refill immediately when genuinely ready.
 - Goals have <=165 minute target active budget (hard maximum 180 minutes) including independent review and checkpoint.
-- One authoritative [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json); accepted evidence + independent reviewer is required to unlock downstream; `in_review` does not unlock.
+- One authoritative `plan/ledger.json`; accepted evidence + independent reviewer is required to unlock downstream; `in_review` does not unlock.
 - GA/GB execution aliases derive from transitive task dependencies per true entry path. Structural class does not change as task statuses change.
 
 ## 9. First development task — G000 / GA000 / T000
@@ -90,7 +90,7 @@ T076 independently validates remote artifacts and CI checks. Exactly six origina
 
 ## 10. Planning and execution inventory
 
-26 canonical goals `G000..G025` (18 GA, 8 GB), 77 task cards `T000,T001..T076`. Existing canonical IDs and traceability from v5 are retained. Every goal includes outcome, exact owner/lock boundaries, executable entry paths, transitive prerequisites, per-path full-goal gates, acceptance, status/evidence and next action. [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json) is authoritative; generated catalogs are readable projections. Before first remote bootstrap the sole ready task is T000.
+26 canonical goals `G000..G025` (18 GA, 8 GB), 77 task cards `T000,T001..T076`. Existing canonical IDs and traceability from v5 are retained. Every goal includes outcome, exact owner/lock boundaries, executable entry paths, transitive prerequisites, per-path full-goal gates, acceptance, status/evidence and next action. `plan/ledger.json` is authoritative; generated catalogs are readable projections. Before first remote bootstrap the sole ready task is T000.
 
 On task graph changes, recompute all aliases, record migrations, update cards/savepoints/jobs, and pass planctl tests. A/B is structural; ready frontier is runtime state. No synthetic dependencies merely for number order or parallel appearance.
 
@@ -106,8 +106,6 @@ Public repository visibility is not the same as OSI-compliant licensing. A LICEN
 - [x] Additional bootstrap verification task and true partial goal gate modeled.
 - [x] Updated all current task cards and goal cards from the machine graph, not an assumed order.
 - [x] CLI starter plan validator and unit tests included.
-- [x] Repository content pushed and independently verified after specification generation; see `https://github.com/orchex006/devsift/blob/main/docs/evidence/G000.md`.
-- [x] GitHub description changed and independently verified after specification generation; see `https://github.com/orchex006/devsift/blob/main/docs/evidence/G000.md`.
+- [x] Repository content pushed and independently verified after specification generation; see `docs/evidence/G000.md`.
+- [x] GitHub description changed and independently verified after specification generation; see `docs/evidence/G000.md`.
 - [ ] Complete product engine/native analyzers/report backends: future tasks. Read-only coordination and Git provenance foundations are accepted in G004/G005.
-
-> Implementation status mirrors accepted code execution. The bundled specs ledger is the original planning fixture, not the runtime authority.

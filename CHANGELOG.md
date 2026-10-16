@@ -4,6 +4,9 @@ All notable user-facing changes to DevSift will be documented here. This follows
 
 ## [Unreleased]
 
+### Changed
+- Own the live execution plan and migrated evidence; retain the original bootstrap ledger as historical reference and keep the consumer skill only in code.
+
 ### Added
 - DevSift brand, canonical repository URL, scoped maintainer and consumer skill identities.
 - T000 first-run autopilot to publish the complete v6 scaffold to the initially empty repository and set its professional GitHub Description.
