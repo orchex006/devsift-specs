@@ -941,9 +941,11 @@
         "T051"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G017.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1129,10 +1131,8 @@
               "T013"
             ]
           },
-          "ready": false,
-          "blocking_tasks": [
-            "T051"
-          ]
+          "ready": true,
+          "blocking_tasks": []
         }
       ]
     },
@@ -1479,7 +1479,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T051",
             "T052",
             "T053",
             "T054",
@@ -5080,7 +5079,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "109b656d2e7cea34e4743971ba350f35b0f606f6",
@@ -5089,11 +5088,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G017.md"
+        },
+        {
+          "source_sha": "33a9550271f84f175bbc52f24f081640dda92d6e",
+          "integrated_sha": "33a9550271f84f175bbc52f24f081640dda92d6e",
+          "test_result": "Independent boundary_reviewer accepts3 actual mixednative+officialschema groups PASS140.081s no skips at109b656; tinyfollowup109to33 removes tautologicalold-record assertion and clarifies nofreshpostapprovalCIscan, static accepted, runtime/meaningfulassertions unchanged. Writer3PASS188.534s. Realallformats, masks, clean0/NEWblock1/legacysecurity+partialSQL+badmanifest2, matching/wrongapprovalmanualplanningonly, source/Git/input hashes unchanged. Separate reopenedG020Doctor issue notcleared.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G017.md"
         }
       ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB017",
       "history": [
         {
@@ -5105,6 +5112,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T12:30:56.137168+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:34:14.879523+00:00"
         }
       ]
     },
@@ -5622,11 +5634,17 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32",
           "test_result": "Producer 11 actual Git measurement tests, 10 budget and 18 policy tests pass. Root-bound immutable pair/scope reproof, mandatory declared evidence and non-authorizing comparison; independent review pending.",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "5eed6256d2e93b70c4b812b50adae4ec838721e5",
+          "test_result": "Documentation-only correction to independently tested34d: executable-bit-only regular files correctly measured1file/0textlines, semantics unverified. Production/tests byte-identical; independent11 actual Git tests32.130s and callback/forged-proof probes already pass. Final exact-source binding pending.",
           "author": "policy_writer",
           "source_repository": "orchex006/devsift"
         }
@@ -5670,6 +5688,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:34:03.648763+00:00",
           "reason": "Independent 11 actual Git tests pass32.130s and callback guard probes pass. Documentation incorrectly claims mode-only regular-file changes fail closed; actual numstat honestly measures one file/zero text lines and keeps semantics unverified. Correct documentation only, preserve production source."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:35:09.663076+00:00"
         }
       ]
     },
@@ -7419,7 +7442,7 @@
       },
       "T051": {
         "owner": "implementer_1",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g017-full-gate",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g017-full-gate",
         "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
@@ -7427,15 +7450,14 @@
           "tests/test_e2e_full_gate.py",
           "docs/E2E.md"
         ],
-        "locks": [
-          "write:tests/e2e/gate"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "109b656d2e7cea34e4743971ba350f35b0f606f6"
+        "source_sha": "33a9550271f84f175bbc52f24f081640dda92d6e",
+        "integrated_sha": "33a9550271f84f175bbc52f24f081640dda92d6e"
       },
       "T062": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g021-t062-mode-doc",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t062-mode-doc",
         "base_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
@@ -7468,7 +7490,8 @@
             "source_repository": "orchex006/devsift",
             "source_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32"
           }
-        ]
+        ],
+        "source_sha": "5eed6256d2e93b70c4b812b50adae4ec838721e5"
       },
       "T056": {
         "owner": "cli_writer",
@@ -7549,19 +7572,17 @@
       ],
       "held_locks": [
         "write:doctor/config",
-        "write:tests/e2e/gate",
         "write:safety/verification",
         "write:tests/governance"
       ],
       "active_jobs": [
         "T059",
         "T060",
-        "T051",
         "T062",
         "T057"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:34:03.648763+00:00",
+      "updated_utc": "2026-10-16T12:35:09.663076+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
