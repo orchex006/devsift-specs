@@ -8273,7 +8273,7 @@
         "T068"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:44:50.053607+00:00",
+      "updated_utc": "2026-10-16T13:44:51.265720+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8674,6 +8674,33 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T13:38:27.098186+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g023-t067-provider-completeness",
+          "source_sha": "e7c1e08649afc5c864321281aee815938e1bfa33",
+          "replacement_sha": "e7c1e08649afc5c864321281aee815938e1bfa33",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:44:50.494700+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g023-t067-security-gate",
+          "source_sha": "a7ca571253923650f26f64cddd8605185cfb7905",
+          "replacement_sha": "a7ca571253923650f26f64cddd8605185cfb7905",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:44:50.876785+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g025-t074-report-walkthrough",
+          "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
+          "replacement_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:44:51.265720+00:00"
         }
       ],
       "external_worktrees_preserved": [
