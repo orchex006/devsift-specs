@@ -3762,8 +3762,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
+          "test_result": "Writer6Pythoncontext,4actualNode-TS+ScriptDomsecurity,12secretcompatibility,6frontendcompatibility tests pass; narrowprovenbindings/TLS/imports, sourceprivacy/negativecontrols andexplicitplatformlimits",
+          "author": "policy_writer"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -3780,6 +3786,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:46:16.979691+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T11:11:59.755313+00:00"
         }
       ]
     },
@@ -6567,7 +6578,7 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g011-t032-security-context",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-security-context",
         "base_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
@@ -6587,7 +6598,8 @@
         "locks": [
           "write:rules/security"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
       },
       "T060": {
         "owner": "implementer_1",
@@ -6734,7 +6746,7 @@
         "T044"
       ],
       "latest_integrated_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
-      "updated_utc": "2026-10-16T11:08:01.001687+00:00",
+      "updated_utc": "2026-10-16T11:11:59.755313+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7207,6 +7219,64 @@
       "G016": "controller_g014",
       "G017": "controller_g014",
       "G020": "controller_g014"
+    },
+    "session_worktree_cleanup": {
+      "g014-g016-g017-g020": [
+        {
+          "clean": true,
+          "branch_retained": "test/g017-cross-language",
+          "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7",
+          "removed": true,
+          "proof": "Clean reviewed source is ancestor of integration; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g017-cross-language"
+        },
+        {
+          "clean": true,
+          "branch_retained": "feature/g020-config",
+          "source_sha": "ea18b15a473010d86bfe5c953e518b00884932c7",
+          "removed": true,
+          "proof": "Clean reviewed source is ancestor of integration; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-config"
+        },
+        {
+          "clean": true,
+          "branch_retained": "test/g020-degraded",
+          "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
+          "removed": true,
+          "proof": "Clean reviewed source is ancestor of integration; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-degraded"
+        },
+        {
+          "clean": true,
+          "branch_retained": "feature/g016-prompts",
+          "source_sha": "5afb0830b6b92ef2ad9b4b228073e4d49c3fb925",
+          "removed": true,
+          "proof": "Clean reviewed source is ancestor of integration; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g016-prompts"
+        },
+        {
+          "clean": true,
+          "branch_retained": "feature/g016-approval",
+          "source_sha": "63984a116d7b0b9f7799b5c41f71a82555abf55c",
+          "removed": true,
+          "proof": "Clean reviewed source is ancestor of integration; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g016-approval"
+        },
+        {
+          "clean": true,
+          "branch_retained": "feature/g020-doctor",
+          "source_sha": "3a209c679d3db811216721cdb35602213188b373",
+          "removed": true,
+          "proof": "Reviewed equivalent cherry-pick 2f8bdbf; original branch retained",
+          "integrated_sha": "69a569f9d60289c9445bc6a03eb7147e9ade8d99",
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-doctor"
+        }
+      ]
     }
   }
 }
