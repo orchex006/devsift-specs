@@ -3980,12 +3980,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB014"
+      "assignee": "controller_g014",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB014",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:28:34.218063+00:00"
+        }
+      ]
     },
     "T041": {
       "id": "T041",
@@ -4212,12 +4219,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB017"
+      "assignee": "implementer_2",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB017",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:28:33.895442+00:00"
+        }
+      ]
     },
     "T050": {
       "id": "T050",
@@ -4237,12 +4251,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB017"
+      "assignee": "implementer_2",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GB017",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:28:34.040659+00:00"
+        }
+      ]
     },
     "T051": {
       "id": "T051",
@@ -4435,12 +4456,19 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA020"
+      "assignee": "implementer_1",
+      "reviewer": "boundary_reviewer",
+      "next_step": "Implement authorized scope",
+      "execution_id": "GA020",
+      "history": [
+        {
+          "status": "running",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:28:33.773775+00:00"
+        }
+      ]
     },
     "T059": {
       "id": "T059",
@@ -4928,7 +4956,10 @@
       "G012",
       "G013",
       "G014",
-      "G015"
+      "G015",
+      "G016",
+      "G017",
+      "G020"
     ],
     "controller": "controller",
     "policy_sha": "acf9a44240d866f94f70dfaa3260b3d393f25f23",
@@ -5741,9 +5772,74 @@
           "write:ci/entry"
         ],
         "lease": "current selected session until accepted or reassigned"
+      },
+      "T058": {
+        "owner": "implementer_1",
+        "status": "running",
+        "branch": "feature/g020-doctor",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-doctor",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+        "paths": [
+          "devsift/doctor.py",
+          "tests/test_doctor.py",
+          "docs/DOCTOR.md"
+        ],
+        "locks": [
+          "write:cli/doctor"
+        ],
+        "session": "g014-g016-g017-g020"
+      },
+      "T049": {
+        "owner": "implementer_2",
+        "status": "running",
+        "branch": "test/g017-cross-language",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+        "paths": [
+          "tests/test_e2e_backend.py",
+          "tests/e2e_support.py",
+          "tests/fixtures/e2e/backend",
+          "docs/E2E.md"
+        ],
+        "locks": [
+          "write:tests/e2e/backend"
+        ],
+        "session": "g014-g016-g017-g020"
+      },
+      "T050": {
+        "owner": "implementer_2",
+        "status": "running",
+        "branch": "test/g017-cross-language",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+        "paths": [
+          "tests/test_e2e_frontend_sql.py",
+          "tests/fixtures/e2e/frontend",
+          "tests/fixtures/e2e/sql"
+        ],
+        "locks": [
+          "write:tests/e2e/frontend"
+        ],
+        "session": "g014-g016-g017-g020"
+      },
+      "T040": {
+        "owner": "controller_g014",
+        "status": "running",
+        "branch": "feature/g014-g016-g017-g020",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/delivery-g014-g020",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+        "paths": [
+          "devsift/report_decisions.py",
+          "tests/test_report_decisions.py",
+          "docs/REPORT-DECISIONS.md"
+        ],
+        "locks": [
+          "write:reports/classifier"
+        ],
+        "session": "g014-g016-g017-g020"
       }
     },
-    "scope": "2026-10-16 user-authorized first three goals; specs published separately; canonical execution ledger lives in code repository",
+    "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
     "checkpoint": {
       "status": "active G011-G015",
       "selected_goals": [
@@ -5784,15 +5880,23 @@
       ],
       "held_locks": [
         "write:adapters/security",
-        "write:rules/observability",
+        "write:ci/entry",
+        "write:cli/doctor",
+        "write:reports/classifier",
         "write:reports/model",
-        "write:ci/entry"
+        "write:rules/observability",
+        "write:tests/e2e/backend",
+        "write:tests/e2e/frontend"
       ],
       "active_jobs": [
         "T031",
         "T034",
         "T037",
-        "T043"
+        "T043",
+        "T058",
+        "T049",
+        "T050",
+        "T040"
       ],
       "latest_integrated_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
       "updated_utc": "2026-10-16T10:28:32.981563+00:00",
