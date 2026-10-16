@@ -6877,8 +6877,8 @@
         "T044",
         "T041"
       ],
-      "latest_integrated_sha": "eee54bf3582209a6d3dc2045367b48273864756b",
-      "updated_utc": "2026-10-16T11:33:31.519976+00:00",
+      "latest_integrated_sha": "38e6cc3676271d746aebd3901ff6617373815762",
+      "updated_utc": "2026-10-16T11:35:52.710137+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7099,6 +7099,33 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T10:51:46.778939+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g013-t038-markdown",
+          "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
+          "replacement_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:35:47.796479+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g013-t039-exporters",
+          "source_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+          "replacement_sha": "253d94496024c6d25bf7420ab924ae867e4de596",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:35:48.568152+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g015-t043-base-scope",
+          "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+          "replacement_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:35:52.710137+00:00"
         }
       ],
       "external_worktrees_preserved": [
