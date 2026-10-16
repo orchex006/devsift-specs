@@ -4294,11 +4294,16 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
           "test_result": "9freshrealprocess/Git CIgatetests pass34.835s +6filter-free CLIscopetests4.934s +8CLItests22.682s; NEWError/legacyadvisory/UNKNOWN/incomplete, immutablecleanHEAD/no-writes, legacysecurityreview and strict thresholds",
+          "author": "controller"
+        },
+        {
+          "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f",
+          "test_result": "Bothreviewcounterexamplesreproducedred; fresh10realprocess/GitCItestspass23.992s inclcommittedPRbase-toHEADdefaultscopeandFalseconfigrejected",
           "author": "controller"
         }
       ],
@@ -4341,6 +4346,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:56:55.005796+00:00",
           "reason": "Reviewer reproduced committed PR changes omitted from defaultchanged CI and configFalse securityreview bypass; fresh rework"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:59:05.575062+00:00"
         }
       ]
     },
@@ -6282,7 +6292,7 @@
       },
       "T043": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g015-t043-base-scope",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g015-t043-base-scope",
         "base_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
@@ -6318,7 +6328,8 @@
             "lease": "current selected session until accepted or reassigned",
             "source_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46"
           }
-        ]
+        ],
+        "source_sha": "3b1b8a3a794845ab4ffcb665e595e02d511b3d8f"
       },
       "T058": {
         "owner": "implementer_1",
@@ -6585,8 +6596,8 @@
         "T032",
         "T047"
       ],
-      "latest_integrated_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
-      "updated_utc": "2026-10-16T10:57:53.257422+00:00",
+      "latest_integrated_sha": "f07efd83445ebb5a113a9933b4d2a1633956076e",
+      "updated_utc": "2026-10-16T10:59:05.575062+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
