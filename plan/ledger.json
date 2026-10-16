@@ -5792,8 +5792,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
+          "test_result": "Producer7 actual Git/CLI acceptance tests25.156s pass: real semantic price change still not authorized by measured counts or declared pass; missing evidence/identity substitutions/wire approvals/legacycritical/unknown/batch/refactor/readonly CLI guard preserved. Independent review pending.",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5810,6 +5817,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:40:49.880564+00:00",
           "reason": "Accepted T062 unlocks actual unauthorized change denial fixtures. Before/after Git evidence remains no edit authority, one-case/batch/refactor boundaries and read-only CLI preserved; no hidden G016 dependency."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:45:06.268925+00:00"
         }
       ]
     },
@@ -7643,7 +7655,7 @@
       },
       "T063": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g021-t063-denial",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t063-denial",
         "base_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
@@ -7656,7 +7668,8 @@
           "write:tests/safety"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7710,7 +7723,7 @@
         "T063"
       ],
       "latest_integrated_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
-      "updated_utc": "2026-10-16T12:40:49.880564+00:00",
+      "updated_utc": "2026-10-16T12:45:06.268925+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
