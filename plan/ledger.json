@@ -7790,7 +7790,7 @@
         "status": "running",
         "branch": "feature/g023-t067-security-gate",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t067-security-gate",
-        "base_sha": "9044a46a0688389c9ebb2871076d2005d8b311a1",
+        "base_sha": "4548f31f3310b9cec81969f39dbee9bd55ba328c",
         "paths": [
           "devsift/security_gate.py",
           "tests/test_security_gate.py",
@@ -7800,7 +7800,14 @@
           "write:security/gate"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "base_upgrades": [
+          {
+            "previous": "9044a46a0688389c9ebb2871076d2005d8b311a1",
+            "source": "4548f31f3310b9cec81969f39dbee9bd55ba328c",
+            "reason": "Controller consumed accepted hardened host Git framework; untracked owned producer files preserved, no shared API writes by worker."
+          }
+        ]
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
