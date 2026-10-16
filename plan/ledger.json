@@ -3758,7 +3758,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
@@ -3815,6 +3815,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:33:31.519976+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T11:36:09.883093+00:00",
+          "reason": "Independent review 25 tests pass; actual TS cast and non-null module member mutations evade guard and falsely report SEC002; narrowly unwrap mutation roots and add actual regressions"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T11:36:09.883093+00:00",
+          "reason": "Independent review 25 tests pass; actual TS cast and non-null module member mutations evade guard and falsely report SEC002; narrowly unwrap mutation roots and add actual regressions"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T11:36:09.883093+00:00",
+          "reason": "Independent review 25 tests pass; actual TS cast and non-null module member mutations evade guard and falsely report SEC002; narrowly unwrap mutation roots and add actual regressions"
         }
       ]
     },
@@ -6655,10 +6673,10 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "in_review",
-        "branch": "fix/g011-t032-tls-context",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-tls-context",
-        "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
+        "status": "running",
+        "branch": "fix/g011-t032-ts-mutation",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-ts-mutation",
+        "base_sha": "38e6cc3676271d746aebd3901ff6617373815762",
         "paths": [
           "devsift/security_context.py",
           "devsift/security_adapter.py",
@@ -6676,17 +6694,13 @@
           {
             "owner": "policy_writer",
             "status": "in_review",
-            "branch": "feature/g011-t032-security-context",
-            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-security-context",
-            "base_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
+            "branch": "fix/g011-t032-tls-context",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-tls-context",
+            "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
             "paths": [
               "devsift/security_context.py",
               "devsift/security_adapter.py",
-              "native/dotnet/Program.cs",
-              "native/go/main.go",
               "native/frontend/analyze.cjs",
-              "devsift/dotnet_adapter.py",
-              "devsift/go_adapter.py",
               "devsift/typescript_adapter.py",
               "tests/test_security_context.py",
               "tests/test_native_security.py",
@@ -6696,10 +6710,36 @@
               "write:rules/security"
             ],
             "lease": "current selected session until accepted or reassigned",
-            "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
+            "prior_jobs": [
+              {
+                "owner": "policy_writer",
+                "status": "in_review",
+                "branch": "feature/g011-t032-security-context",
+                "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-security-context",
+                "base_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d",
+                "paths": [
+                  "devsift/security_context.py",
+                  "devsift/security_adapter.py",
+                  "native/dotnet/Program.cs",
+                  "native/go/main.go",
+                  "native/frontend/analyze.cjs",
+                  "devsift/dotnet_adapter.py",
+                  "devsift/go_adapter.py",
+                  "devsift/typescript_adapter.py",
+                  "tests/test_security_context.py",
+                  "tests/test_native_security.py",
+                  "docs/SECURITY-ANALYSIS.md"
+                ],
+                "locks": [
+                  "write:rules/security"
+                ],
+                "lease": "current selected session until accepted or reassigned",
+                "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426"
+              }
+            ],
+            "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584"
           }
-        ],
-        "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584"
+        ]
       },
       "T060": {
         "owner": "implementer_1",
@@ -6765,13 +6805,15 @@
           "tests/fixtures/case_prompts",
           "docs/CASE-PROMPT-EVAL.md",
           "tests/test_case_cli.py",
-          "skills/devsift/SKILL.md"
+          "skills/devsift/SKILL.md",
+          "devsift/case_command.py"
         ],
         "locks": [
           "write:tests/agent"
         ],
         "session": "g014-g016-g017-g020",
-        "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d"
+        "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
+        "controller_integration_status": "running: explicit input command backend, consumer skill and actual CLI tests; fixture review accepted separately"
       },
       "T044": {
         "owner": "controller",
@@ -6878,7 +6920,7 @@
         "T041"
       ],
       "latest_integrated_sha": "38e6cc3676271d746aebd3901ff6617373815762",
-      "updated_utc": "2026-10-16T11:35:52.710137+00:00",
+      "updated_utc": "2026-10-16T11:36:09.883093+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
