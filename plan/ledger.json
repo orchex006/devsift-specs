@@ -1282,9 +1282,11 @@
         "T066"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G022.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -6185,18 +6187,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
           "test_result": "Three actual isolatedprocess multirepo fixtures pass0.878s: separatepolicyownership coexists withoutconfigmutation; sharedcontractonewinner thenserialretryafterexplicitfixtureaccept; routedothergoal denied. No duplicate runtimepolicyparser or liveledgerwrites; distinct review pending",
           "author": "controller",
           "source_repository": "orchex006/devsift-specs"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
+          "integrated_sha": "df86aa721899b16a524cc3409cd31b3bd3ce894e",
+          "test_result": "Distinct reviewer accepted exact3faa: actual3multirepo childprocess tests pass0.585s, config+foreignstate preserved, sharedcontractoneowner then explicitfixtureacceptedrelease/serialretry, foreigncontrollerroute denied. Controller integratedsame2files and all23specstests+kitvalidator pass; no runtimepolicyparser duplication. G022all3tasks accepted (runtime64 plus specs65/66).",
+          "evidence_uri": "docs/evidence/G022.md",
+          "source_repository": "orchex006/devsift-specs"
         }
       ],
       "assignee": "controller",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA022",
       "history": [
         {
@@ -6218,6 +6229,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:59:04.560025+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T14:00:09.989671+00:00"
         }
       ]
     },
@@ -8548,18 +8564,17 @@
         "lease": "User-authorized autopilot until accepted or explicitly reassigned",
         "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t066-ownership-overrides",
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "paths": [
           "tests/test_multirepo_ownership.py",
           "docs/RESOURCE-OWNERSHIP.md"
         ],
-        "locks": [
-          "write:tests/multirepo"
-        ],
+        "locks": [],
         "source_repository": "orchex006/devsift-specs",
         "claim_controller": "controller",
         "authorization_id": "autopilot_next_goals",
-        "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d"
+        "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
+        "integrated_sha": "df86aa721899b16a524cc3409cd31b3bd3ce894e"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8603,16 +8618,14 @@
       ],
       "held_locks": [
         "write:security/assurance",
-        "write:tests/install",
-        "write:tests/multirepo"
+        "write:tests/install"
       ],
       "active_jobs": [
         "T068",
-        "T054",
-        "T066"
+        "T054"
       ],
       "latest_integrated_sha": "8345368e97c66fde3dc05fa0924a2868d2f7136e",
-      "updated_utc": "2026-10-16T13:59:54.361538+00:00",
+      "updated_utc": "2026-10-16T14:00:09.989671+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -9106,7 +9119,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "c45a037d45fe48e7aec7a2d8ef812ec889c6cb0b"
+      "latest_specs_integrated_sha": "df86aa721899b16a524cc3409cd31b3bd3ce894e"
     },
     "previous_checkpoints": [
       {
