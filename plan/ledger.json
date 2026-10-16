@@ -1324,7 +1324,7 @@
         "T069"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -5997,12 +5997,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB023"
+      "execution_id": "GB023",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:07:50.229805+00:00",
+          "reason": "Accepted G011/T033 unlocks security escalation independent of auto-fix. Fresh bounded actual analysis/source proof, no saved report authority, no legacy edits or hidden waiver/threshold bypass."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:07:50.229805+00:00",
+          "reason": "Accepted G011/T033 unlocks security escalation independent of auto-fix. Fresh bounded actual analysis/source proof, no saved report authority, no legacy edits or hidden waiver/threshold bypass."
+        }
+      ]
     },
     "T068": {
       "id": "T068",
@@ -7770,6 +7784,23 @@
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
         "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080"
+      },
+      "T067": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g023-t067-security-gate",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t067-security-gate",
+        "base_sha": "9044a46a0688389c9ebb2871076d2005d8b311a1",
+        "paths": [
+          "devsift/security_gate.py",
+          "tests/test_security_gate.py",
+          "docs/SECURITY-GATE.md"
+        ],
+        "locks": [
+          "write:security/gate"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7813,14 +7844,16 @@
       ],
       "held_locks": [
         "write:packaging/manifests",
-        "write:policy/discovery"
+        "write:policy/discovery",
+        "write:security/gate"
       ],
       "active_jobs": [
         "T052",
-        "T064"
+        "T064",
+        "T067"
       ],
       "latest_integrated_sha": "9044a46a0688389c9ebb2871076d2005d8b311a1",
-      "updated_utc": "2026-10-16T12:59:47.374987+00:00",
+      "updated_utc": "2026-10-16T13:07:50.229805+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
