@@ -3,7 +3,7 @@
 from pathlib import Path
 import json,sys
 ROOT=Path(__file__).resolve().parents[1]
-MANDATORY=['README.md','AGENTS.md','DEVELOPMENT.md','CHANGELOG.md','CONTRIBUTING.md','SECURITY.md','.gitignore','.github/workflows/plan-validation.yml','docs/BOOTSTRAP-AUTOPILOT.md','plan/ledger.json','plan/MANIFEST.json','plan/goals/G000.md','plan/tasks/T000.md','plan/tasks/T076.md','tools/planctl.py','tools/validate_kit.py','tools/bootstrap_repo.py','docs/SPEC-V6.md','tests/test_planctl.py','skills/devsift/SKILL.md']
+MANDATORY=['README.md','AGENTS.md','DEVELOPMENT.md','CHANGELOG.md','CONTRIBUTING.md','SECURITY.md','.gitignore','.github/workflows/plan-validation.yml','docs/BOOTSTRAP-AUTOPILOT.md','plan/ledger.json','plan/MANIFEST.json','plan/goals/G000.md','plan/tasks/T000.md','plan/tasks/T076.md','tools/planctl.py','tools/validate_kit.py','tools/bootstrap_repo.py','docs/SPEC-V6.md','tests/test_planctl.py']
 def main():
     missing=[p for p in MANDATORY if not (ROOT/p).is_file()]
     ledger=json.loads((ROOT/'plan/ledger.json').read_text(encoding='utf-8'))

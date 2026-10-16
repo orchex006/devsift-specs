@@ -20,3 +20,5 @@ node_modules/
 .devsift/local/
 .DS_Store
 Thumbs.db
+
+worktrees/

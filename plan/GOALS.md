@@ -1,6 +1,6 @@
 # DevSift v6 — Goal Catalog
 
-2026-10-16 sessions: **G000–G005 accepted** (17 tasks); evidence in `docs/evidence/` and canonical status in [canonical code ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json).
+2026-10-16 sessions: **G000–G010 accepted** (32 tasks); evidence in this specifications repository `docs/evidence/` and canonical execution status in `plan/ledger.json`.
 
 26 goals / 77 tasks. Goal timebox <=165 active minutes including review and checkpoint. Recompute structural class from actual transitive task dependencies.
 
@@ -69,5 +69,3 @@
 2. **T076 (GA000)** becomes eligible only after T000 accepted; existing T001/T002/T004/T005/T007/T008 also unlock on T000 accepted, without waiting for G000 to close.
 3. In-review does not unlock; eligibility still requires locks, actual capacity, branch ownership, accepted evidence and current remote state.
 4. Do not dispatch optional out-of-scope work to fill slots.
-
-> Execution progress mirrors the code repository. This specifications repository retains the original planning ledger solely as a fixture.

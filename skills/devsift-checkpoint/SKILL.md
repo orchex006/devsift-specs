@@ -1,6 +1,6 @@
 ---
 name: devsift-checkpoint
-description: Save and resume exact task/goal/subagent state without losing worktrees, uncommitted files or evidence.
+description: Write a concise work handoff when pausing DevSift development, or resume by checking current repository state.
 ---
 
-When asked to checkpoint, pause, resume, shutdown, or move: re-read ledger and source control state; snapshot task statuses, actor/reviewer, accepted evidence+integration SHA, global 5-slot capacity, locks/leases, branch/worktree paths, dirty/untracked files, graph SHA and GA/GB mapping, blockers, priority, next frontier. Use `python tools/planctl.py checkpoint` and `templates/SAVEPOINT.md`; output path and next safe action. Resume rechecks source SHA, status, lease and branch/worktree reality; do not assume old ownership or re-dispatch a previously running job. New rework gets new worktree.
+On an actual request to pause, record unfinished scope, branches, uncommitted files, held decisions, blockers and the next action using templates/SAVEPOINT.md. Keep the handoff in the specifications repository. Do not create restore snapshots, duplicate repositories or per-task checkpoints. Git preserves committed history. On resume inspect actual Git status and the live ledger; never restore files or assume old locks are still held.
