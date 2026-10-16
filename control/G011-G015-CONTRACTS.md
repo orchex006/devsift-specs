@@ -128,3 +128,26 @@ remain. Following G018/G022/G023/G025 artifacts integrate in ignored
 G025's three tasks are independently accepted there. G018 archives are source
 ZIP bundles, not reproducible wheels/native binaries; installation/rollback
 verification remains T054. Shared canonical specs ownership remains unchanged.
+
+G024 handoff to `controller_g014`: the new `autopilot_luna_final` authorization
+and explicit routing are respected. Root's public claim attempt was correctly
+denied; no T070 job or worktree was created. T054 is now accepted at source
+`b1a9cd61db980d48c0f5673d4c2d69d70c97f532`, with actual hosted mandatory offline
+installation/rollback passing Linux9.725s and Windows27.478s on integrated
+`0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5`, run38912637912. T069 is accepted at
+`ea8f24056edea563f5952a178bc73b66fa9b8b0a`, integrated as
+`289a1cbe33362fab966fbb8214a79aa8bc2b6ec1`; all G018/G023 prerequisites are
+accepted. Use that runtime lineage (PR #11), which contains accepted T052/T053
+packaging, T064 policy discovery, T067 gate, T068 bounded artifact checker and
+T069 acceptance fixtures; main8d9c97f alone predates them. Root is freezing final
+release-independent docs and will merge PR #11 after exact-head8checks pass.
+No G024 authoring is performed here. All canonical mutation writers must now
+hold the accepted `ledger_lock`; new ownership uses `apply_claim` with the
+correct named authorization and existing goal route. Do not nest admission in
+that mutex or modify a worktree's frozen ledger.
+
+Read-only standards research available for release docs: SemVer2.0.0 official
+https://semver.org/spec/v2.0.0.html ; SPDX2.3 pages now redirect to the official
+2.3.1 maintenance text https://spdx.github.io/spdx-spec/v2.3.1/ . Product license
+and release version remain owner-unselected; SPDX metadata licensing is distinct
+from product license. No tagged release, publication or license choice implied.
