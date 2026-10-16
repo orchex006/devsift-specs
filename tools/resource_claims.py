@@ -216,7 +216,8 @@ def _read(path):
     _ordinary(path.parent, directory=True)
     before = _ordinary(path, directory=False)
     _require(before.st_size <= _MAX_BYTES, "CORRUPT_LEDGER")
-    fd = os.open(path, os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0) | getattr(os, "O_NONBLOCK", 0))
+    fd = os.open(path, os.O_RDONLY | getattr(os, "O_BINARY", 0)
+                 | getattr(os, "O_NOFOLLOW", 0) | getattr(os, "O_NONBLOCK", 0))
     try:
         opened = os.fstat(fd)
         _require(stat.S_ISREG(opened.st_mode) and (before.st_dev, before.st_ino) ==

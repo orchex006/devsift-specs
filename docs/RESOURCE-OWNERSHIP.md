@@ -88,7 +88,10 @@ Unknown and foreign JSON fields survive semantic roundtrip. Missing, malformed,
 duplicate-key, nonfinite, stale-digest, unauthorized or conflicting inputs cannot
 replace the ledger. Input/output is capped at 8 MB and task/job collections at
 512 entries. Temporary output is flushed and fsynced in the ledger directory,
-then `os.replace` publishes it atomically. This establishes atomic visibility
+then `os.replace` publishes it atomically. Reads and writes use binary byte
+semantics, preserving the ledger's physical UTF-8 bytes and LF or CRLF line
+endings for size checks and expected-digest comparisons; atomic output is UTF-8
+with LF line endings. This establishes atomic visibility
 under normal filesystem operation, not universal power-loss durability. Storage
 components and existing files reject observed links/reparse points and non-regular
 objects; no lock location, ledger filename or callback can be supplied separately.
