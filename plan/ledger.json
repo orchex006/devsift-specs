@@ -4547,8 +4547,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
+          "test_result": "Independent childworkflow3adversarialYAMLtests,parent30actualGitprocessCLItests accepted38e; root independently4actualwrappertests102.93s pass e75, coldbytecodefixreviewed; final combined hostedCI review pending",
+          "author": "controller"
+        }
+      ],
       "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -4565,6 +4571,11 @@
           "actor": "controller",
           "at": "2026-10-16T11:08:01.001687+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T11:43:08.786628+00:00"
         }
       ]
     },
@@ -6900,7 +6911,7 @@
       },
       "T044": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g011-g015-analysis-reporting",
         "worktree": "D:/SP-Billy/devsift-dev/devsift",
         "base_sha": "055b1d963b238a625266a7a12ec18fab6c34cd5c",
@@ -6932,7 +6943,8 @@
               "docs/CI-WORKFLOW.md"
             ]
           }
-        }
+        },
+        "source_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2"
       },
       "T041": {
         "owner": "implementer_2",
@@ -7019,7 +7031,7 @@
         "T042"
       ],
       "latest_integrated_sha": "9ce8cf369f7e6930449372abe2491a439c4576e2",
-      "updated_utc": "2026-10-16T11:42:42.249298+00:00",
+      "updated_utc": "2026-10-16T11:43:08.786628+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
