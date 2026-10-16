@@ -5163,8 +5163,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "29cf67c7615a9b96b54819daf318c3b5256c503a",
+          "test_result": "Producer bounded package/skill audit: package discovery only devsift, no maintainer data declarations, consumer skill free of maintainer instruction references, original locked paths unchanged. Three policy/scope documents only; behavioral fixtures deferred T057. Independent review pending.",
+          "author": "cli_writer"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5181,6 +5187,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:08:12.044264+00:00",
           "reason": "Explicit user autopilot authorizes next ready goals. T001 accepted; no overlap with foreign T048 consumer SKILL/CLI paths. Author bounded maintainer-consumer isolation policy."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:12:15.404396+00:00"
         }
       ]
     },
@@ -7080,7 +7091,8 @@
           "devsift/evidence.py",
           "devsift/git_changes.py",
           "devsift/cli_scan.py",
-          "devsift/case_approval.py"
+          "devsift/case_approval.py",
+          "devsift/scanner.py"
         ],
         "locks": [
           "write:tests/agent"
@@ -7191,7 +7203,7 @@
       },
       "T055": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g019-t055-scope",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g019-t055-scope",
         "base_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
@@ -7203,7 +7215,8 @@
         "locks": [
           "write:governance/agents"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "29cf67c7615a9b96b54819daf318c3b5256c503a"
       },
       "T061": {
         "owner": "policy_writer",
@@ -7272,7 +7285,7 @@
         "T061"
       ],
       "latest_integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
-      "updated_utc": "2026-10-16T12:08:12.417573+00:00",
+      "updated_utc": "2026-10-16T12:12:15.404396+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
