@@ -8745,10 +8745,14 @@
           "clean": true
         }
       ],
-      "held_locks": [],
-      "active_jobs": [],
-      "latest_integrated_sha": "289a1cbe33362fab966fbb8214a79aa8bc2b6ec1",
-      "updated_utc": "2026-10-16T14:07:47.844350+00:00",
+      "held_locks": [
+        "write:release/readiness"
+      ],
+      "active_jobs": [
+        "T070"
+      ],
+      "latest_integrated_sha": "86712822f7e95f45da3fd0661e7418ebff26e6b1",
+      "updated_utc": "2026-10-16T14:10:28.304712+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -9275,6 +9279,24 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T14:01:30.382889+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g018-t054-install-rollback",
+          "source_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
+          "replacement_sha": "b1a9cd61db980d48c0f5673d4c2d69d70c97f532",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:10:26.882262+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g023-t069-security-acceptance",
+          "source_sha": "ea8f24056edea563f5952a178bc73b66fa9b8b0a",
+          "replacement_sha": "ea8f24056edea563f5952a178bc73b66fa9b8b0a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:10:28.304712+00:00"
         }
       ],
       "external_worktrees_preserved": [
