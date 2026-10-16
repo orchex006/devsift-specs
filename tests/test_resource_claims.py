@@ -52,6 +52,20 @@ class ResourceClaimsTests(unittest.TestCase):
         self.assertEqual(updated["execution"]["jobs"]["T001"]["owner"], "worker")
         self.assertEqual(outcome.after_digest, hashlib.sha256(self.path.read_bytes()).hexdigest())
 
+    def test_crlf_utf8_ledger_digest_uses_physical_bytes(self):
+        self.data["foreign"]["unicode"] = "東京"
+        raw = (json.dumps(self.data, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
+        raw = raw.replace(b"\n", b"\r\n")
+        self.path.write_bytes(raw)
+        expected = hashlib.sha256(raw).hexdigest()
+        outcome = self.apply(self.request(), expected_digest=expected)
+        self.assertTrue(outcome.admitted, outcome.reason)
+        self.assertEqual(outcome.before_digest, expected)
+        written = self.path.read_bytes()
+        self.assertEqual(outcome.after_digest, hashlib.sha256(written).hexdigest())
+        self.assertIn("東京".encode("utf-8"), written)
+        self.assertNotIn(b"\r\n", written)
+
     def test_invalid_not_ready_unauthorized_and_stale_leave_ledger_unchanged(self):
         original = self.path.read_bytes()
         self.assertFalse(apply_claim(self.root, self.request(), controller="stranger", authorization_id="session").admitted)
