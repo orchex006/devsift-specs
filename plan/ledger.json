@@ -5245,8 +5245,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
+          "test_result": "Producer specs-owned four template/docs files; 10 plan tests, kit validation and concrete actual evaluator A/B/dependency/cycle examples pass. No runtime or ledger changes. Independent review pending.",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift-specs"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "Claim after accepted T055; maintainer templates belong to the specifications repository after repository separation.",
@@ -5263,6 +5270,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:23:21.820291+00:00",
           "reason": "Accepted T055 unlocks maintainer templates in their canonical specs repository. Embed transitive A/B entry gates, distinct review and compact mode; no duplicate ledger or runtime maintainer assets."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:26:09.327104+00:00"
         }
       ]
     },
@@ -7352,7 +7364,7 @@
       },
       "T056": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g019-t056-templates",
         "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g019-t056-templates",
         "base_sha": "1c55d77535d76f2556657c714d6a7f6cdc30ea47",
@@ -7366,7 +7378,8 @@
           "write:governance/templates"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift-specs"
+        "source_repository": "orchex006/devsift-specs",
+        "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7419,7 +7432,7 @@
         "T056"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:23:21.820291+00:00",
+      "updated_utc": "2026-10-16T12:26:09.327104+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7742,7 +7755,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "1c55d77535d76f2556657c714d6a7f6cdc30ea47"
+      "latest_specs_integrated_sha": "8f0a36faf8c4ba4ac91ccfb17a10503161e56fe9"
     },
     "previous_checkpoints": [
       {
