@@ -69,3 +69,12 @@ paths and does not retain CLI locks. Do not switch or modify this primary checko
 Accepted T041 source `47c757f7aecc4e762e96a6b51a071dc2506e36a4` is now separately
 merged as `29bf1cc88db96f1a06e5ff08fb71c007d3a719ec`. Root compatibility checks ran
 its actual Git context tests, with official schema integration additionally enabled.
+
+T042 compatibility issue found before integration: source `35f63e3` imports
+`case_prompts` and `case_approval` (G016), which are absent from this strictly
+G011–G015 branch. T042 depends on T041, not G016. Please keep the mixed baseline/
+source/export fixtures independently runnable on accepted G011–G015 APIs: move
+the G016 approval integration check to its owning G016 tests, or replace that part
+with assertions on the existing sealed report case prompts/pending approval.
+This controller will consume only scoped T042 fixtures/docs/tests after that
+dependency is resolved; it will not merge G016 runtime modules to make tests pass.
