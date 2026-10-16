@@ -6466,8 +6466,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "ea8f24056edea563f5952a178bc73b66fa9b8b0a",
+          "test_result": "FouractualcrossboundaryGit/policydiscovery/builtinsecurity/report/archive acceptancefixtures pass7.999s, no detector mocks; sourceGit/consumerreadonly, incomplete/Critical/unknown/noauthority preserved; independentreviewpending",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6483,6 +6490,11 @@
           "status": "running",
           "actor": "controller",
           "at": "2026-10-16T14:01:06.930132+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T14:05:38.119427+00:00"
         }
       ]
     },
@@ -8634,7 +8646,7 @@
         "lease": "User-authorized autopilot until accepted or explicitly reassigned",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g023-t069-security-acceptance",
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "paths": [
           "tests/test_security_acceptance.py",
           "docs/SECURITY-GATE.md"
@@ -8644,7 +8656,8 @@
         ],
         "source_repository": "orchex006/devsift",
         "claim_controller": "controller",
-        "authorization_id": "autopilot_next_goals"
+        "authorization_id": "autopilot_next_goals",
+        "source_sha": "ea8f24056edea563f5952a178bc73b66fa9b8b0a"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8693,7 +8706,7 @@
         "T069"
       ],
       "latest_integrated_sha": "0a0dc1b4432eff0036bd21a1232b0a647ea1d6a5",
-      "updated_utc": "2026-10-16T14:04:23.876287+00:00",
+      "updated_utc": "2026-10-16T14:05:38.119427+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
