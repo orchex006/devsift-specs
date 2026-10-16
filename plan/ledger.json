@@ -5203,7 +5203,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "running",
       "evidence": [
         {
           "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
@@ -5212,7 +5212,7 @@
           "source_repository": "orchex006/devsift"
         }
       ],
-      "assignee": "cli_writer",
+      "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
       "execution_id": "GB018",
@@ -5233,6 +5233,24 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:42:55.027941+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller",
+          "at": "2026-10-16T13:46:12.331588+00:00",
+          "reason": "Distinct reviewer actual missing-promisor-blob triggered remote helper during source proof; reject partial/promisor before object reads and disable lazy fetch; use accepted trusted host Git"
+        },
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:46:12.331588+00:00",
+          "reason": "Distinct reviewer actual missing-promisor-blob triggered remote helper during source proof; reject partial/promisor before object reads and disable lazy fetch; use accepted trusted host Git"
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:46:12.331588+00:00",
+          "reason": "Distinct reviewer actual missing-promisor-blob triggered remote helper during source proof; reject partial/promisor before object reads and disable lazy fetch; use accepted trusted host Git"
         }
       ]
     },
@@ -8117,11 +8135,11 @@
         "integrated_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff"
       },
       "T053": {
-        "owner": "cli_writer",
-        "status": "in_review",
-        "branch": "feature/g018-t053-repro-archives",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-repro-archives",
-        "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
+        "owner": "controller",
+        "status": "running",
+        "branch": "fix/g018-t053-offline-git",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-offline-git",
+        "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
         "paths": [
           "tools/build_package.py",
           "tests/test_build_package.py",
@@ -8132,7 +8150,26 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0"
+        "prior_jobs": [
+          {
+            "owner": "cli_writer",
+            "status": "in_review",
+            "branch": "feature/g018-t053-repro-archives",
+            "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-repro-archives",
+            "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
+            "paths": [
+              "tools/build_package.py",
+              "tests/test_build_package.py",
+              "docs/PACKAGING.md"
+            ],
+            "locks": [
+              "write:packaging/artifacts"
+            ],
+            "lease": "current selected session until accepted or reassigned",
+            "source_repository": "orchex006/devsift",
+            "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0"
+          }
+        ]
       },
       "T074": {
         "owner": "policy_writer",
@@ -8273,7 +8310,7 @@
         "T068"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:44:51.265720+00:00",
+      "updated_utc": "2026-10-16T13:46:12.331588+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
