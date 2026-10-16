@@ -3758,7 +3758,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
@@ -3768,6 +3768,11 @@
         {
           "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584",
           "test_result": "Fresh TLS and shared-module alias rework frozen for independent review; producer 8 Python context, 12 credential, 5 native security tests passed; exact review pending",
+          "author": "policy_writer"
+        },
+        {
+          "source_sha": "7889eec543f4ccdf96a9a9011dc245e26d935c0e",
+          "test_result": "Narrow TS wrapper receiver-unwrapping rework and four actual regression counterexamples. Producer 5 actual native tests pass62.397s; source frozen for independent re-review",
           "author": "policy_writer"
         }
       ],
@@ -3833,6 +3838,11 @@
           "actor": "controller",
           "at": "2026-10-16T11:36:09.883093+00:00",
           "reason": "Independent review 25 tests pass; actual TS cast and non-null module member mutations evade guard and falsely report SEC002; narrowly unwrap mutation roots and add actual regressions"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T11:40:11.292262+00:00"
         }
       ]
     },
@@ -4341,17 +4351,31 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "47c757f7aecc4e762e96a6b51a071dc2506e36a4",
+          "integrated_sha": null,
+          "test_result": "Writer9realGit context tests pass75.046s with DEVSIFT_TEST_SCHEMA=1 +trustedcentralvalidation-python, no skips. All3exports+officialSARIF/report schema; candidateconsumer/test facts fullymasked/sourceonly, unresolvedvisible without fakepaths, legacy/new/baselineversions/securityfloor, no source/Git writes.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G014.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB014",
       "history": [
         {
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:26:26.975511+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:37:48.402187+00:00"
         }
       ]
     },
@@ -6673,7 +6697,7 @@
       },
       "T032": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g011-t032-ts-mutation",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t032-ts-mutation",
         "base_sha": "38e6cc3676271d746aebd3901ff6617373815762",
@@ -6739,7 +6763,8 @@
             ],
             "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584"
           }
-        ]
+        ],
+        "source_sha": "7889eec543f4ccdf96a9a9011dc245e26d935c0e"
       },
       "T060": {
         "owner": "implementer_1",
@@ -6853,7 +6878,7 @@
       },
       "T041": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g014-risk-context",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g014-risk-context",
         "base_sha": "f4491d98eba26e65fac83d24187e245fcb8320d1",
@@ -6865,7 +6890,8 @@
         "locks": [
           "write:reports/risk"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "47c757f7aecc4e762e96a6b51a071dc2506e36a4"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6920,7 +6946,7 @@
         "T041"
       ],
       "latest_integrated_sha": "38e6cc3676271d746aebd3901ff6617373815762",
-      "updated_utc": "2026-10-16T11:36:09.883093+00:00",
+      "updated_utc": "2026-10-16T11:40:11.292262+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
