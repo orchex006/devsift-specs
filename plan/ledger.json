@@ -1037,7 +1037,7 @@
         "T054"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -5137,12 +5137,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB018"
+      "execution_id": "GB018",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:37:56.011352+00:00",
+          "reason": "G017 fully accepted at source33a9550 unlocks G018. Base includes every accepted packaging prerequisite; later independent G019/G021 code is not a prerequisite. Offline core/consumer asset allowlists, no release/native downloads or maintainer asset leakage."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:37:56.011352+00:00",
+          "reason": "G017 fully accepted at source33a9550 unlocks G018. Base includes every accepted packaging prerequisite; later independent G019/G021 code is not a prerequisite. Offline core/consumer asset allowlists, no release/native downloads or maintainer asset leakage."
+        }
+      ]
     },
     "T053": {
       "id": "T053",
@@ -5335,8 +5349,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2",
+          "test_result": "Producer actual installed Windows5governance +1CLI tests pass; shadow canary first reproducesplainpython-m execution, isolatedmodule/console safe; actualsource/Git/package unchanged. Requiredinstalledflag failsclosedmissinginstall; separate2OSCI step. Independent review pending.",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5353,6 +5374,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:30:54.445510+00:00",
           "reason": "Accepted specs-owned T056 unlocks consumer governance fixtures. T048 has accepted/released shared SKILL path. Actual consumer/package/source preservation and no automatic task authority; no host/model behavior fabrication."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:37:56.239220+00:00"
         }
       ]
     },
@@ -5443,7 +5469,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "rework",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "ea18b15a473010d86bfe5c953e518b00884932c7",
@@ -5460,11 +5486,27 @@
           "reviewer": "boundary_reviewer",
           "review_result": "accepted",
           "evidence_uri": "docs/evidence/G020.md"
+        },
+        {
+          "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+          "integrated_sha": null,
+          "test_result": "Writer actualWindows8.3 reproduction beforefix,36DoctorCLItests PASS11.647s no skips afterfix; canonicalcontainment onlyafteroriginalcomponent no-link walk, descriptoridentity unchanged. Independentreworkreviewpending.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G020.md"
+        },
+        {
+          "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+          "integrated_sha": "5f5185e28738983ea5683638b5adabf4c4f937ab",
+          "test_result": "Independent boundary_reviewer accepts Windowsaliasrework:36DoctorCLItests PASS4.215s no skips; actual8.3 root/fullfilealias(.JSO/.JSON), originalcomponent no-reparse walk beforecanonicalcontainment, descriptoridentity andreadonlycache protections preserved. Writer36PASS11.647s. T060hostedWindowsfinal reproof stillpending, G020notcomplete.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G020.md"
         }
       ],
-      "assignee": "implementer_1",
+      "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks.",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GA020",
       "history": [
         {
@@ -5487,6 +5529,16 @@
           "actor": "controller_g014",
           "at": "2026-10-16T12:29:44.774960+00:00",
           "reason": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks."
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:36:25.425638+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:37:22.527144+00:00"
         }
       ]
     },
@@ -5507,7 +5559,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "rework",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
@@ -5524,11 +5576,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "accepted",
           "evidence_uri": "docs/evidence/G020.md"
+        },
+        {
+          "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+          "integrated_sha": null,
+          "test_result": "Supplemental hostedWindowsaliasregression4groups plusallDoctorfailuremodes36tests PASS11.647s noskips; original2CIfailingtests nowpasslocally. Independentreview+newhostedCIpending.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G020.md"
         }
       ],
-      "assignee": "implementer_1",
+      "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks.",
+      "next_step": "Independent review required",
       "execution_id": "GA020",
       "history": [
         {
@@ -5551,6 +5611,11 @@
           "actor": "controller_g014",
           "at": "2026-10-16T12:29:44.774960+00:00",
           "reason": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks."
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T12:36:25.471119+00:00"
         }
       ]
     },
@@ -7071,19 +7136,17 @@
       },
       "T059": {
         "owner": "implementer_2",
-        "status": "rework",
+        "status": "accepted",
         "branch": "fix/g020-windows-path",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-windows-path",
-        "base_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01",
+        "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
         "paths": [
           "devsift/doctor.py",
           "tests/test_doctor_config.py",
           "docs/DOCTOR.md",
           "CHANGELOG.md"
         ],
-        "locks": [
-          "write:doctor/config"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
         "deferred_cli_integration": {
           "paths": [
@@ -7092,8 +7155,8 @@
           ],
           "reason": "T043 concurrently reserved CLI entry; preserve prepared diff in delivery-g014-g020 worktree and integrate only after T043 accepted/released. No further CLI edits while that reservation is active."
         },
-        "source_sha": "ea18b15a473010d86bfe5c953e518b00884932c7",
-        "integrated_sha": "a6eff5429b8b47df6ce2b36b9c7dcc19daeb2518"
+        "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
+        "integrated_sha": "5f5185e28738983ea5683638b5adabf4c4f937ab"
       },
       "T038": {
         "owner": "cli_writer",
@@ -7222,18 +7285,18 @@
         "integrated_sha": "24c00092521a122d34addc5802007e4b4992f201"
       },
       "T060": {
-        "owner": "implementer_1",
-        "status": "rework",
-        "branch": "test/g020-degraded",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-degraded",
-        "base_sha": "a6eff5429b8b47df6ce2b36b9c7dcc19daeb2518",
+        "owner": "implementer_2",
+        "status": "in_review",
+        "branch": "fix/g020-windows-path",
+        "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-windows-path",
+        "base_sha": "01e0d3d97bbc84a279ebfb5d2fbfa70a270c47b6",
         "paths": [
           "tests/test_doctor_degraded.py",
           "docs/DOCTOR.md"
         ],
         "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
+        "source_sha": "93ad8ea9403fcc6b15542b9da26ce730d02ceb7a",
         "integrated_sha": "8c719aee86f66c8fbcc2548b22efe59ba9d0d8de"
       },
       "T047": {
@@ -7513,7 +7576,7 @@
       },
       "T057": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g019-t057-governance",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g019-t057-governance",
         "base_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
@@ -7526,6 +7589,27 @@
         ],
         "locks": [
           "write:tests/governance"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift",
+        "source_sha": "3524b31dd80a316d67689b42bd1d0cfd457642e2"
+      },
+      "T052": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "feature/g018-t052-package-manifest",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t052-package-manifest",
+        "base_sha": "33a9550271f84f175bbc52f24f081640dda92d6e",
+        "paths": [
+          "pyproject.toml",
+          "MANIFEST.in",
+          "packaging/manifest.json",
+          "tools/package_manifest.py",
+          "tests/test_package_manifest.py",
+          "docs/PACKAGING.md"
+        ],
+        "locks": [
+          "write:packaging/manifests"
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
@@ -7571,18 +7655,18 @@
         }
       ],
       "held_locks": [
-        "write:doctor/config",
         "write:safety/verification",
-        "write:tests/governance"
+        "write:tests/governance",
+        "write:packaging/manifests"
       ],
       "active_jobs": [
-        "T059",
         "T060",
         "T062",
-        "T057"
+        "T057",
+        "T052"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:35:10.006829+00:00",
+      "updated_utc": "2026-10-16T12:37:56.239220+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
