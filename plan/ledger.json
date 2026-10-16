@@ -1188,7 +1188,7 @@
         "T060"
       ],
       "repo": "orchex006/devsift",
-      "status": "accepted",
+      "status": "running",
       "evidence": [
         "docs/evidence/G020.md"
       ],
@@ -5309,12 +5309,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA019"
+      "execution_id": "GA019",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:30:54.445510+00:00",
+          "reason": "Accepted specs-owned T056 unlocks consumer governance fixtures. T048 has accepted/released shared SKILL path. Actual consumer/package/source preservation and no automatic task authority; no host/model behavior fabrication."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:30:54.445510+00:00",
+          "reason": "Accepted specs-owned T056 unlocks consumer governance fixtures. T048 has accepted/released shared SKILL path. Actual consumer/package/source preservation and no automatic task authority; no host/model behavior fabrication."
+        }
+      ]
     },
     "T058": {
       "id": "T058",
@@ -5403,7 +5417,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "accepted",
+      "status": "rework",
       "evidence": [
         {
           "source_sha": "ea18b15a473010d86bfe5c953e518b00884932c7",
@@ -5424,7 +5438,7 @@
       ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Accepted; refresh ready frontier",
+      "next_step": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks.",
       "execution_id": "GA020",
       "history": [
         {
@@ -5441,6 +5455,12 @@
           "status": "accepted",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:48:03.955333+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller_g014",
+          "at": "2026-10-16T12:29:44.774960+00:00",
+          "reason": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks."
         }
       ]
     },
@@ -5461,7 +5481,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "accepted",
+      "status": "rework",
       "evidence": [
         {
           "source_sha": "488368575f53320810d5516eb148d3cbbcb5273c",
@@ -5482,7 +5502,7 @@
       ],
       "assignee": "implementer_1",
       "reviewer": "boundary_reviewer",
-      "next_step": "Accepted; refresh ready frontier",
+      "next_step": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks.",
       "execution_id": "GA020",
       "history": [
         {
@@ -5499,6 +5519,12 @@
           "status": "accepted",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:54:15.130765+00:00"
+        },
+        {
+          "status": "rework",
+          "actor": "controller_g014",
+          "at": "2026-10-16T12:29:44.774960+00:00",
+          "reason": "Hosted Windows runtime CI38899831021 failed two Doctor config/cache assertions: valid absolute 8.3 short-name temp alias differs lexically from resolved root. Reopen for alias-aware containment without relaxing link checks."
         }
       ]
     },
@@ -5582,8 +5608,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32",
+          "test_result": "Producer 11 actual Git measurement tests, 10 budget and 18 policy tests pass. Root-bound immutable pair/scope reproof, mandatory declared evidence and non-authorizing comparison; independent review pending.",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5600,6 +5633,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:23:21.080398+00:00",
           "reason": "Accepted T061 unlocks before/after diagnostic, regression and rollback evidence protections. Pure read-only evidence verification; no implicit command execution or write authority."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:30:54.662198+00:00"
         }
       ]
     },
@@ -6977,17 +7015,20 @@
         "integrated_sha": "f3d78c8c59ad14fc6c6f3249008691bb3b672d5d"
       },
       "T059": {
-        "owner": "implementer_1",
-        "status": "accepted",
-        "branch": "feature/g020-config",
-        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-config",
+        "owner": "implementer_2",
+        "status": "rework",
+        "branch": "fix/g020-windows-path",
+        "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g020-windows-path",
         "base_sha": "ed5f7395678d35ea381c32b1035aeb8362c3ff01",
         "paths": [
           "devsift/doctor.py",
           "tests/test_doctor_config.py",
-          "docs/DOCTOR.md"
+          "docs/DOCTOR.md",
+          "CHANGELOG.md"
         ],
-        "locks": [],
+        "locks": [
+          "write:doctor/config"
+        ],
         "session": "g014-g016-g017-g020",
         "deferred_cli_integration": {
           "paths": [
@@ -7127,7 +7168,7 @@
       },
       "T060": {
         "owner": "implementer_1",
-        "status": "accepted",
+        "status": "rework",
         "branch": "test/g020-degraded",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g020-degraded",
         "base_sha": "a6eff5429b8b47df6ce2b36b9c7dcc19daeb2518",
@@ -7361,7 +7402,7 @@
       },
       "T062": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g021-t062-verification",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t062-verification",
         "base_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
@@ -7374,7 +7415,8 @@
           "write:safety/verification"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "34d7a6a223c11596301ae9e88bfea13f6ab59f32"
       },
       "T056": {
         "owner": "cli_writer",
@@ -7393,6 +7435,24 @@
         "source_repository": "orchex006/devsift-specs",
         "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
         "integrated_sha": "e07a8e0b7a02a6e29e8febadfed58cecfa0813e8"
+      },
+      "T057": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "test/g019-t057-governance",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g019-t057-governance",
+        "base_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
+        "paths": [
+          "tests/test_governance_boundary.py",
+          "tests/fixtures/governance",
+          "docs/AGENT-SCOPE.md",
+          "skills/devsift/SKILL.md"
+        ],
+        "locks": [
+          "write:tests/governance"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7435,15 +7495,20 @@
         }
       ],
       "held_locks": [
+        "write:doctor/config",
         "write:tests/e2e/gate",
-        "write:safety/verification"
+        "write:safety/verification",
+        "write:tests/governance"
       ],
       "active_jobs": [
+        "T059",
+        "T060",
         "T051",
-        "T062"
+        "T062",
+        "T057"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:28:28.649137+00:00",
+      "updated_utc": "2026-10-16T12:30:54.662198+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
