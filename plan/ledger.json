@@ -614,9 +614,11 @@
         "T033"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G011.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1127,7 +1129,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T033",
             "T048",
             "T051"
           ]
@@ -1358,10 +1359,8 @@
               "T019"
             ]
           },
-          "ready": false,
-          "blocking_tasks": [
-            "T033"
-          ]
+          "ready": true,
+          "blocking_tasks": []
         }
       ]
     },
@@ -1479,7 +1478,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T033",
             "T048",
             "T051",
             "T052",
@@ -3897,17 +3895,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
           "test_result": "Producer all 5 actual Git/CLI redaction tests passed with native testing enabled (120.532s); 2 strengthened error/provenance checks passed (9.234s). All formats/prompts/error streams masked, reserved schema values valid and source/Git unchanged. Independent review pending.",
           "author": "policy_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
+          "integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
+          "test_result": "Independent reviewer ran all 5 actual CLI/Git/native tests with no skips: PASS80.720s. Real pinned frontend1.2 SEC001, legacy review2/new block1, UNKNOWN provenance2, all formats/prompts/errors masked, reserved protocol labels intact, malformed PEM bounded, and complete source/Git hashes unchanged. Producer full5 passed120.532s.",
+          "evidence_uri": "docs/evidence/G011.md"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA011",
       "history": [
         {
@@ -3926,6 +3932,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T12:00:37.243351+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T12:04:12.776600+00:00"
         }
       ]
     },
@@ -7123,7 +7134,7 @@
       },
       "T033": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g011-t033-security-e2e",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t033-security-e2e",
         "base_sha": "24c00092521a122d34addc5802007e4b4992f201",
@@ -7131,11 +7142,10 @@
           "tests/test_security_end_to_end.py",
           "docs/SECURITY-ANALYSIS.md"
         ],
-        "locks": [
-          "write:tests/security"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "3178d956cce9567e61c68569af9c3323a467f397"
+        "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
+        "integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7178,15 +7188,13 @@
         }
       ],
       "held_locks": [
-        "write:tests/agent",
-        "write:tests/security"
+        "write:tests/agent"
       ],
       "active_jobs": [
-        "T048",
-        "T033"
+        "T048"
       ],
-      "latest_integrated_sha": "951c81dfde71a24a8bce3a3b1bc23675b9423d17",
-      "updated_utc": "2026-10-16T12:01:52.786109+00:00",
+      "latest_integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
+      "updated_utc": "2026-10-16T12:04:12.776600+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
