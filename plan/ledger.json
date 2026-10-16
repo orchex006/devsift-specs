@@ -7201,7 +7201,7 @@
         "T048"
       ],
       "latest_integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
-      "updated_utc": "2026-10-16T12:04:12.776600+00:00",
+      "updated_utc": "2026-10-16T12:06:33.623563+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7503,6 +7503,15 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T12:01:52.786109+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g011-t033-security-e2e",
+          "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
+          "replacement_sha": "3178d956cce9567e61c68569af9c3323a467f397",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T12:06:33.623563+00:00"
         }
       ],
       "external_worktrees_preserved": [
@@ -7725,7 +7734,7 @@
         ],
         "controller": "controller",
         "reviewer": "reviewer",
-        "scope": "This session dispatches only G011-G015. Preserve separately claimed work and do not integrate out-of-scope artifacts into this runtime branch.",
+        "scope": "Original G011-G015 delivery. Later autopilot authorization is recorded separately. Preserve separately claimed work.",
         "coordination": "control/ACTIVE-SESSIONS.md"
       },
       "autopilot_next_goals": {
