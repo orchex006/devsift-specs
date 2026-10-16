@@ -5216,7 +5216,7 @@
         "T055"
       ],
       "owner": "governance/templates",
-      "repo": "orchex006/devsift",
+      "repo": "orchex006/devsift-specs",
       "resource_locks": [
         "write:governance/templates"
       ],
@@ -5229,7 +5229,7 @@
       "evidence": [],
       "assignee": null,
       "reviewer": null,
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Claim after accepted T055; maintainer templates belong to the specifications repository after repository separation.",
       "execution_id": "GA019"
     },
     "T057": {
