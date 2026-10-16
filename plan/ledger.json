@@ -6010,7 +6010,7 @@
         "T064"
       ],
       "owner": "policy/ownership",
-      "repo": "orchex006/devsift",
+      "repo": "orchex006/devsift-specs",
       "resource_locks": [
         "write:policy/ownership"
       ],
@@ -6024,7 +6024,13 @@
       "assignee": null,
       "reviewer": null,
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA022"
+      "execution_id": "GA022",
+      "history": [
+        {
+          "actor": "controller",
+          "reason": "Maintainer ownership serialization belongs to the single canonical specs ledger; runtime policy discovery remains T064. No DAG or acceptance change."
+        }
+      ]
     },
     "T066": {
       "id": "T066",
@@ -6034,7 +6040,7 @@
         "T065"
       ],
       "owner": "tests/multirepo",
-      "repo": "orchex006/devsift",
+      "repo": "orchex006/devsift-specs",
       "resource_locks": [
         "write:tests/multirepo"
       ],
@@ -6048,7 +6054,13 @@
       "assignee": null,
       "reviewer": null,
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA022"
+      "execution_id": "GA022",
+      "history": [
+        {
+          "actor": "controller",
+          "reason": "Maintainer ownership serialization belongs to the single canonical specs ledger; runtime policy discovery remains T064. No DAG or acceptance change."
+        }
+      ]
     },
     "T067": {
       "id": "T067",
