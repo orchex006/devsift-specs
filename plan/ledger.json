@@ -5844,7 +5844,14 @@
       "G015",
       "G016",
       "G017",
-      "G020"
+      "G018",
+      "G019",
+      "G020",
+      "G021",
+      "G022",
+      "G023",
+      "G024",
+      "G025"
     ],
     "controller": "controller",
     "policy_sha": "acf9a44240d866f94f70dfaa3260b3d393f25f23",
@@ -7720,6 +7727,26 @@
         "reviewer": "reviewer",
         "scope": "This session dispatches only G011-G015. Preserve separately claimed work and do not integrate out-of-scope artifacts into this runtime branch.",
         "coordination": "control/ACTIVE-SESSIONS.md"
+      },
+      "autopilot_next_goals": {
+        "source": "Direct user message 2026-10-16 in this conversation",
+        "request": "User will be away and explicitly requests autopilot: when current goals near completion, continue ready work in subsequent goals.",
+        "selected_goals": [
+          "G016",
+          "G017",
+          "G018",
+          "G019",
+          "G020",
+          "G021",
+          "G022",
+          "G023",
+          "G024",
+          "G025"
+        ],
+        "controller": "controller",
+        "reviewer": "reviewer",
+        "scope": "Continue subsequent goals by accepted dependency frontier. Preserve existing owners, isolate delivery PRs, independently review and clean completed contained worktrees. No releases or consumer-source remediation implied.",
+        "authorized_utc": "2026-10-16T12:06:16.052038+00:00"
       }
     },
     "cross_session_reviews": {
