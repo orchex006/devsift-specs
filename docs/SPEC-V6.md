@@ -1,6 +1,6 @@
 # DevSift — Product & Engineering Specification v6
 
-**Status:** approved specification baseline. G000–G005 foundations are implemented; current acceptance evidence is in `plan/ledger.json` and `docs/evidence/`. Analyzer/report engines remain pending.
+**Status:** G000–G010 and all 32 tasks are independently accepted. Immutable baselines, the bounded native host and documented Roslyn, Go AST, ESLint/TypeScript and ScriptDom rules are implemented. Explicit trusted setup enables native CLI scans; complete report/prompt backends remain pending. See `plan/ledger.json` and `docs/evidence/`.
 **Canonical repository:** https://github.com/orchex006/devsift
 **Owner:** `orchex006`
 **Product:** `DevSift` · proposed CLI: `devsift` · proposed skill: `$devsift`

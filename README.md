@@ -2,7 +2,9 @@
 
 This repository owns product specifications, requirements, acceptance criteria, goal/task cards, the canonical execution ledger, development orchestration skills and review evidence. [devsift](https://github.com/orchex006/devsift) owns the consumer skill, Python CLI, native analyzers, runtime tests and usage documentation.
 
-The live plan is [plan/ledger.json](plan/ledger.json), migrated from code without changing task acceptance states. The old planning fixture is [historical bootstrap reference](reference/bootstrap/ledger.json), not live execution state. No live ledger is mirrored in code.
+The live plan is [plan/ledger.json](plan/ledger.json), migrated from code without changing task acceptance states. The old planning fixture is [historical bootstrap reference](reference/bootstrap/ledger.json), not live execution state.
+
+The runtime separation is complete in [code PR #7](https://github.com/orchex006/devsift/pull/7), merged after independent review and all Windows/Linux CI checks passed. There is no code-ledger copy. Use the specifications ledger for all future coordination.
 
 ```sh
 python tools/planctl.py validate
