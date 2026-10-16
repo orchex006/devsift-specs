@@ -1128,7 +1128,6 @@
             "T031",
             "T032",
             "T033",
-            "T034",
             "T035",
             "T036",
             "T037",
@@ -1498,7 +1497,6 @@
             "T031",
             "T032",
             "T033",
-            "T034",
             "T035",
             "T036",
             "T037",
@@ -3797,17 +3795,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161",
           "test_result": "Writer ten observability plus14evidence tests pass; strict actual hop pairing/coverage and no raw IDs or messages, no source writes",
           "author": "cli_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161",
+          "integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
+          "test_result": "Distinct reviewer24tests and adversarialprivacy/correlationproofprobes pass; controllerintegrated10tests pass0.027s",
+          "evidence_uri": "docs/evidence/G012.md"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA012",
       "history": [
         {
@@ -3826,6 +3832,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T10:28:32.981563+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T10:32:22.790483+00:00"
         }
       ]
     },
@@ -3846,12 +3857,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA012"
+      "execution_id": "GA012",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:32:23.348899+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:32:23.348899+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T036": {
       "id": "T036",
@@ -5783,7 +5808,7 @@
       },
       "T034": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g012-t034-observability",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t034-observability",
         "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
@@ -5792,11 +5817,10 @@
           "tests/test_observability.py",
           "docs/OBSERVABILITY.md"
         ],
-        "locks": [
-          "write:rules/observability"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161"
+        "source_sha": "f0e8ebd251b91c999d9263a3de66b946d13ff161",
+        "integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341"
       },
       "T037": {
         "owner": "controller",
@@ -5913,6 +5937,22 @@
         ],
         "session": "g014-g016-g017-g020",
         "source_sha": "5352b1dc91052d1042a45d04b5b29c5e691a1cd1"
+      },
+      "T035": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "feature/g012-t035-noise",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t035-noise",
+        "base_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
+        "paths": [
+          "devsift/observability.py",
+          "tests/test_observability_noise.py",
+          "docs/OBSERVABILITY.md"
+        ],
+        "locks": [
+          "write:rules/observability"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -5956,20 +5996,20 @@
       ],
       "held_locks": [
         "write:adapters/security",
-        "write:rules/observability",
         "write:reports/model",
         "write:ci/entry",
-        "write:reports/classifier"
+        "write:reports/classifier",
+        "write:rules/observability"
       ],
       "active_jobs": [
         "T031",
-        "T034",
         "T037",
         "T043",
-        "T040"
+        "T040",
+        "T035"
       ],
-      "latest_integrated_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
-      "updated_utc": "2026-10-16T10:32:13.518515+00:00",
+      "latest_integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
+      "updated_utc": "2026-10-16T10:32:23.348899+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
