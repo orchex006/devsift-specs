@@ -1483,7 +1483,6 @@
           },
           "ready": false,
           "blocking_tasks": [
-            "T053",
             "T054",
             "T068",
             "T069"
@@ -5205,7 +5204,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
@@ -5218,11 +5217,20 @@
           "test_result": "Actual missing-promisor-object remote-helper marker regression RED before fix, all8 actual archive/input/integrity tests pass43.311s after no-lazy-fetch/effectivepartialguard/trustedhostGit. Fresh distinct re-review pending",
           "author": "controller",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f",
+          "integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
+          "test_result": "Distinct reviewer accepted final c49: actualmissingpromisorremotehelper/no-marker proof2.194s, includedpartial/hostGit1.530s, allcomponentstablebytes/verify12.470s; prior6suite40.085s and producerfull8pass43.311s. Controller integratedsame3files exact, diffcheckpasses. SourceZIP-only, no wheel/native reproducibilityclaim.",
+          "evidence_uri": "docs/evidence/G018.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "controller",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB018",
       "history": [
         {
@@ -5264,6 +5272,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:48:44.462493+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T13:50:30.083594+00:00"
         }
       ]
     },
@@ -5284,12 +5297,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB018"
+      "execution_id": "GB018",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:50:30.331520+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:50:30.331520+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T055": {
       "id": "T055",
@@ -8215,7 +8242,7 @@
       },
       "T053": {
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "fix/g018-t053-offline-git",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-offline-git",
         "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
@@ -8224,9 +8251,7 @@
           "tests/test_build_package.py",
           "docs/PACKAGING.md"
         ],
-        "locks": [
-          "write:packaging/artifacts"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
         "prior_jobs": [
@@ -8249,7 +8274,8 @@
             "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0"
           }
         ],
-        "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f"
+        "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f",
+        "integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64"
       },
       "T074": {
         "owner": "policy_writer",
@@ -8351,6 +8377,23 @@
         "source_repository": "orchex006/devsift",
         "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
         "integrated_sha": "9bc4effdd02dc582df02df7ceb17ba6960d9b288"
+      },
+      "T054": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "test/g018-t054-install-rollback",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t054-install-rollback",
+        "base_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
+        "paths": [
+          "tests/test_package_install.py",
+          "docs/PACKAGING.md",
+          ".github/workflows/cli-contract.yml"
+        ],
+        "locks": [
+          "write:tests/install"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8393,17 +8436,17 @@
         }
       ],
       "held_locks": [
-        "write:packaging/artifacts",
         "write:policy/ownership",
-        "write:security/assurance"
+        "write:security/assurance",
+        "write:tests/install"
       ],
       "active_jobs": [
-        "T053",
         "T065",
-        "T068"
+        "T068",
+        "T054"
       ],
-      "latest_integrated_sha": "9bc4effdd02dc582df02df7ceb17ba6960d9b288",
-      "updated_utc": "2026-10-16T13:50:05.725941+00:00",
+      "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
+      "updated_utc": "2026-10-16T13:50:30.331520+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
