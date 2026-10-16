@@ -4,7 +4,7 @@ This repository owns product specifications, requirements, acceptance criteria, 
 
 The live plan is [plan/ledger.json](plan/ledger.json), migrated from code without changing task acceptance states. The old planning fixture is [historical bootstrap reference](reference/bootstrap/ledger.json), not live execution state.
 
-The runtime separation is complete in [code PR #7](https://github.com/orchex006/devsift/pull/7), merged after independent review and all Windows/Linux CI checks passed. There is no code-ledger copy. Use the specifications ledger for all future coordination.
+The runtime separation is complete in [code PR #7](https://github.com/orchex006/devsift/pull/7), with all Windows/Linux CI checks passing. There is no code-ledger copy. Use the specifications ledger for all future coordination.
 
 ```sh
 python tools/planctl.py validate
