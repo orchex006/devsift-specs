@@ -8681,7 +8681,7 @@
         "T069"
       ],
       "latest_integrated_sha": "2e2f5370028a4bb3d330077628f143d5572dd678",
-      "updated_utc": "2026-10-16T14:01:07.185762+00:00",
+      "updated_utc": "2026-10-16T14:01:30.382889+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -9163,6 +9163,51 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T13:53:36.938436+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift-specs\\worktrees\\g022-t065-owner-locks",
+          "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04",
+          "replacement_sha": "ff3e941630238131362cf3cec3c2407dbe775e04",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:01:28.767832+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift-specs\\worktrees\\g022-t065-history-compat",
+          "source_sha": "44ece7f0f270f100085cde769f97d5e6fb030d14",
+          "replacement_sha": "44ece7f0f270f100085cde769f97d5e6fb030d14",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:01:29.158067+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift-specs\\worktrees\\g022-t066-ownership-overrides",
+          "source_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
+          "replacement_sha": "3faa43832dcd27a35712f69ff9c472220e71de2d",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:01:29.561357+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g023-t068-artifact-assurance",
+          "source_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
+          "replacement_sha": "fa044d5734ecde418e611ceea8a45ce3c3d805dd",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:01:29.928644+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g023-t068-deflate-proof",
+          "source_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9",
+          "replacement_sha": "60140e537a1e12cc0ad5c156a4b0ad3aa2b123a9",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:01:30.382889+00:00"
         }
       ],
       "external_worktrees_preserved": [
@@ -9175,7 +9220,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "df86aa721899b16a524cc3409cd31b3bd3ce894e"
+      "latest_specs_integrated_sha": "32c99f0769d80fe1d499bbf99ab5b66537e45398"
     },
     "previous_checkpoints": [
       {
