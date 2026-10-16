@@ -1501,9 +1501,11 @@
         "T075"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G025.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -6529,18 +6531,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
           "test_result": "Docs-only gradual review-to-enforce adoption, source/lifecycle/UNKNOWN/Critical/prompt/policy boundaries cross-linked to accepted actual contracts; git diff --check pass, distinct review pending",
           "author": "controller",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "policy_writer",
+          "review_result": "accepted",
+          "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
+          "integrated_sha": "9bc4effdd02dc582df02df7ceb17ba6960d9b288",
+          "test_result": "Distinct policy_writer reviewer accepted exact docs-only adoption source and controller DEVELOPMENT/CHANGELOG dbbf2fc against actual policy/CI/Doctor/case/G21. Relative links resolve; no redundant tests for prose; diffcheck pass. Integrated9bc4eff. G025 all3tasks accepted.",
+          "evidence_uri": "docs/evidence/G025.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "controller",
-      "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "reviewer": "policy_writer",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA025",
       "history": [
         {
@@ -6559,6 +6570,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:48:44.699246+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T13:50:05.725941+00:00"
         }
       ]
     },
@@ -8323,19 +8339,18 @@
       },
       "T075": {
         "owner": "controller",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "docs/g025-t075-adoption",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t075-adoption",
         "base_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
         "paths": [
           "docs/MIGRATION.md"
         ],
-        "locks": [
-          "write:docs/migration"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9"
+        "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
+        "integrated_sha": "9bc4effdd02dc582df02df7ceb17ba6960d9b288"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8380,17 +8395,15 @@
       "held_locks": [
         "write:packaging/artifacts",
         "write:policy/ownership",
-        "write:security/assurance",
-        "write:docs/migration"
+        "write:security/assurance"
       ],
       "active_jobs": [
         "T053",
         "T065",
-        "T068",
-        "T075"
+        "T068"
       ],
-      "latest_integrated_sha": "dbbf2fcac6693b928c2c15e743265d3f2bf92c5d",
-      "updated_utc": "2026-10-16T13:49:17.164905+00:00",
+      "latest_integrated_sha": "9bc4effdd02dc582df02df7ceb17ba6960d9b288",
+      "updated_utc": "2026-10-16T13:50:05.725941+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
