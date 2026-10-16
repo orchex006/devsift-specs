@@ -6304,8 +6304,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
+          "test_result": "Read-only onboarding doc and README for new versus legacy; links accepted T074 and actual CLI/library contracts. git diff --check passes; no runtime change; distinct review pending",
+          "author": "controller",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6322,6 +6329,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:39:49.781532+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:41:59.378330+00:00"
         }
       ]
     },
@@ -6342,18 +6354,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
           "test_result": "Executable documentation runs actual isolated CLI scan/report/case workflow over temp Git: one proof test passes8.101s; distinct review pending",
           "author": "policy_writer",
           "source_repository": "orchex006/devsift"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
+          "integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
+          "test_result": "Independent reviewer accepted content and exact unchanged executable doc: one serial proof passes10.847s after two honest host-contention timeouts. Actual CLI all3formats/source-reproof/prompt denial/manualplanning/sourceGitreadonly verified. Controller integrated same2files unchanged.",
+          "evidence_uri": "docs/evidence/G025.md",
+          "source_repository": "orchex006/devsift"
         }
       ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA025",
       "history": [
         {
@@ -6372,6 +6393,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T13:36:48.685283+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T13:41:59.127062+00:00"
         }
       ]
     },
@@ -8054,7 +8080,7 @@
       },
       "T074": {
         "owner": "policy_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "feature/g025-t074-report-walkthrough",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t074-report-walkthrough",
         "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
@@ -8062,12 +8088,11 @@
           "docs/cases/REPORT-WALKTHROUGH.md",
           "tests/test_report_walkthrough.py"
         ],
-        "locks": [
-          "write:docs/cases"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift",
-        "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770"
+        "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
+        "integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9"
       },
       "T065": {
         "owner": "policy_writer",
@@ -8088,7 +8113,7 @@
       },
       "T073": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g025-t073-getting-started",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-getting-started",
         "base_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
@@ -8100,7 +8125,8 @@
           "write:docs/readme"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8144,18 +8170,16 @@
       ],
       "held_locks": [
         "write:packaging/artifacts",
-        "write:docs/cases",
         "write:policy/ownership",
         "write:docs/readme"
       ],
       "active_jobs": [
         "T053",
-        "T074",
         "T065",
         "T073"
       ],
-      "latest_integrated_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
-      "updated_utc": "2026-10-16T13:40:01.761468+00:00",
+      "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
+      "updated_utc": "2026-10-16T13:41:59.378330+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
