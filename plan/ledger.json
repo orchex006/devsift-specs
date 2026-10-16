@@ -6291,12 +6291,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA025"
+      "execution_id": "GA025",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:39:49.781532+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:39:49.781532+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T074": {
       "id": "T074",
@@ -8059,6 +8073,22 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift-specs"
+      },
+      "T073": {
+        "owner": "controller",
+        "status": "running",
+        "branch": "docs/g025-t073-getting-started",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-getting-started",
+        "base_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
+        "paths": [
+          "README.md",
+          "docs/USAGE.md"
+        ],
+        "locks": [
+          "write:docs/readme"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -8104,16 +8134,18 @@
         "write:security/gate",
         "write:packaging/artifacts",
         "write:docs/cases",
-        "write:policy/ownership"
+        "write:policy/ownership",
+        "write:docs/readme"
       ],
       "active_jobs": [
         "T067",
         "T053",
         "T074",
-        "T065"
+        "T065",
+        "T073"
       ],
       "latest_integrated_sha": "2a4c1d3e1400d96c59d3d784b7100c74c46a20ff",
-      "updated_utc": "2026-10-16T13:38:27.098186+00:00",
+      "updated_utc": "2026-10-16T13:39:49.781532+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
