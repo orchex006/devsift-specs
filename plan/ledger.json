@@ -7185,8 +7185,8 @@
         "T048",
         "T033"
       ],
-      "latest_integrated_sha": "0f49505001d17186771f860fad07605f7bd42e62",
-      "updated_utc": "2026-10-16T12:00:37.243351+00:00",
+      "latest_integrated_sha": "951c81dfde71a24a8bce3a3b1bc23675b9423d17",
+      "updated_utc": "2026-10-16T12:01:52.786109+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7479,6 +7479,15 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T11:58:42.362374+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g011-t032-delete-mutation",
+          "source_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "replacement_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T12:01:52.786109+00:00"
         }
       ],
       "external_worktrees_preserved": [
