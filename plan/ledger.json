@@ -5245,18 +5245,27 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
           "test_result": "Producer specs-owned four template/docs files; 10 plan tests, kit validation and concrete actual evaluator A/B/dependency/cycle examples pass. No runtime or ledger changes. Independent review pending.",
           "author": "cli_writer",
           "source_repository": "orchex006/devsift-specs"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
+          "integrated_sha": "e07a8e0b7a02a6e29e8febadfed58cecfa0813e8",
+          "test_result": "Independent 10 plan tests, kit validation and concrete actual evaluator A/B/transitive-entry examples pass. Compact templates retain accepted-only gates, distinct review and controller integration/source evidence, source repository, locks and actual-pause handoffs. Specs-only assets; no runtime/graph/schema or consumer instruction changes.",
+          "evidence_uri": "docs/evidence/G019.md",
+          "source_repository": "orchex006/devsift-specs"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "Claim after accepted T055; maintainer templates belong to the specifications repository after repository separation.",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GA019",
       "history": [
         {
@@ -5275,6 +5284,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T12:26:09.327104+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T12:28:28.649137+00:00"
         }
       ]
     },
@@ -7364,7 +7378,7 @@
       },
       "T056": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "docs/g019-t056-templates",
         "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g019-t056-templates",
         "base_sha": "1c55d77535d76f2556657c714d6a7f6cdc30ea47",
@@ -7374,12 +7388,11 @@
           "templates/CHECKLIST.md",
           "docs/TASK-TEMPLATES.md"
         ],
-        "locks": [
-          "write:governance/templates"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift-specs",
-        "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548"
+        "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
+        "integrated_sha": "e07a8e0b7a02a6e29e8febadfed58cecfa0813e8"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7423,16 +7436,14 @@
       ],
       "held_locks": [
         "write:tests/e2e/gate",
-        "write:safety/verification",
-        "write:governance/templates"
+        "write:safety/verification"
       ],
       "active_jobs": [
         "T051",
-        "T062",
-        "T056"
+        "T062"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:27:09.869117+00:00",
+      "updated_utc": "2026-10-16T12:28:28.649137+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7773,7 +7784,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "8f0a36faf8c4ba4ac91ccfb17a10503161e56fe9"
+      "latest_specs_integrated_sha": "e07a8e0b7a02a6e29e8febadfed58cecfa0813e8"
     },
     "previous_checkpoints": [
       {
@@ -7961,15 +7972,12 @@
         "coordination": "control/ACTIVE-SESSIONS.md",
         "goal_controller": "controller_g014 owns all tasks of these four selected goals, including independent T041 after accepted T039",
         "pending_shared_cli": {
-          "status": "active integration after T044 accepted",
-          "owner": "controller_g014",
-          "paths": [
-            "devsift/cli.py",
-            "tests/test_doctor_cli.py",
-            "docs/CLI.md",
-            "docs/CASE-PROMPTS.md"
-          ],
-          "branch": "feature/g014-g016-g017-g020"
+          "status": "released after independently accepted T048",
+          "source_sha": "345d55bc0f6edc15bbf83763028a90c767f509cf",
+          "branch": "feature/g014-g016-g017-g020",
+          "pull_request": "https://github.com/orchex006/devsift/pull/9",
+          "paths": [],
+          "note": "Preserve accepted Doctor/case input flags and isolated consumer entry when merging later CLI work."
         }
       },
       "g011-g015": {
