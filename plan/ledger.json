@@ -1145,7 +1145,7 @@
         "T057"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -1231,7 +1231,7 @@
         "T063"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -5163,12 +5163,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA019"
+      "execution_id": "GA019",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:08:12.044264+00:00",
+          "reason": "Explicit user autopilot authorizes next ready goals. T001 accepted; no overlap with foreign T048 consumer SKILL/CLI paths. Author bounded maintainer-consumer isolation policy."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:08:12.044264+00:00",
+          "reason": "Explicit user autopilot authorizes next ready goals. T001 accepted; no overlap with foreign T048 consumer SKILL/CLI paths. Author bounded maintainer-consumer isolation policy."
+        }
+      ]
     },
     "T056": {
       "id": "T056",
@@ -5421,12 +5435,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA021"
+      "execution_id": "GA021",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:08:12.417573+00:00",
+          "reason": "Explicit user autopilot authorizes next ready goals. T013 accepted; independent non-mutating change-budget contract, no overlap with foreign case approval/CLI ownership."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:08:12.417573+00:00",
+          "reason": "Explicit user autopilot authorizes next ready goals. T013 accepted; independent non-mutating change-budget contract, no overlap with foreign case approval/CLI ownership."
+        }
+      ]
     },
     "T062": {
       "id": "T062",
@@ -7046,14 +7074,21 @@
           "docs/CASE-PROMPTS.md",
           "README.md",
           "tests/test_cli.py",
-          "tests/test_cli_platform.py"
+          "tests/test_cli_platform.py",
+          "devsift/git_runtime.py",
+          "tests/test_git_runtime.py",
+          "devsift/evidence.py",
+          "devsift/git_changes.py",
+          "devsift/cli_scan.py",
+          "devsift/case_approval.py"
         ],
         "locks": [
           "write:tests/agent"
         ],
         "session": "g014-g016-g017-g020",
         "source_sha": "2f36d4a8be3bced308c5ac51027cc460606c4e1d",
-        "controller_integration_status": "running: explicit input command backend, consumer skill and actual CLI tests; fixture review accepted separately"
+        "controller_integration_status": "running: explicit input command backend, consumer skill and actual CLI tests; fixture review accepted separately",
+        "additional_regression": "Actual case CLI regression proved project git.exe can intercept source-proof lookup. Resolve host Git absolutely outside consumer root; also prevent Python module shadowing in consumer skill."
       },
       "T044": {
         "owner": "controller",
@@ -7153,6 +7188,38 @@
         "lease": "current selected session until accepted or reassigned",
         "source_sha": "3178d956cce9567e61c68569af9c3323a467f397",
         "integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506"
+      },
+      "T055": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "docs/g019-t055-scope",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g019-t055-scope",
+        "base_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
+        "paths": [
+          "AGENTS.md",
+          "docs/AGENT-SCOPE.md",
+          "skills/devsift/CONSUMER-SCOPE.md"
+        ],
+        "locks": [
+          "write:governance/agents"
+        ],
+        "lease": "current selected session until accepted or reassigned"
+      },
+      "T061": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g021-t061-change-budget",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t061-change-budget",
+        "base_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
+        "paths": [
+          "devsift/change_budget.py",
+          "tests/test_change_budget.py",
+          "docs/CHANGE-BUDGET.md"
+        ],
+        "locks": [
+          "write:safety/decision"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7195,13 +7262,17 @@
         }
       ],
       "held_locks": [
-        "write:tests/agent"
+        "write:tests/agent",
+        "write:governance/agents",
+        "write:safety/decision"
       ],
       "active_jobs": [
-        "T048"
+        "T048",
+        "T055",
+        "T061"
       ],
       "latest_integrated_sha": "8daad207827e0e746b8c370bea6712a1d167e506",
-      "updated_utc": "2026-10-16T12:06:33.623563+00:00",
+      "updated_utc": "2026-10-16T12:08:12.417573+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
