@@ -6988,7 +6988,9 @@
           "devsift/cli.py",
           "tests/test_doctor_cli.py",
           "docs/CLI.md",
-          "docs/CASE-PROMPTS.md"
+          "docs/CASE-PROMPTS.md",
+          "README.md",
+          "tests/test_cli.py"
         ],
         "locks": [
           "write:tests/agent"
@@ -7150,8 +7152,8 @@
         "T045",
         "T033"
       ],
-      "latest_integrated_sha": "24c00092521a122d34addc5802007e4b4992f201",
-      "updated_utc": "2026-10-16T11:52:13.493535+00:00",
+      "latest_integrated_sha": "6ec26dddda93fa762d9a9be6cdfec0ad0ffece94",
+      "updated_utc": "2026-10-16T11:55:17.340492+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7408,6 +7410,33 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T11:47:39.498654+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g011-t032-security-context",
+          "source_sha": "e9b3dc63a512689394ff7f2bd99d4b34d3a63426",
+          "replacement_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:55:08.040076+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g011-t032-tls-context",
+          "source_sha": "0a3d8e691b3712df787d05467cfb6ffd5d197584",
+          "replacement_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:55:12.305291+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g011-t032-ts-mutation",
+          "source_sha": "7889eec543f4ccdf96a9a9011dc245e26d935c0e",
+          "replacement_sha": "af1b88af07dd52115bbff5f790d037c16a50584a",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T11:55:17.340492+00:00"
         }
       ],
       "external_worktrees_preserved": [
