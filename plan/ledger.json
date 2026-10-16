@@ -1502,7 +1502,7 @@
         "T075"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -6248,12 +6248,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA025"
+      "execution_id": "GA025",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T13:31:01.418634+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T13:31:01.418634+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T075": {
       "id": "T075",
@@ -7913,6 +7927,22 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
+      },
+      "T074": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g025-t074-report-walkthrough",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t074-report-walkthrough",
+        "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
+        "paths": [
+          "docs/cases/REPORT-WALKTHROUGH.md",
+          "tests/test_report_walkthrough.py"
+        ],
+        "locks": [
+          "write:docs/cases"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7957,15 +7987,17 @@
       "held_locks": [
         "write:policy/discovery",
         "write:security/gate",
-        "write:packaging/artifacts"
+        "write:packaging/artifacts",
+        "write:docs/cases"
       ],
       "active_jobs": [
         "T064",
         "T067",
-        "T053"
+        "T053",
+        "T074"
       ],
       "latest_integrated_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
-      "updated_utc": "2026-10-16T13:30:46.211743+00:00",
+      "updated_utc": "2026-10-16T13:31:01.418634+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
