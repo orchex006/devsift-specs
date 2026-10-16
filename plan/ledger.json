@@ -6088,12 +6088,18 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04",
           "test_result": "Eight actual Windows locking/admission fixture tests plus ten planctl tests pass; both validators pass. Specs-owned maintainer API only, POSIX CI pending; distinct reviewer queued",
           "author": "policy_writer",
+          "source_repository": "orchex006/devsift-specs"
+        },
+        {
+          "source_sha": "44ece7f0f270f100085cde769f97d5e6fb030d14",
+          "test_result": "Actual-shaped canonicalCOPY compatibility failure reproduced; new reviewedhistorical and controllerroute fixtures REDbeforefix. All20specstests and bothvalidators pass1.088s afterboundedinactivehistory compatibility and exclusivegoalrouting guard; independent distinct re-review queued",
+          "author": "controller",
           "source_repository": "orchex006/devsift-specs"
         }
       ],
@@ -6140,6 +6146,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:51:52.663841+00:00",
           "reason": "Root and independent reviewer reproduced canonicalCOPY admissionINVALID_REQUEST due3reviewedacceptedhistoricalnon-taskjobs. Preserveactualledger; allow onlyexplicitinactiveacceptedemptylocksfullSHAreviewedhistoricalrecords, failclosedunknown/active"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:52:51.826985+00:00"
         }
       ]
     },
@@ -8325,7 +8336,7 @@
       },
       "T065": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g022-t065-history-compat",
         "worktree": "D:/SP-Billy/devsift-dev/devsift-specs/worktrees/g022-t065-history-compat",
         "base_sha": "d30e131e7c173ef0ad76d24ba890f27e7fc009fa",
@@ -8358,7 +8369,8 @@
             "source_repository": "orchex006/devsift-specs",
             "source_sha": "ff3e941630238131362cf3cec3c2407dbe775e04"
           }
-        ]
+        ],
+        "source_sha": "44ece7f0f270f100085cde769f97d5e6fb030d14"
       },
       "T073": {
         "owner": "controller",
@@ -8496,7 +8508,7 @@
         "T054"
       ],
       "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:51:52.663841+00:00",
+      "updated_utc": "2026-10-16T13:52:51.826985+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8936,7 +8948,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "d30e131e7c173ef0ad76d24ba890f27e7fc009fa"
+      "latest_specs_integrated_sha": "c9f7e1971a22ff72ac47cda8f73664e1352f7762"
     },
     "previous_checkpoints": [
       {
