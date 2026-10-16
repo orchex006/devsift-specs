@@ -5,7 +5,7 @@ All notable user-facing changes to DevSift will be documented here. This follows
 ## [Unreleased]
 
 ### Changed
-- Reconcile G000–G010 native implementation maturity and identify the pending code-side repository migration without claiming its removal is already complete.
+- Reconcile G000–G010 native implementation maturity and record completed, reviewed repository separation with passing Windows/Linux CI.
 - Own the live execution plan and migrated evidence; retain the original bootstrap ledger as historical reference and keep the consumer skill only in code.
 
 ### Added
