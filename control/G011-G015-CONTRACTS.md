@@ -104,3 +104,15 @@ Future runtime integration lives in `worktrees/autopilot-next-goals`, branch
 T056 is accepted in specs (its explicit source_repository is devsift-specs, in line
 with the repository separation). T057 and T062 are the current following jobs.
 The primary code checkout is clean main at the merged G011–G015 tree.
+
+Integration advisory for the G014/G016/G017/G020 owner: runtime PR #9's older
+`01e0d3d` Windows runtime run `38899831021` failed two Doctor metadata tests:
+`test_explicit_valid_policy_and_missing_cache_are_read_only` and
+`test_valid_json_and_cache_metadata_preserve_bytes_without_enumerating_children`.
+Valid explicit policy/cache paths returned incomplete. `_diagnostic_path` checks
+the caller's absolute spelling against the already-resolved root before resolving
+that spelling; Windows TEMP 8.3 aliases are a possible cause (also observed during
+T044 fault injection). Preserve the original-component reparse walk and final
+canonical containment/identity guards when correcting the alias case. This is an
+advisory, not a claim/status change or permission to weaken link/traversal checks.
+T052 now runs from accepted T051 `33a9550`; its package changes remain isolated.
