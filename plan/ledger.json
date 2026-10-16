@@ -843,7 +843,7 @@
         "T045"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -3872,8 +3872,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+          "test_result": "Eight actual-Git report model tests pass9.729s; forged provenance, redaction, safe navigation, no writes, counts/shape/size rejection",
+          "author": "controller"
+        }
+      ],
       "assignee": "controller",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -3890,6 +3896,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:21:30.102363+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:27:40.320516+00:00"
         }
       ]
     },
@@ -4031,12 +4042,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB015"
+      "execution_id": "GB015",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:27:40.476026+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:27:40.476026+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T044": {
       "id": "T044",
@@ -5673,7 +5698,7 @@
       },
       "T037": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g011-g015-analysis-reporting",
         "worktree": "D:/SP-Billy/devsift-dev/devsift",
         "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
@@ -5685,6 +5710,23 @@
         ],
         "locks": [
           "write:reports/model"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665"
+      },
+      "T043": {
+        "owner": "controller",
+        "status": "running",
+        "branch": "feature/g011-g015-analysis-reporting",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift",
+        "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+        "paths": [
+          "devsift/ci_gate.py",
+          "tests/test_ci_gate.py",
+          "docs/CI-GATE.md"
+        ],
+        "locks": [
+          "write:ci/entry"
         ],
         "lease": "current selected session until accepted or reassigned"
       }
@@ -5731,15 +5773,17 @@
       "held_locks": [
         "write:adapters/security",
         "write:rules/observability",
-        "write:reports/model"
+        "write:reports/model",
+        "write:ci/entry"
       ],
       "active_jobs": [
         "T031",
         "T034",
-        "T037"
+        "T037",
+        "T043"
       ],
-      "latest_integrated_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
-      "updated_utc": "2026-10-16T10:21:30.102363+00:00",
+      "latest_integrated_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
+      "updated_utc": "2026-10-16T10:27:40.476026+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
