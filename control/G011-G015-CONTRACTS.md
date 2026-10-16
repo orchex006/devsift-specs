@@ -33,7 +33,14 @@ supports explicit manifest/digest, actual `--base`, `--all`/`--changed`/exact-fi
 the immutable HEAD check. Independent security review remains distinct from
 legacy quality blocking. No report JSON is accepted as an authoritative CI scan.
 
-T043 holds CLI paths until its accepted handoff. T044 also needs CI/report CLI
-integration; agree the next exclusive CLI writer before applying doctor/config
-flags. No overlapping edits, automatic installation during scans or implicit
-release is authorized by this contract note.
+T043 final reviewed source `3b1b8a3` is now accepted and integrated. T044 immediately
+owns `cli.py`/`cli_scan.py` for report output and CI artifact integration; doctor
+flags remain isolated until that next accepted handoff. Do not apply them in this
+primary checkout or switch its branch. T044 waits for accepted T039 exporter
+contracts before consuming or editing their files/workflows. No overlapping edits,
+automatic installation during scans or implicit release is authorized here.
+
+Shared T040 source `5352b1d` (only its three files) was independently checked by
+this session's reviewer against the current runtime and merged separately here;
+controller integration ran its nine actual Git tests successfully. Other-owner
+G016/G017/G020 runtime artifacts are not included by that merge.
