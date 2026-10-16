@@ -8508,7 +8508,7 @@
         "T054"
       ],
       "latest_integrated_sha": "41a47e5b20ea519a5618cd3ad676b3a6ebfdfe64",
-      "updated_utc": "2026-10-16T13:52:51.826985+00:00",
+      "updated_utc": "2026-10-16T13:53:36.938436+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8936,6 +8936,60 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T13:44:51.265720+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\autopilot-next-goals",
+          "source_sha": "8504c0340374f73869a69006c2840d0a762c56e5",
+          "replacement_sha": "8504c0340374f73869a69006c2840d0a762c56e5",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:35.157252+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g018-t053-repro-archives",
+          "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
+          "replacement_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:35.499967+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g018-t053-offline-git",
+          "source_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f",
+          "replacement_sha": "c49b86fe8c6a86dde39699121559caa02e1fb99f",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:35.884457+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g025-t073-getting-started",
+          "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
+          "replacement_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:36.235546+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g025-t073-workflow-clarity",
+          "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8",
+          "replacement_sha": "ba44394c64746861b3cf9aefc859c306133678f8",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:36.589076+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g025-t075-adoption",
+          "source_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
+          "replacement_sha": "283aae69e362a2845f6a2bf6a47fa3dcbf6331b9",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T13:53:36.938436+00:00"
         }
       ],
       "external_worktrees_preserved": [

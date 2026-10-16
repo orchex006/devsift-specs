@@ -116,3 +116,15 @@ T044 fault injection). Preserve the original-component reparse walk and final
 canonical containment/identity guards when correcting the alias case. This is an
 advisory, not a claim/status change or permission to weaken link/traversal checks.
 T052 now runs from accepted T051 `33a9550`; its package changes remain isolated.
+
+Autopilot closure update: G019/G021 independently accepted sources integrated in
+runtime PR #10, final reviewed head `8504c0340374f73869a69006c2840d0a762c56e5`.
+All eight final Windows/Linux checks passed; optional SARIF service publishing
+was skipped by configuration. PR #10 merged as
+`8d9c97f6902521b6daafcdb9b38cb35aacff84dd`. Primary code checkout is clean main
+at that commit. The completed `autopilot-next-goals` folder was removed; refs
+remain. Following G018/G022/G023/G025 artifacts integrate in ignored
+`devsift/worktrees/autopilot-packaging-policy`, runtime draft PR #11.
+G025's three tasks are independently accepted there. G018 archives are source
+ZIP bundles, not reproducible wheels/native binaries; installation/rollback
+verification remains T054. Shared canonical specs ownership remains unchanged.
