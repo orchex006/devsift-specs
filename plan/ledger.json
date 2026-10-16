@@ -7582,7 +7582,7 @@
         "T057"
       ],
       "latest_integrated_sha": "504c55eb165d67b9107f5f19e35267f5462ec001",
-      "updated_utc": "2026-10-16T12:35:09.663076+00:00",
+      "updated_utc": "2026-10-16T12:35:10.006829+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -7911,6 +7911,15 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T12:27:09.869117+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift-specs\\worktrees\\g019-t056-templates",
+          "source_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
+          "replacement_sha": "5d3095def042bcf4f644b5ef04fed16ace738548",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T12:35:10.006829+00:00"
         }
       ],
       "external_worktrees_preserved": [
@@ -7923,7 +7932,7 @@
           "reason": "Concurrent unrelated work with extensive uncommitted files; non-force cleanup refused and no files discarded"
         }
       ],
-      "latest_specs_integrated_sha": "e07a8e0b7a02a6e29e8febadfed58cecfa0813e8"
+      "latest_specs_integrated_sha": "810f0e634469270df5699240f286cf2240ab35d6"
     },
     "previous_checkpoints": [
       {
