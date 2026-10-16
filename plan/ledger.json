@@ -765,9 +765,11 @@
         "T042"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G014.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -843,9 +845,11 @@
         "T045"
       ],
       "repo": "orchex006/devsift",
-      "status": "running",
-      "evidence": [],
-      "next_step": "Select a ready entry task",
+      "status": "accepted",
+      "evidence": [
+        "docs/evidence/G015.md"
+      ],
+      "next_step": "Selected goal accepted; consult authorized frontier",
       "review_budget_minutes": 25,
       "checkpoint_budget_minutes": 15,
       "implementation_budget_minutes": 125,
@@ -1124,8 +1128,6 @@
           "ready": false,
           "blocking_tasks": [
             "T033",
-            "T042",
-            "T045",
             "T048",
             "T051"
           ]
@@ -1478,8 +1480,6 @@
           "ready": false,
           "blocking_tasks": [
             "T033",
-            "T042",
-            "T045",
             "T048",
             "T051",
             "T052",
@@ -4458,7 +4458,7 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f",
@@ -4467,11 +4467,19 @@
           "reviewer": "boundary_reviewer",
           "review_result": "pending",
           "evidence_uri": "docs/evidence/G014.md"
+        },
+        {
+          "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f",
+          "integrated_sha": "6334f8f3397dfc5f03d0ee6b9a0e3a5253a986fd",
+          "test_result": "Independent3mixedflow tests pass295.325s no skips officialschemas; writer3pass267.398s. Actual reviewedbaseline/Gitprovenance +T040assess ->model/T041context->all3exports, reallegacy/new/UNKNOWN/securityreview, missingevidence andpriorincomplete2 dominatesenforced1, exactmaskedapprovalmanualplanningonly; source/Git/persistedbaselineunchanged.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "accepted",
+          "evidence_uri": "docs/evidence/G014.md"
         }
       ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Independent review required",
+      "next_step": "Accepted; refresh ready frontier",
       "execution_id": "GB014",
       "history": [
         {
@@ -4483,6 +4491,11 @@
           "status": "in_review",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T11:51:15.310687+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T11:57:25.189128+00:00"
         }
       ]
     },
@@ -4655,17 +4668,25 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "in_review",
+      "status": "accepted",
       "evidence": [
         {
           "source_sha": "e6fa5910fd9f710609b32da424432671cf112217",
           "test_result": "Producer 5 adversarial workflow contract tests passed, including 19 cache mutations; 6 actual Git/process pipeline tests passed in 102.453s with deterministic same-HEAD report bytes and unchanged failure statuses. Hosted cache evidence pending independent review.",
           "author": "cli_writer"
+        },
+        {
+          "reviewer": "reviewer",
+          "review_result": "accepted",
+          "source_sha": "e6fa5910fd9f710609b32da424432671cf112217",
+          "integrated_sha": "6ec26dddda93fa762d9a9be6cdfec0ad0ffece94",
+          "test_result": "Independent reviewer accepted 5 workflow/cache tests with 19 hostile mutations and actual deterministic scan repeat (49.896s). Hosted quality workflow38896891155 passed on Windows and Ubuntu: exact-key SQL NuGet cache MISS, mandatory build/scan/upload success, PR cache save skipped. All three report files match across OS and prior officially validated artifacts. Cache hit and successful main-branch save were not observed.",
+          "evidence_uri": "docs/evidence/G015.md"
         }
       ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
-      "next_step": "claim when prerequisites accepted",
+      "next_step": "Accepted; see goal evidence and canonical frontier",
       "execution_id": "GB015",
       "history": [
         {
@@ -4684,6 +4705,11 @@
           "status": "in_review",
           "actor": "controller",
           "at": "2026-10-16T11:52:13.493535+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller",
+          "at": "2026-10-16T11:57:47.219088+00:00"
         }
       ]
     },
@@ -7053,7 +7079,7 @@
       },
       "T042": {
         "owner": "implementer_2",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g014-report-gates",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g014-report-gates",
         "base_sha": "d4251bc2ea4d5de6f042e331b7370e103e665408",
@@ -7062,15 +7088,14 @@
           "tests/fixtures/report_context",
           "docs/REPORT-CONTEXT.md"
         ],
-        "locks": [
-          "write:tests/reports"
-        ],
+        "locks": [],
         "session": "g014-g016-g017-g020",
-        "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f"
+        "source_sha": "35f63e3c2daee1ad64840547fb9c0e30e124354f",
+        "integrated_sha": "6334f8f3397dfc5f03d0ee6b9a0e3a5253a986fd"
       },
       "T045": {
         "owner": "cli_writer",
-        "status": "in_review",
+        "status": "accepted",
         "branch": "test/g015-t045-ci-cache",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g015-t045-ci-cache",
         "base_sha": "29bf1cc88db96f1a06e5ff08fb71c007d3a719ec",
@@ -7079,11 +7104,10 @@
           "tests/test_ci_cache_contract.py",
           "docs/CI-WORKFLOW.md"
         ],
-        "locks": [
-          "write:tests/ci"
-        ],
+        "locks": [],
         "lease": "current selected session until accepted or reassigned",
-        "source_sha": "e6fa5910fd9f710609b32da424432671cf112217"
+        "source_sha": "e6fa5910fd9f710609b32da424432671cf112217",
+        "integrated_sha": "6ec26dddda93fa762d9a9be6cdfec0ad0ffece94"
       },
       "T033": {
         "owner": "policy_writer",
@@ -7142,18 +7166,14 @@
       ],
       "held_locks": [
         "write:tests/agent",
-        "write:tests/reports",
-        "write:tests/ci",
         "write:tests/security"
       ],
       "active_jobs": [
         "T048",
-        "T042",
-        "T045",
         "T033"
       ],
       "latest_integrated_sha": "6ec26dddda93fa762d9a9be6cdfec0ad0ffece94",
-      "updated_utc": "2026-10-16T11:55:17.340492+00:00",
+      "updated_utc": "2026-10-16T11:57:47.219088+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
