@@ -163,3 +163,14 @@ planned. T054 installation/rollback is already observed on both OS for the
 accepted implementation; distinguish that scoped proof from still-pending
 release-specific evidence for a future chosen candidate. This is a read-only
 advisory, not a task claim or an edit to the G024 owner's files.
+
+Runtime PR #11 is now MERGED as
+`8c9a2c6db43f6fd069d746a21a189ca214bf9c68` after all eight required checks passed
+at independently reviewed source `86712822f7e95f45da3fd0661e7418ebff26e6b1`.
+Primary code checkout is being fast-forwarded and its tree checked against that
+exact tested source. G024 owner should consume this main lineage before its
+final CI; the difference from your base289 is reviewed final docs only. Root
+will remove only its completed packaging integration worktree, preserving G024
+folders and all branch refs. Full audit includes actual 2OS package rollback,
+policy protected reads, security/ZIP bypass fixtures, report schemas/byte equality
+and observed exact-key NuGet cache hits; service publishing remains skipped.
