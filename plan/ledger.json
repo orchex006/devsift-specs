@@ -6330,11 +6330,17 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57",
           "test_result": "Read-only onboarding doc and README for new versus legacy; links accepted T074 and actual CLI/library contracts. git diff --check passes; no runtime change; distinct review pending",
+          "author": "controller",
+          "source_repository": "orchex006/devsift"
+        },
+        {
+          "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8",
+          "test_result": "Docs-only exact two reviewer corrections: preapproval proposal generation versus approval record; allsource selection versus provenlegacy. git diff --check passes, narrow distinct re-review pending",
           "author": "controller",
           "source_repository": "orchex006/devsift"
         }
@@ -6378,6 +6384,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:43:55.951976+00:00",
           "reason": "Reviewer requires distinguishing preapproval proposal generation from explicit operator binding and allscope selection from proven legacy origin"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:44:50.053607+00:00"
         }
       ]
     },
@@ -8158,7 +8169,7 @@
       },
       "T073": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "docs/g025-t073-workflow-clarity",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t073-workflow-clarity",
         "base_sha": "34d378018a4b536d50477827b004a5364f7deec9",
@@ -8189,7 +8200,8 @@
             "source_repository": "orchex006/devsift",
             "source_sha": "a784a341f649bc5f97876b6d261181a2884c3d57"
           }
-        ]
+        ],
+        "source_sha": "ba44394c64746861b3cf9aefc859c306133678f8"
       },
       "T068": {
         "owner": "cli_writer",
@@ -8261,7 +8273,7 @@
         "T068"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:43:55.951976+00:00",
+      "updated_utc": "2026-10-16T13:44:50.053607+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
