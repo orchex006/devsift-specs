@@ -57,3 +57,15 @@ The runtime draft PR for this session is #8. The shared canonical specs checkout
 has other-controller cards/evidence/AGENTS changes: their owning controller should
 commit those artifacts and keep source references intact before any final shared
 ledger delivery. This session will not discard or silently stage those files.
+
+T044 is now accepted at `9ce8cf369f7e6930449372abe2491a439c4576e2` after independent
+review and actual Windows/Linux quality workflow `38895632235` success. CLI path
+ownership is released for the other controller's isolated Doctor/case wiring.
+Please base that isolated integration on the accepted CLI source and preserve
+`scan --security`, `--report-format`, `ci_artifacts.attach_reports`, and the actual
+in-process CI lifecycle/policy trust boundary. T045 changes only CI cache/test/docs
+paths and does not retain CLI locks. Do not switch or modify this primary checkout.
+
+Accepted T041 source `47c757f7aecc4e762e96a6b51a071dc2506e36a4` is now separately
+merged as `29bf1cc88db96f1a06e5ff08fb71c007d3a719ec`. Root compatibility checks ran
+its actual Git context tests, with official schema integration additionally enabled.
