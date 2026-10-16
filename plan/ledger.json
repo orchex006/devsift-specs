@@ -6315,8 +6315,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770",
+          "test_result": "Executable documentation runs actual isolated CLI scan/report/case workflow over temp Git: one proof test passes8.101s; distinct review pending",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6333,6 +6340,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:31:01.418634+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:36:48.685283+00:00"
         }
       ]
     },
@@ -8016,7 +8028,7 @@
       },
       "T074": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g025-t074-report-walkthrough",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g025-t074-report-walkthrough",
         "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
@@ -8028,7 +8040,8 @@
           "write:docs/cases"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "fa80c62de42045d26e742ec82edb2d6e904b1770"
       },
       "T065": {
         "owner": "policy_writer",
@@ -8100,7 +8113,7 @@
         "T065"
       ],
       "latest_integrated_sha": "6b2e406214d233cdbaf7e1f16c4fcad9be9f7afb",
-      "updated_utc": "2026-10-16T13:36:18.654469+00:00",
+      "updated_utc": "2026-10-16T13:36:48.685283+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
