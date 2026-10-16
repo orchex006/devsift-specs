@@ -4114,8 +4114,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7",
+          "test_result": "Writer10focusedactualGitMarkdowncases pass acrosssuite+targetedassertioncorrection; completeallcases/metadata, secretmask source/overlap, escaping/safe fences/numbering/no-write",
+          "author": "cli_writer"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -4132,6 +4138,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:43:33.105156+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:57:53.257422+00:00"
         }
       ]
     },
@@ -6433,7 +6444,7 @@
       },
       "T038": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g013-t038-markdown",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t038-markdown",
         "base_sha": "84177a8779ceb43cb0fb8c4e1163fd6b1e05d542",
@@ -6446,7 +6457,8 @@
         "locks": [
           "write:reports/markdown"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "ef80a022908bf630011dd907c0866a18250bbfd7"
       },
       "T046": {
         "owner": "implementer_2",
@@ -6574,7 +6586,7 @@
         "T047"
       ],
       "latest_integrated_sha": "9f237e83035aee41e13d0c12d1771d5d6a02cb46",
-      "updated_utc": "2026-10-16T10:56:55.005796+00:00",
+      "updated_utc": "2026-10-16T10:57:53.257422+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
