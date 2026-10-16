@@ -3873,8 +3873,14 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b",
+          "test_result": "Writer19noise/correlation tests pass, explicit measured duplicateemissioncontexts/protectedaudit/auth/security/no rawIDs or messages",
+          "author": "cli_writer"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -3891,6 +3897,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:32:23.348899+00:00",
           "reason": ""
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:37:12.473907+00:00"
         }
       ]
     },
@@ -4326,11 +4337,20 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6",
+          "integrated_sha": null,
+          "test_result": "Writer actual native backend E2E: 4 tests pass44.883s with Roslyn/Go overrides and DEVSIFT_TEST_NATIVE=1; no skips; immutable consumer/Git/manifest/baseline snapshots.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G017.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB017",
       "history": [
         {
@@ -4348,6 +4368,11 @@
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:33:41.511226+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:36:18.624422+00:00"
         }
       ]
     },
@@ -5960,7 +5985,9 @@
         "paths": [
           "devsift/doctor.py",
           "tests/test_doctor.py",
-          "docs/DOCTOR.md"
+          "docs/DOCTOR.md",
+          "devsift/cli.py",
+          "tests/test_doctor_cli.py"
         ],
         "locks": [
           "write:cli/doctor"
@@ -5969,7 +5996,7 @@
       },
       "T049": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5982,7 +6009,8 @@
         "locks": [
           "write:tests/e2e/backend"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "3a08f6386fdf5cd89c9af561723137258f3b3dd6"
       },
       "T050": {
         "owner": "implementer_2",
@@ -6018,7 +6046,7 @@
       },
       "T035": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g012-t035-noise",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t035-noise",
         "base_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
@@ -6030,7 +6058,8 @@
         "locks": [
           "write:rules/observability"
         ],
-        "lease": "current selected session until accepted or reassigned"
+        "lease": "current selected session until accepted or reassigned",
+        "source_sha": "c9686027a9086d6813fb6d12805d437c4db04a7b"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -6090,8 +6119,8 @@
         "T050",
         "T035"
       ],
-      "latest_integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
-      "updated_utc": "2026-10-16T10:34:26.407313+00:00",
+      "latest_integrated_sha": "94f13e27bcc63969faa0995c731184069997eaae",
+      "updated_utc": "2026-10-16T10:37:12.473907+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
