@@ -3691,11 +3691,16 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "2ecb1feb88bc706050ad22f631136295efd6eee6",
           "test_result": "Writer9actualGit/composition/credentialcontexttests pass8.666s; source/snapshotmask, sixlanguages, malformedinput, privacy and dedupe",
+          "author": "policy_writer"
+        },
+        {
+          "source_sha": "09163be7abc3cd839bce3b85a7202bf68da05436",
+          "test_result": "Fresh12securitytests and10classifier tests pass; originalregex/malformedPEM/nonsecurityoverlap3regressions reproduced thenfixed; fullmaskedprivatefingerprintsactualGit",
           "author": "policy_writer"
         }
       ],
@@ -3738,6 +3743,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:34:26.407313+00:00",
           "reason": "Reviewer proved JS regex false credential and nonsecurity overlap mask lost by shared scanner; root owns shared reproof correction"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:40:37.876517+00:00"
         }
       ]
     },
@@ -4435,11 +4445,20 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7",
+          "integrated_sha": null,
+          "test_result": "Writer actual TS/SQL5 E2E tests pass82.014s no skips; both tsql150/160, shared envelope, VERIFIED+UNKNOWN, security floor/redaction, dirtysource failure, parameterizedclean+partialerror, no targetSQL/config/import execution.",
+          "reviewer": "boundary_reviewer",
+          "review_result": "pending",
+          "evidence_uri": "docs/evidence/G017.md"
+        }
+      ],
       "assignee": "implementer_2",
       "reviewer": "boundary_reviewer",
-      "next_step": "Implement authorized scope",
+      "next_step": "Independent review required",
       "execution_id": "GB017",
       "history": [
         {
@@ -4457,6 +4476,11 @@
           "status": "running",
           "actor": "g014-g016-g017-g020",
           "at": "2026-10-16T10:33:41.549012+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "g014-g016-g017-g020",
+          "at": "2026-10-16T10:39:27.797988+00:00"
         }
       ]
     },
@@ -5948,7 +5972,7 @@
       },
       "T031": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g011-t031-literal-context",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t031-literal-context",
         "base_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
@@ -5979,7 +6003,8 @@
             "lease": "current selected session until accepted or reassigned",
             "source_sha": "2ecb1feb88bc706050ad22f631136295efd6eee6"
           }
-        ]
+        ],
+        "source_sha": "09163be7abc3cd839bce3b85a7202bf68da05436"
       },
       "T034": {
         "owner": "cli_writer",
@@ -6088,7 +6113,7 @@
       },
       "T050": {
         "owner": "implementer_2",
-        "status": "running",
+        "status": "in_review",
         "branch": "test/g017-cross-language",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g017-cross-language",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -6100,7 +6125,8 @@
         "locks": [
           "write:tests/e2e/frontend"
         ],
-        "session": "g014-g016-g017-g020"
+        "session": "g014-g016-g017-g020",
+        "source_sha": "aa7fe33450bc45cd527842074bdacdf4784e92d7"
       },
       "T040": {
         "owner": "controller_g014",
@@ -6208,11 +6234,11 @@
       ],
       "held_locks": [
         "write:adapters/security",
-        "write:ci/entry",
-        "write:cli/doctor",
         "write:reports/model",
+        "write:ci/entry",
         "write:tests/e2e/frontend",
-        "write:tests/observability"
+        "write:tests/observability",
+        "write:cli/doctor"
       ],
       "active_jobs": [
         "T031",
@@ -6223,7 +6249,7 @@
         "T059"
       ],
       "latest_integrated_sha": "e0ec72b35040c5654a9465d196d2f7befecb03ef",
-      "updated_utc": "2026-10-16T10:38:57.723835+00:00",
+      "updated_utc": "2026-10-16T10:40:37.876517+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
