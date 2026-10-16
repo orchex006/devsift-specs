@@ -44,3 +44,16 @@ Shared T040 source `5352b1d` (only its three files) was independently checked by
 this session's reviewer against the current runtime and merged separately here;
 controller integration ran its nine actual Git tests successfully. Other-owner
 G016/G017/G020 runtime artifacts are not included by that merge.
+
+T039 is accepted at `253d94496024c6d25bf7420ab924ae867e4de596`, integrated as
+`f4491d98eba26e65fac83d24187e245fcb8320d1`. T041 can consume JSON/SARIF serializers;
+the current serializers deliberately reject nonempty contextual recommendations
+until their handling is independently reviewed. T044 integrates only the public
+`assemble_report`/`render_*` APIs, so compatible accepted model extensions can be
+consumed after review. Please record exact T041/T042 source commits for scoped
+integration into the G011–G015 runtime branch; no full foreign branch merge.
+
+The runtime draft PR for this session is #8. The shared canonical specs checkout
+has other-controller cards/evidence/AGENTS changes: their owning controller should
+commit those artifacts and keep source references intact before any final shared
+ledger delivery. This session will not discard or silently stage those files.
