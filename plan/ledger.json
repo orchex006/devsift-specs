@@ -614,7 +614,7 @@
         "T033"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -664,7 +664,7 @@
         "T036"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -718,7 +718,7 @@
         "T039"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -3699,12 +3699,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA011"
+      "execution_id": "GA011",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:29.535975+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:29.535975+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T032": {
       "id": "T032",
@@ -3772,12 +3786,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "cli_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA012"
+      "execution_id": "GA012",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:29.822829+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:29.822829+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T035": {
       "id": "T035",
@@ -3844,12 +3872,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "controller",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB013"
+      "execution_id": "GB013",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:30.102363+00:00",
+          "reason": ""
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T10:21:30.102363+00:00",
+          "reason": ""
+        }
+      ]
     },
     "T038": {
       "id": "T038",
@@ -4846,15 +4888,15 @@
   },
   "execution": {
     "selected_goals": [
-      "G006",
-      "G007",
-      "G008",
-      "G009",
-      "G010"
+      "G011",
+      "G012",
+      "G013",
+      "G014",
+      "G015"
     ],
     "controller": "controller",
-    "policy_sha": "3b59aaebe632334687cf06b68b1821be8a8c45fd",
-    "base_sha": "dbd9deea87c914fc63da4d286d962dfc7aa52928",
+    "policy_sha": "acf9a44240d866f94f70dfaa3260b3d393f25f23",
+    "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
     "jobs": {
       "T000": {
         "owner": "controller",
@@ -5596,17 +5638,66 @@
           "docs/EVIDENCE.md"
         ],
         "test_result": "Regression failed old guard; controller14evidence tests20.572s pass, distinct reviewer actualGit compatibility regression1.91s pass; correct priorassertion upgrades tofullmask, wrongdisplayunresolved"
+      },
+      "T031": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g011-t031-secrets",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g011-t031-secrets",
+        "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+        "paths": [
+          "devsift/security_adapter.py",
+          "tests/test_security_adapter.py",
+          "docs/SECURITY-ANALYSIS.md"
+        ],
+        "locks": [
+          "write:adapters/security"
+        ],
+        "lease": "current selected session until accepted or reassigned"
+      },
+      "T034": {
+        "owner": "cli_writer",
+        "status": "running",
+        "branch": "feature/g012-t034-observability",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g012-t034-observability",
+        "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+        "paths": [
+          "devsift/observability.py",
+          "tests/test_observability.py",
+          "docs/OBSERVABILITY.md"
+        ],
+        "locks": [
+          "write:rules/observability"
+        ],
+        "lease": "current selected session until accepted or reassigned"
+      },
+      "T037": {
+        "owner": "controller",
+        "status": "running",
+        "branch": "feature/g011-g015-analysis-reporting",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift",
+        "base_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+        "paths": [
+          "devsift/report_model.py",
+          "schemas/report.schema.json",
+          "tests/test_report_model.py",
+          "docs/REPORT-MODEL.md"
+        ],
+        "locks": [
+          "write:reports/model"
+        ],
+        "lease": "current selected session until accepted or reassigned"
       }
     },
     "scope": "2026-10-16 user-authorized first three goals; specs published separately; canonical execution ledger lives in code repository",
     "checkpoint": {
-      "status": "selected scope accepted; final CI/publication in progress",
+      "status": "active G011-G015",
       "selected_goals": [
-        "G006",
-        "G007",
-        "G008",
-        "G009",
-        "G010"
+        "G011",
+        "G012",
+        "G013",
+        "G014",
+        "G015"
       ],
       "old_worktree_cleanup": [
         {
@@ -5637,10 +5728,18 @@
           "clean": true
         }
       ],
-      "held_locks": [],
-      "active_jobs": [],
-      "latest_integrated_sha": "f2b5d522446a288671dc7b5acfd140ad82f18862",
-      "updated_utc": "2026-10-16T09:46:02.591271+00:00",
+      "held_locks": [
+        "write:adapters/security",
+        "write:rules/observability",
+        "write:reports/model"
+      ],
+      "active_jobs": [
+        "T031",
+        "T034",
+        "T037"
+      ],
+      "latest_integrated_sha": "a76e21aaecc451c18704a3050105d5d63ff0ef12",
+      "updated_utc": "2026-10-16T10:21:30.102363+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
