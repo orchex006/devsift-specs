@@ -34,12 +34,12 @@ python tools/validate_kit.py
 python -m unittest discover -s tests -v
 ```
 
-These offline commands validate the plan and files; **they do not push commits, install software or scan product code**. All implementation begins at `plan/GOALS.md` and `plan/ledger.json`, following `AGENTS.md` and `DEVELOPMENT.md`.
+These offline commands validate the plan and files; **they do not push commits, install software or scan product code**. Implementation follows the [code goal catalog](https://github.com/orchex006/devsift/blob/main/plan/GOALS.md) and [canonical execution ledger](https://github.com/orchex006/devsift/blob/main/plan/ledger.json), under its maintainer policy.
 
 ## Source layout
 
 - `AGENTS.md` / `DEVELOPMENT.md`: repo-only policy, branching, worktrees, agent orchestration, review and savepoints
-- `plan/`: 26 goal cards, 77 task cards, one canonical ledger, A/B entry-path decisions and first-frontier dispatch
+- `plan/`: 26 goal cards, 77 task cards, the original planning-ledger fixture, A/B entry-path decisions and historical first-frontier dispatch; accepted cards mirror canonical code execution
 - `skills/`: development planning/execution/checkpoint plus planned `$devsift` consumer entrypoint
 - `docs/`: bootstrap runbook, repository identity, report contract, open-source process, source study and checklists
 - `reference/v4/`: frozen historical source-aware lint specification; **not installed as functional engine**
