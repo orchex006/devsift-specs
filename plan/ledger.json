@@ -5899,8 +5899,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080",
+          "test_result": "Producer actual Windows10 policy-discovery tests pass0.197s, one POSIX-specific test explicitly skipped; policy18pass0.289s. Protected reads, real symlink/8.3alias/handlecleanup pass; no remote/process or analysis-authority claims. Independent review pending.",
+          "author": "policy_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "policy_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5917,6 +5924,11 @@
           "actor": "controller",
           "at": "2026-10-16T12:49:49.510367+00:00",
           "reason": "User autopilot next ready true entry: T001 accepted. Bounded read-only repo-local policy data discovery/validation, no remote/runtime code/config execution, preserve canonical policy enforcement. No hidden Doctor/G020 dependency."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T12:59:47.374987+00:00"
         }
       ]
     },
@@ -7743,7 +7755,7 @@
       },
       "T064": {
         "owner": "policy_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g022-t064-policy-discovery",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g022-t064-policy-discovery",
         "base_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
@@ -7756,7 +7768,8 @@
           "write:policy/discovery"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "7aa2d7f96219fac386ccf47536b1fddf22704080"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7806,8 +7819,8 @@
         "T052",
         "T064"
       ],
-      "latest_integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
-      "updated_utc": "2026-10-16T12:49:49.510367+00:00",
+      "latest_integrated_sha": "9044a46a0688389c9ebb2871076d2005d8b311a1",
+      "updated_utc": "2026-10-16T12:59:47.374987+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -8353,10 +8366,16 @@
           "note": "Preserve accepted Doctor/case input flags and isolated consumer entry when merging later CLI work."
         },
         "delivery": {
-          "status": "all12tasksaccepted; finalWindowsnativeCI/mainmergepending",
-          "source_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "status": "all_goals_accepted; runtime_main_merged; specs_evidence_reviewed",
+          "runtime_source_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "runtime_main_sha": "58232337a064637e4038d93b604ee174692f6086",
           "runtime_pr": "https://github.com/orchex006/devsift/pull/9",
-          "specs_pr": "https://github.com/orchex006/devsift-specs/pull/9"
+          "specs_pr": "https://github.com/orchex006/devsift-specs/pull/9",
+          "checks": "8SUCCESS; SARIFpublishPRskip",
+          "native_windows": "457tests970.148s;2installed-onlyskips",
+          "native_linux": "457tests117.738s;11platform/installedskips",
+          "independent_reviewer": "boundary_reviewer",
+          "specs_delivery": "https://github.com/orchex006/devsift-specs/pull/9"
         }
       },
       "g011-g015": {
@@ -8543,6 +8562,15 @@
           "removed": true,
           "integrated_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
           "proof": "Accepted T059/T060 correction source ancestor; original branch retained"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\delivery-g014-g020",
+          "source_sha": "ebf1705ffa3393d9017b0ebf8fff9f6b2583697d",
+          "branch_retained": "feature/g014-g016-g017-g020",
+          "clean": true,
+          "removed": true,
+          "integrated_sha": "58232337a064637e4038d93b604ee174692f6086",
+          "proof": "Validated final source merged runtime PR9/main; branch retained"
         }
       ]
     }
