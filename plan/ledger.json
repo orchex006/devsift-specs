@@ -1282,7 +1282,7 @@
         "T066"
       ],
       "repo": "orchex006/devsift",
-      "status": "pending",
+      "status": "running",
       "evidence": [],
       "next_step": "Select a ready entry task",
       "review_budget_minutes": 25,
@@ -5899,12 +5899,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA022"
+      "execution_id": "GA022",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:49:49.510367+00:00",
+          "reason": "User autopilot next ready true entry: T001 accepted. Bounded read-only repo-local policy data discovery/validation, no remote/runtime code/config execution, preserve canonical policy enforcement. No hidden Doctor/G020 dependency."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:49:49.510367+00:00",
+          "reason": "User autopilot next ready true entry: T001 accepted. Bounded read-only repo-local policy data discovery/validation, no remote/runtime code/config execution, preserve canonical policy enforcement. No hidden Doctor/G020 dependency."
+        }
+      ]
     },
     "T065": {
       "id": "T065",
@@ -7726,6 +7740,23 @@
         "source_repository": "orchex006/devsift",
         "source_sha": "05baee035e2e6b41a1ec02e2c993ae2c297d6691",
         "integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14"
+      },
+      "T064": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "feature/g022-t064-policy-discovery",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g022-t064-policy-discovery",
+        "base_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
+        "paths": [
+          "devsift/project_policy.py",
+          "tests/test_project_policy.py",
+          "docs/PROJECT-POLICY.md"
+        ],
+        "locks": [
+          "write:policy/discovery"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7768,13 +7799,15 @@
         }
       ],
       "held_locks": [
-        "write:packaging/manifests"
+        "write:packaging/manifests",
+        "write:policy/discovery"
       ],
       "active_jobs": [
-        "T052"
+        "T052",
+        "T064"
       ],
       "latest_integrated_sha": "4b7cf2848085e5eb5b30757baac5044af0abcf14",
-      "updated_utc": "2026-10-16T12:49:16.356309+00:00",
+      "updated_utc": "2026-10-16T12:49:49.510367+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
