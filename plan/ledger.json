@@ -5792,12 +5792,26 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "policy_writer",
+      "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GA021"
+      "execution_id": "GA021",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller",
+          "at": "2026-10-16T12:40:49.880564+00:00",
+          "reason": "Accepted T062 unlocks actual unauthorized change denial fixtures. Before/after Git evidence remains no edit authority, one-case/batch/refactor boundaries and read-only CLI preserved; no hidden G016 dependency."
+        },
+        {
+          "status": "running",
+          "actor": "controller",
+          "at": "2026-10-16T12:40:49.880564+00:00",
+          "reason": "Accepted T062 unlocks actual unauthorized change denial fixtures. Before/after Git evidence remains no edit authority, one-case/batch/refactor boundaries and read-only CLI preserved; no hidden G016 dependency."
+        }
+      ]
     },
     "T064": {
       "id": "T064",
@@ -7626,6 +7640,23 @@
         ],
         "lease": "current selected session until accepted or reassigned",
         "source_repository": "orchex006/devsift"
+      },
+      "T063": {
+        "owner": "policy_writer",
+        "status": "running",
+        "branch": "test/g021-t063-denial",
+        "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g021-t063-denial",
+        "base_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
+        "paths": [
+          "tests/test_remediation_denial.py",
+          "tests/fixtures/remediation",
+          "docs/VERIFICATION-EVIDENCE.md"
+        ],
+        "locks": [
+          "write:tests/safety"
+        ],
+        "lease": "current selected session until accepted or reassigned",
+        "source_repository": "orchex006/devsift"
       }
     },
     "scope": "Authorized DevSift development; canonical execution ledger lives only in devsift-specs",
@@ -7669,15 +7700,17 @@
       ],
       "held_locks": [
         "write:tests/governance",
-        "write:packaging/manifests"
+        "write:packaging/manifests",
+        "write:tests/safety"
       ],
       "active_jobs": [
         "T060",
         "T057",
-        "T052"
+        "T052",
+        "T063"
       ],
       "latest_integrated_sha": "7dafcd0f0a7e73ed43380aa997e233a4cd4dfcd2",
-      "updated_utc": "2026-10-16T12:40:29.259503+00:00",
+      "updated_utc": "2026-10-16T12:40:49.880564+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
