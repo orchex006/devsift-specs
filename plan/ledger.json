@@ -6530,8 +6530,28 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "accepted",
+      "evidence": [
+        {
+          "author": "luna_implementer_1",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "low",
+          "source_sha": "63364530d5e685bae2f651368940a6797f3a5b37",
+          "source_repository": "orchex006/devsift",
+          "test_result": "Writer5actualtemporaryGit/sourcebundle tests PASS; privacy rework removesinvalidpin echo and postverifyunboundedmetadata reread; selectedcomponentinspectiononly, releaseauthorityFalse. Independentreviewpending."
+        },
+        {
+          "reviewer": "luna_reviewer",
+          "review_result": "accepted",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "low",
+          "source_sha": "63364530d5e685bae2f651368940a6797f3a5b37",
+          "integrated_sha": "63364530d5e685bae2f651368940a6797f3a5b37",
+          "source_repository": "orchex006/devsift",
+          "test_result": "Independent5actualGit/bundle/CLI tests PASS14.242s no skips; privatepinrejection, no unboundedmetadata reread, tamper/missingarchive readonly; selectedscope only no releaseauthority.",
+          "evidence_uri": "docs/evidence/G024.md"
+        }
+      ],
       "assignee": "luna_implementer_1",
       "reviewer": "luna_reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -6547,6 +6567,16 @@
           "status": "running",
           "actor": "controller_g014",
           "at": "2026-10-16T14:08:42.268552+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:13:53.127567+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:15:31.540836+00:00"
         }
       ]
     },
@@ -6567,12 +6597,55 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
-      "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "status": "accepted",
+      "evidence": [
+        {
+          "author": "luna_implementer_2",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "low",
+          "source_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a",
+          "source_repository": "orchex006/devsift",
+          "test_result": "Docs-only4paths: release draft/SBOM-license checklist, canonicaldependencyrefs/manualfact/linkchecks, gitdiff/cachedchecks PASS; no new tests. Independentreviewpending."
+        },
+        {
+          "reviewer": "luna_reviewer",
+          "review_result": "accepted",
+          "model": "gpt-6-luna",
+          "reasoning_effort": "low",
+          "source_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a",
+          "integrated_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a",
+          "source_repository": "orchex006/devsift",
+          "test_result": "Independentstaticdocs/fact/linkreview PASS; fourcomponentmanifest, pyproject0.0dev0/emptyruntime/setuptools83/nativecanonicalrefs/currentCLI verified; legalSBOMsignreleaseunchecked; clean/diffpass; no testsneededproseonly.",
+          "evidence_uri": "docs/evidence/G024.md"
+        }
+      ],
+      "assignee": "luna_implementer_2",
+      "reviewer": "luna_reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB024"
+      "execution_id": "GB024",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:17:23.245968+00:00",
+          "reason": "Resource admission under cooperative canonical-ledger OS lock."
+        },
+        {
+          "status": "running",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:17:23.278171+00:00"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:20:57.612050+00:00"
+        },
+        {
+          "status": "accepted",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:23:36.923364+00:00"
+        }
+      ]
     },
     "T072": {
       "id": "T072",
@@ -6591,12 +6664,20 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "pending",
+      "status": "running",
       "evidence": [],
-      "assignee": null,
-      "reviewer": null,
+      "assignee": "luna_implementer_1",
+      "reviewer": "luna_reviewer",
       "next_step": "claim when prerequisites accepted",
-      "execution_id": "GB024"
+      "execution_id": "GB024",
+      "history": [
+        {
+          "status": "claimed",
+          "actor": "controller_g014",
+          "at": "2026-10-16T14:23:36.982579+00:00",
+          "reason": "Resource admission under cooperative canonical-ledger OS lock."
+        }
+      ]
     },
     "T073": {
       "id": "T073",
@@ -8691,15 +8772,54 @@
         "lease": "Explicit final autopilot; execution model gpt-6-luna low",
         "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g024-t070-readiness",
         "owner": "luna_implementer_1",
-        "status": "running",
+        "status": "accepted",
         "paths": [
           "tools/check_release_readiness.py",
           "tests/test_release_readiness.py",
           "docs/RELEASE-READINESS.md",
           "CHANGELOG.md"
         ],
+        "locks": [],
+        "source_repository": "orchex006/devsift",
+        "claim_controller": "controller_g014",
+        "authorization_id": "autopilot_luna_final",
+        "source_sha": "63364530d5e685bae2f651368940a6797f3a5b37",
+        "integrated_sha": "63364530d5e685bae2f651368940a6797f3a5b37"
+      },
+      "T071": {
+        "base_sha": "63364530d5e685bae2f651368940a6797f3a5b37",
+        "branch": "docs/g024-t071-release-checklist",
+        "lease": "Explicitautopilot; gpt-6-luna low",
+        "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g024-t071-release-checklist",
+        "owner": "luna_implementer_2",
+        "status": "accepted",
+        "paths": [
+          "docs/RELEASE-DRAFT.md",
+          "docs/RELEASE-CHECKLIST.md",
+          "docs/RELEASE-READINESS.md",
+          "CHANGELOG.md"
+        ],
+        "locks": [],
+        "source_repository": "orchex006/devsift",
+        "claim_controller": "controller_g014",
+        "authorization_id": "autopilot_luna_final",
+        "source_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a",
+        "integrated_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a"
+      },
+      "T072": {
+        "base_sha": "75dfa105896d4f5b616f2ce7838d264f7b154b1a",
+        "branch": "test/g024-t072-release-dry-run",
+        "lease": "Explicitautopilot; gpt-6-luna low",
+        "worktree": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g024-t072-release-dry-run",
+        "owner": "luna_implementer_1",
+        "status": "running",
+        "paths": [
+          "tests/test_release_dry_run.py",
+          "docs/RELEASE-READINESS.md",
+          "docs/RELEASE-CHECKLIST.md"
+        ],
         "locks": [
-          "write:release/readiness"
+          "write:tests/release"
         ],
         "source_repository": "orchex006/devsift",
         "claim_controller": "controller_g014",
@@ -8746,13 +8866,13 @@
         }
       ],
       "held_locks": [
-        "write:release/readiness"
+        "write:tests/release"
       ],
       "active_jobs": [
-        "T070"
+        "T072"
       ],
-      "latest_integrated_sha": "86712822f7e95f45da3fd0661e7418ebff26e6b1",
-      "updated_utc": "2026-10-16T14:10:28.304712+00:00",
+      "latest_integrated_sha": "8c9a2c6db43f6fd069d746a21a189ca214bf9c68",
+      "updated_utc": "2026-10-16T14:29:59.571190+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
@@ -9297,6 +9417,15 @@
           "clean": true,
           "ref_retained": true,
           "at": "2026-10-16T14:10:28.304712+00:00"
+        },
+        {
+          "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\autopilot-packaging-policy",
+          "source_sha": "86712822f7e95f45da3fd0661e7418ebff26e6b1",
+          "replacement_sha": "86712822f7e95f45da3fd0661e7418ebff26e6b1",
+          "contained": true,
+          "clean": true,
+          "ref_retained": true,
+          "at": "2026-10-16T14:29:59.571190+00:00"
         }
       ],
       "external_worktrees_preserved": [
@@ -9725,6 +9854,28 @@
           "proof": "Validated final source merged runtime PR9/main; branch retained"
         }
       ]
+    },
+    "supporting_corrections": {
+      "g024_windows_ledger_bytes": {
+        "controller": "controller_g014",
+        "owner": "luna_implementer_2",
+        "reviewer": "luna_reviewer",
+        "status": "accepted",
+        "source_repository": "orchex006/devsift-specs",
+        "paths": [
+          "tools/resource_claims.py",
+          "tests/test_resource_claims.py",
+          "docs/RESOURCE-OWNERSHIP.md"
+        ],
+        "model": "gpt-6-luna",
+        "reasoning_effort": "low",
+        "reason": "Actual T071 admission falselyCORRUPT_LEDGER for validCRLF canonicalJSON: Windows text-mode os.read returned368745 bytes versus378505 physicalbytes; sourceJSONparsedvalid. O_BINARY read required; no T065/task status reassignment.",
+        "at": "2026-10-16T14:24:45.592280+00:00",
+        "source_sha": "a46042d6f1460a46c7589506d0b5778dff4bee5e",
+        "test_result": "IndependentLuna/low11resourceclaimtests PASS9.208s noskips incl4actualWindowscrossprocess; binaryrawCRLF+UTF8expectedhash/admission andalloriginalidentity/nofollow/size/lock protections preserved; writer11PASS2.120s.",
+        "integrated_sha": "a46042d6f1460a46c7589506d0b5778dff4bee5e",
+        "review_result": "accepted"
+      }
     }
   }
 }
