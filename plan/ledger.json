@@ -5203,8 +5203,15 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
-      "evidence": [],
+      "status": "in_review",
+      "evidence": [
+        {
+          "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0",
+          "test_result": "Six actual deterministic archive, integrity tamper, immutable source/index, separate Gitdir/link/output and disabled callback tests pass33.809s; source ZIP not wheel reproducibility, distinct review pending",
+          "author": "cli_writer",
+          "source_repository": "orchex006/devsift"
+        }
+      ],
       "assignee": "cli_writer",
       "reviewer": "reviewer",
       "next_step": "claim when prerequisites accepted",
@@ -5221,6 +5228,11 @@
           "actor": "controller",
           "at": "2026-10-16T13:26:40.922601+00:00",
           "reason": "Accepted T052 unlocks deterministic archives and integrity metadata. Explicit trusted immutable source and outside-source output, no network/publication/consumer hooks, canonical metadata and hashes; fresh install laterT054."
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T13:42:55.027941+00:00"
         }
       ]
     },
@@ -8063,7 +8075,7 @@
       },
       "T053": {
         "owner": "cli_writer",
-        "status": "running",
+        "status": "in_review",
         "branch": "feature/g018-t053-repro-archives",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g018-t053-repro-archives",
         "base_sha": "bd84e20c430cae078b296a86f1d556f8b85448a2",
@@ -8076,7 +8088,8 @@
           "write:packaging/artifacts"
         ],
         "lease": "current selected session until accepted or reassigned",
-        "source_repository": "orchex006/devsift"
+        "source_repository": "orchex006/devsift",
+        "source_sha": "c7b5e5f74c4de315020ea54c7eac92ce0a9afdb0"
       },
       "T074": {
         "owner": "policy_writer",
@@ -8179,7 +8192,7 @@
         "T073"
       ],
       "latest_integrated_sha": "34d378018a4b536d50477827b004a5364f7deec9",
-      "updated_utc": "2026-10-16T13:41:59.378330+00:00",
+      "updated_utc": "2026-10-16T13:42:55.027941+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
