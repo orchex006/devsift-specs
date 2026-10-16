@@ -3919,11 +3919,16 @@
         "Relevant fixtures/tests pass with recorded command and result",
         "Independent reviewer accepts evidence after integration"
       ],
-      "status": "running",
+      "status": "in_review",
       "evidence": [
         {
           "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
           "test_result": "Eight actual-Git report model tests pass9.729s; forged provenance, redaction, safe navigation, no writes, counts/shape/size rejection",
+          "author": "controller"
+        },
+        {
+          "source_sha": "24d53e1f52109607851705a9cb6941d41daf1cf7",
+          "test_result": "All3reviewblockers reproducedred; fresh10actualGitreporttests pass28.212s, knownsecretcodeclosedmapping/reservedwordskeepkeys-enums/controlURLsreject",
           "author": "controller"
         }
       ],
@@ -3966,6 +3971,11 @@
           "actor": "controller",
           "at": "2026-10-16T10:29:34.472028+00:00",
           "reason": "Reviewer reproduced raw error code leak and explicit-secret masking of machine keys/enums; fresh contained rework"
+        },
+        {
+          "status": "in_review",
+          "actor": "controller",
+          "at": "2026-10-16T10:33:22.759588+00:00"
         }
       ]
     },
@@ -5824,7 +5834,7 @@
       },
       "T037": {
         "owner": "controller",
-        "status": "running",
+        "status": "in_review",
         "branch": "fix/g013-t037-redaction",
         "worktree": "D:/SP-Billy/devsift-dev/devsift/worktrees/g013-t037-redaction",
         "base_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665",
@@ -5857,7 +5867,8 @@
             "lease": "current selected session until accepted or reassigned",
             "source_sha": "6112ac77e08affc1abbe6cf829fcfa25cb507665"
           }
-        ]
+        ],
+        "source_sha": "24d53e1f52109607851705a9cb6941d41daf1cf7"
       },
       "T043": {
         "owner": "controller",
@@ -6009,7 +6020,7 @@
         "T035"
       ],
       "latest_integrated_sha": "f8b3dc9d615f38f66d66ba675b4953e3af85d341",
-      "updated_utc": "2026-10-16T10:32:23.348899+00:00",
+      "updated_utc": "2026-10-16T10:33:22.759588+00:00",
       "worktree_cleanup": [
         {
           "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\g006-baseline",
