@@ -1,7 +1,9 @@
 # G011–G015 session contracts
 
-This controller implements only the user's G011–G015 request. It does not dispatch
-G016/G017/G020 work or modify another owner's claims. G014 artifacts shared by
+This document records the original G011–G015 delivery. The user subsequently
+authorized autopilot across following ready goals on 2026-10-16. Current ready
+autopilot jobs are T055/G019 and T061/G021 on isolated branches, kept out of runtime
+PR #8. Existing G016/G017/G020 ownership remains unchanged. G014 artifacts shared by
 `controller_g014` are consumed after source/review verification; the separate
 authorization registry is preserved rather than overwritten by this session.
 

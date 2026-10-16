@@ -1,3 +1,5 @@
+Concurrent sessions: read [control/ACTIVE-SESSIONS.md](control/ACTIVE-SESSIONS.md) and execution.authorizations in the canonical ledger before changing existing task ownership. Another session scope does not revoke direct user authorization.
+
 # DevSift specifications maintainer policy
 
 Scope: `orchex006/devsift-specs`. This repo owns requirements, acceptance criteria, the single live plan/ledger.json, task/goal cards, governance, maintainer skills and review evidence. Runtime, consumer skill, native builds and runtime tests belong to the explicitly selected `orchex006/devsift` checkout. Do not mirror the ledger or consumer skill.
