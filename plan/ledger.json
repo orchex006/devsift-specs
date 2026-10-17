@@ -9975,7 +9975,33 @@
           "removed": true,
           "proof": "ValidatedtreeidenticaltoruntimePR12main; branch refs retained"
         }
-      ]
+      ],
+      "installer-progress-0.1.12": {
+        "runtime_repository": "https://github.com/orchex006/devsift",
+        "runtime_pr": "https://github.com/orchex006/devsift/pull/16",
+        "integrated_sha": "0a827e47493b7c56e98c0ca49aecf3f1846ed6b8",
+        "asset_revision": "26ba06dca549b97c65e2f1dde5cdbc7599b4e518",
+        "public_assets_verified": 21,
+        "public_SHA256SUMS_sha256": "fe2a158537861d78aa6f7ca1c0522585c70680fa5688da67607f242c8ce6de6c",
+        "independent_review": "review_installer_docs approved source and all final assets",
+        "public_windows_powershell_5_1": "install and update passed; CLI help and report template verified at all host destinations",
+        "worktrees": [
+          {
+            "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\progress-0.1.12",
+            "revision": "88be40a1ffff02c4dd180e46ede5ab915525d2f6",
+            "dirty_files_equal_HEAD_blob": [],
+            "integrated": true
+          },
+          {
+            "path": "D:\\SP-Billy\\devsift-dev\\devsift\\worktrees\\progress-final-0.1.12",
+            "revision": "26ba06dca549b97c65e2f1dde5cdbc7599b4e518",
+            "dirty_files_equal_HEAD_blob": [],
+            "integrated": true
+          }
+        ],
+        "ref_retained": "feat/installer-progress",
+        "proof": "No tracked Git diff against HEAD and no untracked nonignored files at removal; both commits ancestors of main. Any reported dirty physical file was required to equal its HEAD Git blob; none were reported. Branch ref retained; no unique work discarded."
+      }
     },
     "supporting_corrections": {
       "g024_windows_ledger_bytes": {
